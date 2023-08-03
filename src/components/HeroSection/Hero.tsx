@@ -23,7 +23,7 @@ export default  function Hero() {
             </Swiper>
                 </div>
                 <div >
-                <div className="text-[50px] font-bold">WELCOME TO BIN SADIQ
+                <div className="text-[50px] font-bold ">WELCOME TO BIN SADIQ
                 <br /> A LIVING LEGACY</div>
                 <div className="w-[700px]">Having the inheritance and elegance of the past with the comfort and convenience of modern living.BIN SADIQ offers a unique opportunity to own residential and commercial places in the Heart of Twin cities, with restored heritagwe buildings and modern residences that feature state-of-the-art amenities and stunning views. Discover a world of timeless beauty,sophistication,and exclusivity at BIN SADIQ.</div>
                 </div>
@@ -43,7 +43,7 @@ export default  function Hero() {
                 <div className='bg-white'>
                     <img src="/Goc.jpg" alt="" />
                 </div>
-                <div className='bg-white container mx-auto px-28'>
+                <div className='bg-white  '>
                     <img src="/Landmarks.jpg" alt="" className='object-cover w-full h-full'/>
                 </div>
                 

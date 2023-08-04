@@ -12,6 +12,9 @@ import { Autoplay,Navigation,Pagination } from 'swiper/modules';
 import Image from 'next/image';
 import CoreValues from '../Core_Values/CoreValues';
 export default  function Hero() {
+
+
+    
     return (
         <div className='bg-white'>
             <div className="flex flex-row items-center justify-center bg-white text-black pt-20 px-20 gap-20 ">

@@ -41,37 +41,37 @@ const timer = setTimeout(()=> {
         
     ]
 
-    return <div className="container mx-auto text-center py-20 ">
+    return <div className="container mx-auto text-center py-20 pt-[200px]">
         <div className="text-[64px] text-golden font-bold">OUR CORE VALUES</div>
-        <div className="flex flex-col items-center gap-20">
+        <div className="flex flex-col items-center gap-20 pt-[150px]">
 
 
         <div className="flex flex-row items-center justify-center gap-[150px]">
         <div className=" flex flex-row items-center gap-5">
-            <div className="w-[100px] h-[100px] p-3 rounded-full flex flex-row items-center justify-center shadow-2xl" >
+            <div className="w-[100px] h-[100px] p-3 rounded-full flex flex-row items-center justify-center " >
             <img src='/core1.png' alt="" className="w-[100px]"/>
             </div>
             
-            <div className="w-[3px] h-[100px] bg-black"></div>
+            <div className="w-[3px] h-[100px] bg-white"></div>
             <FadeInElement>
-            <p className={`w-[250px]  transition-opacity duration-500 opacity-100 transition-opacity duration-300 opacity-0 flex flex-col text-left text-black`}>
+            <p className={`w-[250px] text-white  transition-opacity duration-500 opacity-100 transition-opacity duration-300 opacity-0 flex flex-col text-left text-black`}>
             WE ACT WITH
-            <span className="font-bold drop-shadow-xl">INTEGRITY</span>
+            <span className="font-bold drop-shadow-xl text-golden">INTEGRITY</span>
             </p>
             </FadeInElement> 
         </div>
 
         <div className=" flex flex-row items-center gap-5">
 
-            <div className="w-[100px] h-[100px] p-3 rounded-full flex flex-row items-center justify-center shadow-2xl" >
+            <div className="w-[100px] h-[100px] p-3 rounded-full flex flex-row items-center justify-center " >
             <img src="/core2.png" alt="" className="w-[100px]"/>
             </div>
             
-            <div className="w-[3px] h-[100px] bg-black"></div>
+            <div className="w-[3px] h-[100px] bg-white"></div>
             <FadeInElement>
-            <div className={`w-[250px]  transition-opacity duration-500 opacity-100 transition-opacity duration-300 opacity-0 flex flex-col text-left text-black`}>
+            <div className={`w-[250px] text-white transition-opacity duration-500 opacity-100 transition-opacity duration-300 opacity-0 flex flex-col text-left text-black`}>
                 WE BELIEVE IN
-                <span className="font-bold">MUTUAL RESPECT</span>
+                <span className="font-bold text-golden">MUTUAL RESPECT</span>
             </div>
             </FadeInElement>
         </div>
@@ -82,15 +82,15 @@ const timer = setTimeout(()=> {
         <div className="flex flex-row items-center justify-center gap-[150px]">
         <div className=" flex flex-row items-center gap-5">
 
-            <div className="w-[100px] h-[100px] p-3 rounded-full flex flex-row items-center justify-center shadow-2xl" >
+            <div className="w-[100px] h-[100px] p-3 rounded-full flex flex-row items-center justify-center " >
             <img src="/core3.png" alt="" className="w-[100px]"/>
             </div>
             
-            <div className="w-[3px] h-[100px] bg-black"></div>
+            <div className="w-[3px] h-[100px] bg-white"></div>
            <FadeInElement>
-            <div className={`w-[250px] transition-opacity duration-500 opacity-100 transition-opacity duration-300 opacity-0 flex flex-col text-left text-black`}>
+            <div className={`w-[250px] text-white transition-opacity duration-500 opacity-100 transition-opacity duration-300 opacity-0 flex flex-col text-left text-black`}>
             WE ARE DEVOTED
-            <span className="font-bold">INNOVATUION</span>
+            <span className="font-bold text-golden">INNOVATUION</span>
             </div> 
             </FadeInElement>
             
@@ -98,15 +98,15 @@ const timer = setTimeout(()=> {
 
         <div className=" flex flex-row items-center gap-5">
 
-            <div className="w-[100px] h-[100px] p-3 rounded-full flex flex-row items-center justify-center shadow-2xl" onMouseEnter={()=> setShow4(true)}>
+            <div className="w-[100px] h-[100px] p-3 rounded-full flex flex-row items-center justify-center" onMouseEnter={()=> setShow4(true)}>
             <img src="/core4.png" alt="" className="w-[100px]"/>
             </div>
             
-            <div className="w-[3px] h-[100px] bg-black"></div>
+            <div className="w-[3px] h-[100px] bg-white"></div>
             <FadeInElement>
-            <div className={`w-[250px] transition-opacity duration-500 opacity-100 transition-opacity duration-300 opacity-0  flex flex-col text-left text-black`}>
+            <div className={`w-[250px] text-white transition-opacity duration-500 opacity-100 transition-opacity duration-300 opacity-0  flex flex-col text-left text-black`}>
                 WE BUILD TRUST THROUGH
-                <span className="font-bold">TRANSPARENCY</span>
+                <span className="font-bold text-golden">TRANSPARENCY</span>
             </div>
             </FadeInElement>
         </div>
@@ -115,15 +115,15 @@ const timer = setTimeout(()=> {
         <div className="text-black mt-20 flex flex-row justify-center">
             <div className=" flex flex-row items-center gap-5">
 
-            <div className="w-[100px] h-[100px] p-3 rounded-full flex flex-row items-center justify-center shadow-2xl" onMouseEnter={()=> setShow4(true)}>
+            <div className="w-[100px] h-[100px] p-3 rounded-full flex flex-row items-center justify-center " onMouseEnter={()=> setShow4(true)}>
             <img src="/core5.png" alt="" className="w-[100px]"/>
             </div>
             
-            <div className="w-[3px] h-[100px] bg-black"></div>
+            <div className="w-[3px] h-[100px] bg-white"></div>
             <FadeInElement>
-            <div className={`w-[250px] transition-opacity duration-500 opacity-100 transition-opacity duration-300 opacity-0  flex flex-col text-left text-black`}>
+            <div className={`w-[250px] text-white transition-opacity duration-500 opacity-100 transition-opacity duration-300 opacity-0  flex flex-col text-left text-black`}>
                 WE BUILD TRUST THROUGH
-                <span className="font-bold">TRANSPARENCY</span>
+                <span className="font-bold text-golden">TRANSPARENCY</span>
             </div>
             </FadeInElement>
 

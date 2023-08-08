@@ -51,13 +51,10 @@ return<> <div className="w-full h-[100vh] bg-no-repeat relative bg-cover" style=
 <p className="w-[700px] text-center ">Our Vision is to recreate the Heritage culture with Modern living in Reali Estate sector of Pakistan, which favors the development of sustainable, modern projects tailored to benefit society</p>
 </div>
 
-<div>
-    <div>
-        <img src="/Landmarks.jpg" alt="" className="bg-cover w-full h-full"/>
-    </div>
+
     <div>
         <Footer/>
     </div>
-</div>
+
 </>
 }

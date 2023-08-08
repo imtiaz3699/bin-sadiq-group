@@ -14,6 +14,8 @@ module.exports = {
       },
       colors: {
         'golden': '#D0B256',
+        'blue1': '#2e3a51',
+        'lead-color':'#2B292A',
       },
     },
   },

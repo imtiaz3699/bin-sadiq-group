@@ -1,5 +1,10 @@
 export default function Footer () {
-    return <div className="bg-black py-[80px] flex flex-row text-white items-center justify-between px-20">
+    
+    return <>
+    <div className=''>
+                <img src="/Landmarks.jpg" alt="" className='object-cover w-full h-full'/>
+            </div>
+    <div className="bg-lead-color py-[80px] flex flex-row text-white items-center justify-between px-20">
         
             <div className="flex flex-col items-center ">
                 <div className="w-[200px] h-[200px]">
@@ -21,4 +26,5 @@ export default function Footer () {
                 <div className="text-[20px]">0331-000-1111</div>
         </div>
     </div>
+    </>
 }

@@ -46,6 +46,16 @@ export default function SecondNavbar () {
         {
             name:'PEOPLE',
             url:'', 
+            linked:[
+                {
+                    name:'Usama Sadiq',
+                    url:'/usama-sadiq',
+                },
+                {
+                    name:'Our Team',
+                    url:'/our-team',
+                }
+            ],
         },
         {
             name:'CONTACT',
@@ -60,6 +70,9 @@ export default function SecondNavbar () {
         if(index === 4){
             setState(4)
         }
+        if(index === 5){
+            setState(5)
+        }        
     }
     return <div className="flex flex-row items-center text-white justify-center gap-20 w-full absolute py-6 px-10 z-10">
             {
@@ -69,7 +82,7 @@ export default function SecondNavbar () {
                     <img src={element?.name} alt="" className="w-[100px] h-[100px]"/> 
                     :
                     <Link href={element?.url}> 
-                    <div className="text-[18px] relative font-semi-bold cursor-pointer  flex flex-row items-center gap-2" onMouseEnter={()=> dropDowns(idx)} >
+                    <div className="text-[18px] relative font-semi-bold cursor-pointer  flex flex-row items-center gap-2" onMouseEnter={()=> dropDowns(idx)} onMouseLeave={()=> setState(null)}>
                        <span className="hover:text-golden">{element?.name}</span>  
                     {
                         element?.linked && <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="w-6 h-6 hover:text-golden">
@@ -78,7 +91,7 @@ export default function SecondNavbar () {
                     } 
 
 
-                    <div className="flex flex-col items-center absolute w-[300px] top-[25px] left-[-110px]">
+                    <div className="flex flex-col items-center absolute w-[300px] top-[27px] pt-3 left-[-100px]">
                     {
                        state === idx  && element?.linked && element?.linked.map((item,index)=> {
                             return <>
@@ -91,17 +104,9 @@ export default function SecondNavbar () {
                     </div>
 
 
-                    <div className="flex flex-col items-center absolute w-[300px] top-[25px] left-[-110px]">
-                    {
-                       state === idx  && element.linked  && element.linked.map((item,index)=> {
-                            return <>
-                            <Link href={item.url} key = {index}>
-                            <div className="hover:text-golden text-[16px]">{item.name}</div>
-                            </Link>
-                            </>
-                        }) 
-                    }
-                    </div>
+                    
+
+                    
                     
                     </div></Link> } 
                     </div>

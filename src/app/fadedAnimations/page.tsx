@@ -1,13 +1,13 @@
-"use client"
-import React, { useEffect, useState } from 'react';
+'use client'
+import React, { ReactNode, useEffect, useState, useRef } from 'react';
 
 interface FadeInElementProps {
-  children: React.ReactNode;
+  children: ReactNode;
 }
 
- const FadeInElement: React.FC<FadeInElementProps> = ({ children }) => {
+const FadeInElement: React.FC<FadeInElementProps> = ({ children }: FadeInElementProps) => {
   const [isVisible, setIsVisible] = useState(false);
-  const elementRef = React.useRef<HTMLDivElement>(null);
+  const elementRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
     const handleScroll = () => {

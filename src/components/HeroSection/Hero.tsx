@@ -42,8 +42,13 @@ const logos = ['/foundation.png','/association.png','/heritage.png','/law-associ
                 <div className='text-golden font-bold text-[80px] '>Why Choose Us</div>
                 <div className='text-[22px]  font-semibold text-gray-500 text-white'>We've always tried to be different,a different approach to buisness & customer service,<br /> a different culture at work place. We believe in the importance of fresh thinking-in being <br /> green,  and approaching things in new and different ways.</div>
             </div>
-            <div className='bg-lead-color flex flex-row items-center justify-center mt-56'>
-                <ContinuousSlider/>
+            <div className='bg-lead-color flex flex-row items-center justify-between mt-56'>
+                {/* <ContinuousSlider/> */}
+                {
+                    logos.map((element,idx)=> {
+                        return <img src={element} alt="" className='w-[400px] h-[300px]'/>
+                    })
+                }
             </div>
             </div>
             </div>            

@@ -2,9 +2,9 @@
 export default function Footer () {
     
     return <>
-    <div className=''>
+    {/* <div className=''>
                 <img src="/Landmarks.jpg" alt="" className='object-cover w-full h-full'/>
-            </div>
+            </div> */}
     <div className="bg-lead-color py-[80px] flex flex-row text-white items-center justify-between px-20">
         
             <div className="flex flex-col items-center ">

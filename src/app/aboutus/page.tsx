@@ -27,9 +27,9 @@ return<> <div className="w-full h-[100vh] bg-no-repeat relative bg-cover" style=
 
 <div className="flex flex-row items-centr">
 <div>
-    <img src="/aboutus2.jpg" alt="" />
+    <img src="/aboutus2.jpg" alt="" className="w-full h-full"/>
 </div>
-<div><img src="/aboutus4.jpg" alt="" /></div>
+<div><img src="/aboutus4.jpg" alt="" className="w-full h-full"/></div>
 </div>
 
 <div className="bg-black py-20 flex flex-col gap-10 items-center justify-center text-white">

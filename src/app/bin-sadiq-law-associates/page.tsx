@@ -1,3 +1,4 @@
+"use client"
 import SecondNavbar from "@/components/SecondNavbar/SecondNavbar";
 
 export default function BinSadiqLawAssociates () {

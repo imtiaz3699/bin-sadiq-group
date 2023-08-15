@@ -1,3 +1,4 @@
+"use client"
 import FadeInElement from "@/app/fadedAnimations/page";
 import FadedAnimationElement from "@/app/fadedAnimations/page";
 import React,{useEffect} from "react"

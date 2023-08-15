@@ -56,10 +56,12 @@ const timer = setTimeout(()=> {
             
             <div className="w-[3px] h-[100px] bg-white"></div>
             <FadeInElement>
+                <>
             <p className={`w-[250px] text-white  transition-opacity duration-500 opacity-100 transition-opacity duration-300 opacity-0 flex flex-col text-left text-black`}>
             WE ACT WITH
             <span className="font-bold drop-shadow-xl text-golden">INTEGRITY</span>
             </p>
+            </>
             </FadeInElement> 
         </div>
 
@@ -71,10 +73,12 @@ const timer = setTimeout(()=> {
             
             <div className="w-[3px] h-[100px] bg-white"></div>
             <FadeInElement>
+                <>
             <div className={`w-[250px] text-white transition-opacity duration-500 opacity-100 transition-opacity duration-300 opacity-0 flex flex-col text-left text-black`}>
                 WE BELIEVE IN
                 <span className="font-bold text-golden">MUTUAL RESPECT</span>
             </div>
+            </>
             </FadeInElement>
         </div>
         </div>
@@ -90,10 +94,12 @@ const timer = setTimeout(()=> {
             
             <div className="w-[3px] h-[100px] bg-white"></div>
            <FadeInElement>
+            <>
             <div className={`w-[250px] text-white transition-opacity duration-500 opacity-100 transition-opacity duration-300 opacity-0 flex flex-col text-left text-black`}>
             WE ARE DEVOTED
             <span className="font-bold text-golden">INNOVATUION</span>
             </div> 
+            </>
             </FadeInElement>
             
         </div>
@@ -106,10 +112,12 @@ const timer = setTimeout(()=> {
             
             <div className="w-[3px] h-[100px] bg-white"></div>
             <FadeInElement>
+                <>
             <div className={`w-[250px] text-white transition-opacity duration-500 opacity-100 transition-opacity duration-300 opacity-0  flex flex-col text-left text-black`}>
                 WE BUILD TRUST THROUGH
                 <span className="font-bold text-golden">TRANSPARENCY</span>
             </div>
+            </>
             </FadeInElement>
         </div>
         </div>
@@ -123,10 +131,12 @@ const timer = setTimeout(()=> {
             
             <div className="w-[3px] h-[100px] bg-white"></div>
             <FadeInElement>
+                <>
             <div className={`w-[250px] text-white transition-opacity duration-500 opacity-100 transition-opacity duration-300 opacity-0  flex flex-col text-left text-black`}>
                 WE BUILD TRUST THROUGH
                 <span className="font-bold text-golden">TRANSPARENCY</span>
             </div>
+            </>
             </FadeInElement>
 
 

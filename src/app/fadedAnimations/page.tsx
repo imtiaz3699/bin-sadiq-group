@@ -2,7 +2,7 @@
 import React, { ReactNode, useEffect, useState, useRef } from 'react';
 
 interface FadeInElementProps {
-  children: React.ReactNode[];
+  children: JSX.Element;
 }
 
 const FadeInElement: React.FC<FadeInElementProps> = ({children}) => {

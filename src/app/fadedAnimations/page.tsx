@@ -40,4 +40,3 @@ interface FadeInElementProps {
 };
 
 export default FadeInElement;
-export type { FadeInElementProps }; 

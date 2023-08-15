@@ -1,14 +1,13 @@
 'use client'
 import React, { useRef, useState,useEffect } from 'react';
-// Import Swiper React components
+
 import { Swiper, SwiperSlide } from 'swiper/react';
-// import './style.css';
-// Import Swiper styles
+
 import 'swiper/css';
 import 'swiper/css/navigation';
 
 
-// import required modules
+
 import { Autoplay,Navigation,Pagination } from 'swiper/modules';
 import Image from 'next/image';
 import CoreValues from '../Core_Values/CoreValues';

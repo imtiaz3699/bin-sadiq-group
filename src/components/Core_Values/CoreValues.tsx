@@ -1,7 +1,7 @@
 "use client"
-import FadeInElement from "@/app/fadedAnimations/page";
+import FadeInElement from "@/components/fadedAnimations/page";
 
-import FadedAnimationElement from "@/app/fadedAnimations/page";
+import FadedAnimationElement from "@/components/fadedAnimations/page";
 import React,{useEffect} from "react"
 export default  function CoreValues () {
     const [show,setShow] = React.useState<boolean>(false);
@@ -55,14 +55,14 @@ const timer = setTimeout(()=> {
             </div>
             
             <div className="w-[3px] h-[100px] bg-white"></div>
-            <FadeInElement>
+            <FadedAnimationElement>
                 <>
             <p className={`w-[250px] text-white  transition-opacity duration-500 opacity-100 transition-opacity duration-300 opacity-0 flex flex-col text-left text-black`}>
             WE ACT WITH
             <span className="font-bold drop-shadow-xl text-golden">INTEGRITY</span>
             </p>
             </>
-            </FadeInElement> 
+            </FadedAnimationElement> 
         </div>
 
         <div className=" flex flex-row items-center gap-5">

@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "dev:network": "next dev -H 0.0.0.0"
+    "dev:network": "next dev -H 0.0.0.0",
+    "export": "next build && next export"
   },
   "dependencies": {
     "@types/node": "20.4.5",

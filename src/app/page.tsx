@@ -1,3 +1,4 @@
+"use client"
 import Hero from '@/components/HeroSection/Hero'
 import Navbar from '@/components/Navbar/Navbar'
 import Image from 'next/image'

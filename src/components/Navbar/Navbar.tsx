@@ -15,6 +15,7 @@ import Link from 'next/link';
 
 const Navbar = () => {
     const [dropDown, setDropDown] = useState(false);
+    const [secondDropDown, setSecondDropDown] = useState(false)
     const sliderImages = [
         {
             img:'/Slider_img_1_Big.jpg',
@@ -37,7 +38,29 @@ return <div className='h-[100vh] w-full'>
         <Link href='/aboutus'>
         <div className='text-[18px] font-semi-bold cursor-pointer hover:text-golden'>ABOUT US</div>
         </Link>
-        <div className='text-[18px] font-semi-bold cursor-pointer hover:text-golden'>PROJECTS</div>
+        <div className='relative flex flex-row items-center gap-3' onMouseEnter={()=> setSecondDropDown(true)} onMouseLeave={()=> setSecondDropDown(false)}>
+            
+            <span className='hover:text-golden cursor-pointer'>PROJECTS</span>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="w-6 h-6 hover:text-golden">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+    	</svg>
+
+       {
+        secondDropDown && 
+        <div className='flex flex-col text-center px-3 py-3 left-[-110px] absolute top-[25px] gap-3  rounded-xl w-[300px]'>
+            <Link href='/csr'>
+            <div className='hover:text-golden text-[16px]'>Heritage</div>
+            </Link>
+            {/* <Link href="/bin-sadiq-law-associates">
+            <div className='hover:text-golden text-[16px]'>Bin Sadiq Law Associates</div>
+            </Link> */}
+        </div> 
+       } 
+            
+            </div>
+
+
+
         </div>
         <div>
             <img src="/binSadiqLogo.png" alt="" className='w-[100px] h-[100px]'/>

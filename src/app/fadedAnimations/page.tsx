@@ -5,7 +5,7 @@ interface FadeInElementProps {
   children: React.ReactNode;
 }
 
-const FadeInElement: React.FC<FadeInElementProps> = ({ children }) => {
+ const FadeInElement: React.FC<FadeInElementProps> = ({ children }) => {
   const [isVisible, setIsVisible] = useState(false);
   const elementRef = React.useRef<HTMLDivElement>(null);
 
@@ -40,3 +40,4 @@ const FadeInElement: React.FC<FadeInElementProps> = ({ children }) => {
 };
 
 export default FadeInElement;
+export type { FadeInElementProps }; 

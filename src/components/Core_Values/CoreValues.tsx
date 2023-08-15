@@ -1,5 +1,6 @@
 "use client"
 import FadeInElement from "@/app/fadedAnimations/page";
+import { FadeInElementProps } from "@/app/fadedAnimations/page";
 import FadedAnimationElement from "@/app/fadedAnimations/page";
 import React,{useEffect} from "react"
 export default  function CoreValues () {

@@ -2,10 +2,10 @@
 import React, { ReactNode, useEffect, useState, useRef } from 'react';
 
 interface FadeInElementProps {
-  children: React.ReactNode;
+  children: ReactNode[];
 }
 
-const FadeInElement: React.FC<FadeInElementProps> = ({children : FadeInElementProps}) => {
+const FadeInElement: React.FC<FadeInElementProps> = ({children}) => {
   const [isVisible, setIsVisible] = useState(false);
   const elementRef = useRef<HTMLDivElement | null>(null);
 

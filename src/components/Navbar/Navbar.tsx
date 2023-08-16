@@ -42,13 +42,9 @@ return <div className='h-[100vh] w-full'>
         <div className='relative flex flex-row items-center gap-3' onMouseEnter={()=> setSecondDropDown(true)} onMouseLeave={()=> setSecondDropDown(false)}>
             
             <span className='hover:text-golden cursor-pointer'>PROJECTS</span>
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="w-6 h-6 hover:text-golden">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
-    	</svg>
-
-       {
+                   {
         secondDropDown && 
-        <div className='flex flex-col text-center px-3 py-3 left-[-110px] absolute top-[25px] gap-3  rounded-xl w-[300px]'>
+        <div className='flex flex-col  px-3 py-3 left-[-13px]  absolute top-[25px] gap-3  rounded-xl '>
             <Link href='/csr'>
             <div className='hover:text-golden text-[16px]'>Heritage</div>
             </Link>
@@ -67,12 +63,10 @@ return <div className='h-[100vh] w-full'>
            
         <div className='relative text-[18px] font-semi-bold cursor-pointer  flex flex-row items-center gap-2' onMouseEnter={()=> setDropDown(true)} onMouseLeave={()=> setDropDown(false)}>
             <span className='hover:text-golden'>CSR</span>
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="w-6 h-6 hover:text-golden">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
-    	</svg>
+            
 
        {
-        dropDown && <div className='flex flex-col text-center px-3 py-3 left-[-110px] absolute top-[25px] gap-3  rounded-xl w-[300px]'>
+        dropDown && <div className='flex flex-col  px-3 py-3 left-[-15px] absolute top-[25px] gap-3  rounded-xl w-[300px]'>
             <Link href='/csr'>
             <div className='hover:text-golden text-[16px]'>Bin Sadiq Foundation</div>
             </Link>
@@ -87,11 +81,9 @@ return <div className='h-[100vh] w-full'>
 
         <div className='relative text-[18px] font-semi-bold cursor-pointer  flex flex-row items-center gap-2' onMouseEnter={()=> setThirdDropDown(true)} onMouseLeave={()=> setThirdDropDown(false)}>
            <span className='hover:text-golden'> PEOPLE </span>
-           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="w-6 h-6 hover:text-golden">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
-    	</svg>
+           
         {
-        thirdDropDown && <div className='flex flex-col text-center px-3 py-3 left-[-110px] absolute top-[25px] gap-3  rounded-xl w-[300px]'>
+        thirdDropDown && <div className='flex flex-col text-left px-3 py-3 left-[-15px] absolute top-[25px] gap-3  rounded-xl w-[150px]'>
             <Link href='/usama-sadiq'>
             <div className='hover:text-golden text-[16px]'>Usama Sadiq</div>
             </Link>

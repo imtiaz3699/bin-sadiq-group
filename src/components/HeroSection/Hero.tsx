@@ -9,6 +9,7 @@ import CoreValues from '../Core_Values/CoreValues';
 import Footer from '@/app/footer/page';
 import ContinuousSlider from './Sliders';
 import FadeInElement from '../fadedAnimations/page';
+import './hero.css'
 
 export default  function Hero() {
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -35,7 +36,6 @@ useEffect(() => {
       const timeoutId = setTimeout(() => {
         setCurrentIndex((prevIndex) => prevIndex + 1);
       }, 10); // Adjust the typing speed (milliseconds)
-
       return () => clearTimeout(timeoutId);
     }
   }, [currentIndex, text]);
@@ -60,7 +60,7 @@ useEffect(() => {
             <CoreValues/>
             <div className=' text-black text-center py-10 pt-[200px]'>
                 <FadeInElement>
-                <div className='text-golden font-bold text-[80px]'>Why Choose Us</div>
+                <div className='text-golden font-bold text-[80px] '>Why Choose Us</div>
                 </FadeInElement>
             
                 <div className='text-[22px]  font-semibold text-gray-500 text-white'>We've always tried to be different,a different approach to buisness & customer service,<br /> a different culture at work place. We believe in the importance of fresh thinking-in being <br /> green,  and approaching things in new and different ways.</div>
@@ -69,19 +69,19 @@ useEffect(() => {
                 <div className='container mx-auto flex flex-row items-center justify-between  text-center '>
                 {
                     logos.map((element,idx)=> {
-                        return <img src={element} alt="" className={`${element === '/foundation.png' ? 'w-[100px] h-[125]' : "w-[150px] h-[125px]" } transition-transform duration-300 transform hover:scale-110 animate-bounce`}/>
+                        return <img src={element} alt="" className={`${element === '/foundation.png' ? 'w-[100px] h-[125]' : "w-[150px] h-[125px]" } hover:scale-125 transition-transform duration-300 transform `}/>
                     })
                 }
             </div>
             </div>
             <div className='py-20 '>
                 <div className='container mx-auto text-center flex flex-col items-center justify-center'>
-                        <h1 className='text-golden text-[64px] font-normal text-golden'>OUR SERVICES </h1>
+                        <h1 className='text-golden text-[64px] font-normal text-golden '>OUR SERVICES </h1>
                         <div className='max-w-[995px] text-[24px] leading-[27px] text-white mt-[41px]'> {text.slice(0, currentIndex)}</div>
                 <div className='grid grid-cols-3 place-items-center mt-[150px] gap-[100px]'>
                       {
                         ourServices.map((element,idx)=> {
-                            return <div className={`${state === idx ? "transition-transform duration-300 ease-in-out transform hover:scale-125" : '' } w-[342px] shadow-2xl drop-shadow-2xl h-[342px] flex flex-col items-center justify-center bg-golden rounded-[12px]`} key = {idx} onMouseEnter={()=> setState(idx)}>
+                            return <div className={`transition-transform duration-500 ease-in-out transform hover:scale-125 w-[342px] shadow-2xl drop-shadow-2xl h-[342px] flex flex-col items-center justify-center bg-golden rounded-[12px]`} key = {idx} onMouseEnter={()=> setState(idx)}>
                             <Image alt = "" src = {element.img} width = {99} height = {99}/>
                             <h1 className='font-bold text-[24px] max-w-[180px] mt-[31px]'>{element.name}</h1>
                             <button className='bg-black w-[150px] h-[35px] text-[12px] text-white mt-[80px] px-[14px]'>Read More....</button>
@@ -98,9 +98,9 @@ useEffect(() => {
                     <h1 className='text-[64px] leading-[76px]'>UPDATES</h1>
                           <div className='container mx-auto mt-[55px]'>
                             <div className='flex flex-row items-center justify-center gap-[25px]'>
-                                    <Image alt = "" src = "/P-Post 5 1.png" width = {400} height = {400} className='shadow-2xl dropshadow-2xl'/>
-                                    <Image alt = "" src = "/Pre-Launch Post 1.png" width = {400} height = {400}/>
-                                    <Image alt = "" src = "/Quote Post 10 1.png" width = {400} height = {400}/>
+                                    <Image alt = "" src = "/P-Post 5 1.png" width = {400} height = {400} className='transition-transform duration-700 transform hover:scale-105 hover:shadow-lg'/>
+                                    <Image alt = "" src = "/Pre-Launch Post 1.png" width = {400} height = {400} className='transition-transform duration-700 transform hover:scale-105 hover:shadow-lg'/>
+                                    <Image alt = "" src = "/Quote Post 10 1.png" width = {400} height = {400} className='transition-transform duration-700 transform hover:scale-105 hover:shadow-lg'/>
                             </div>
                             </div>  
                     </div>

@@ -12,7 +12,7 @@ import FadeInElement from '../fadedAnimations/page';
 
 export default  function Hero() {
     const [currentIndex, setCurrentIndex] = useState(0);
-    const [state, setState] = useState(false);
+    const [state, setState] = useState(0);
 const logos = ['/bin-sadiq-group.png','/association.png','/heritage.png','/law-association.png','/foundation.png']
 const ourServices  = [
     {
@@ -28,11 +28,7 @@ const ourServices  = [
         name:'MARKETING & SALES',
     },
 ]
-useEffect(()=> {
-    setTimeout(()=> {
-            setState(true)
-    },2000)
-},[state])
+
 const text = 'At Bin Sadiq, we offer a comprehensive range of real estate services to meet all your needs. Whether you are looking to buy, sell, or rent a property, or need assistance with property management or construction, we have the expertise and resources to help you achieve your goals.'
 useEffect(() => {
     if (currentIndex < text.length) {
@@ -85,7 +81,7 @@ useEffect(() => {
                 <div className='grid grid-cols-3 place-items-center mt-[150px] gap-[100px]'>
                       {
                         ourServices.map((element,idx)=> {
-                            return <div className='transition-transform duration-300 ease-in-out transform hover:scale-125 w-[342px] shadow-2xl drop-shadow-2xl h-[342px] flex flex-col items-center justify-center   bg-golden rounded-[12px]' key = {idx}>
+                            return <div className={`${state === idx ? "transition-transform duration-300 ease-in-out transform hover:scale-125" : '' } w-[342px] shadow-2xl drop-shadow-2xl h-[342px] flex flex-col items-center justify-center bg-golden rounded-[12px]`} key = {idx} onMouseEnter={()=> setState(idx)}>
                             <Image alt = "" src = {element.img} width = {99} height = {99}/>
                             <h1 className='font-bold text-[24px] max-w-[180px] mt-[31px]'>{element.name}</h1>
                             <button className='bg-black w-[150px] h-[35px] text-[12px] text-white mt-[80px] px-[14px]'>Read More....</button>

@@ -19,6 +19,7 @@ module.exports = {
         'lead-color':'#2B292A',
         'grean':'#1A3728'
       },
+      
     },
   },
   plugins: [],

@@ -51,8 +51,8 @@ const timer = setTimeout(()=> {
 
         <div className="flex flex-row items-center justify-center gap-[150px]">
         <div className=" flex flex-row items-center gap-5">
-            <div className="w-[100px] h-[100px] p-3 rounded-full flex flex-row items-center justify-center " >
-            <img src='/core1.png' alt="" className="w-[100px]"/>
+            <div className="transition-transform duration-300 ease-in-out transform hover:scale-125 w-[100px] h-[100px] p-3 rounded-full flex flex-row items-center justify-center " >
+            <img src='/core1.png' alt="" className="w-[100px]  " />
             </div>
             
             <div className="w-[3px] h-[100px] bg-white"></div>
@@ -68,7 +68,7 @@ const timer = setTimeout(()=> {
 
         <div className=" flex flex-row items-center gap-5">
 
-            <div className="w-[100px] h-[100px] p-3 rounded-full flex flex-row items-center justify-center " >
+            <div className="transition-transform duration-300 ease-in-out transform hover:scale-125 w-[100px] h-[100px] p-3 rounded-full flex flex-row items-center justify-center " >
             <img src="/core2.png" alt="" className="w-[100px]"/>
             </div>
             
@@ -89,7 +89,7 @@ const timer = setTimeout(()=> {
         <div className="flex flex-row items-center justify-center gap-[150px]">
         <div className=" flex flex-row items-center gap-5">
 
-            <div className="w-[100px] h-[100px] p-3 rounded-full flex flex-row items-center justify-center " >
+            <div className="transition-transform duration-300 ease-in-out transform hover:scale-125 w-[100px] h-[100px] p-3 rounded-full flex flex-row items-center justify-center " >
             <img src="/core3.png" alt="" className="w-[100px]"/>
             </div>
             
@@ -107,7 +107,7 @@ const timer = setTimeout(()=> {
 
         <div className=" flex flex-row items-center gap-5">
 
-            <div className="w-[100px] h-[100px] p-3 rounded-full flex flex-row items-center justify-center" onMouseEnter={()=> setShow4(true)}>
+            <div className="transition-transform duration-300 ease-in-out transform hover:scale-125 w-[100px] h-[100px] p-3 rounded-full flex flex-row items-center justify-center" onMouseEnter={()=> setShow4(true)}>
             <img src="/core4.png" alt="" className="w-[100px]"/>
             </div>
             
@@ -126,7 +126,7 @@ const timer = setTimeout(()=> {
         <div className="text-black mt-20 flex flex-row justify-center">
             <div className=" flex flex-row items-center gap-5">
 
-            <div className="w-[100px] h-[100px] p-3 rounded-full flex flex-row items-center justify-center " onMouseEnter={()=> setShow4(true)}>
+            <div className="transition-transform duration-300 ease-in-out transform hover:scale-125 w-[100px] h-[100px] p-3 rounded-full flex flex-row items-center justify-center " onMouseEnter={()=> setShow4(true)}>
             <img src="/core5.png" alt="" className="w-[100px]"/>
             </div>
             

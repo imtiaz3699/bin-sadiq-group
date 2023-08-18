@@ -95,12 +95,6 @@ export default function SecondNavbar () {
                         }) 
                     }
                     </div>
-
-
-                    
-
-                    
-                    
                     </div></Link> } 
                     </div>
                 })

@@ -43,8 +43,9 @@ const timer = setTimeout(()=> {
         
     ]
 
-    return <div className="container mx-auto text-center py-20 pt-[200px]">
-        <div className="text-[64px] text-golden font-bold">OUR CORE VALUES</div>
+    return <div className="bg-[#CFB156] text-center py-20">
+        <div className="container mx-auto">
+        <div className="text-[64px] text-black font-bold">OUR CORE VALUES</div>
         <div className="flex flex-col items-center gap-20 pt-[150px]">
 
 
@@ -57,9 +58,9 @@ const timer = setTimeout(()=> {
             <div className="w-[3px] h-[100px] bg-white"></div>
             <FadedAnimationElement>
                 <>
-            <p className={`w-[250px] text-white  transition-opacity duration-500 opacity-100 transition-opacity duration-300 opacity-0 flex flex-col text-left text-black`}>
+            <p className={`w-[250px] text-white text-[20px]  transition-opacity duration-500 opacity-100 transition-opacity duration-300 opacity-0 flex flex-col text-left text-black`}>
             WE ACT WITH
-            <span className="font-bold drop-shadow-xl text-golden">INTEGRITY</span>
+            <span className="font-bold drop-shadow-xl text-black">INTEGRITY</span>
             </p>
             </>
             </FadedAnimationElement> 
@@ -74,9 +75,9 @@ const timer = setTimeout(()=> {
             <div className="w-[3px] h-[100px] bg-white"></div>
             <FadeInElement>
                 <>
-            <div className={`w-[250px] text-white transition-opacity duration-500 opacity-100 transition-opacity duration-300 opacity-0 flex flex-col text-left text-black`}>
+            <div className={`w-[250px] text-[20px] text-white transition-opacity duration-500 opacity-100 transition-opacity duration-300 opacity-0 flex flex-col text-left text-black`}>
                 WE BELIEVE IN
-                <span className="font-bold text-golden">MUTUAL RESPECT</span>
+                <span className="font-bold text-black">MUTUAL RESPECT</span>
             </div>
             </>
             </FadeInElement>
@@ -95,9 +96,9 @@ const timer = setTimeout(()=> {
             <div className="w-[3px] h-[100px] bg-white"></div>
            <FadeInElement>
             <>
-            <div className={`w-[250px] text-white transition-opacity duration-500 opacity-100 transition-opacity duration-300 opacity-0 flex flex-col text-left text-black`}>
+            <div className={`w-[250px] text-[20px] text-white transition-opacity duration-500 opacity-100 transition-opacity duration-300 opacity-0 flex flex-col text-left text-black`}>
             WE ARE DEVOTED
-            <span className="font-bold text-golden">INNOVATUION</span>
+            <span className="font-bold text-black">INNOVATUION</span>
             </div> 
             </>
             </FadeInElement>
@@ -113,9 +114,9 @@ const timer = setTimeout(()=> {
             <div className="w-[3px] h-[100px] bg-white"></div>
             <FadeInElement>
                 <>
-            <div className={`w-[250px] text-white transition-opacity duration-500 opacity-100 transition-opacity duration-300 opacity-0  flex flex-col text-left text-black`}>
+            <div className={`w-[250px] text-white transition-opacity duration-500 opacity-100 transition-opacity duration-300 opacity-0  flex flex-col text-left text-[20px] text-black`}>
                 WE BUILD TRUST THROUGH
-                <span className="font-bold text-golden">TRANSPARENCY</span>
+                <span className="font-bold  text-black">TRANSPARENCY</span>
             </div>
             </>
             </FadeInElement>
@@ -134,13 +135,14 @@ const timer = setTimeout(()=> {
                 <>
             <div className={`w-[250px] text-white transition-opacity duration-500 opacity-100 transition-opacity duration-300 opacity-0  flex flex-col text-left text-black`}>
                 WE BUILD TRUST THROUGH
-                <span className="font-bold text-golden">TRANSPARENCY</span>
+                <span className="font-bold text-black">TRANSPARENCY</span>
             </div>
             </>
             </FadeInElement>
 
 
             
+        </div>
         </div>
         </div>
     </div>

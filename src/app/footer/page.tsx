@@ -7,7 +7,7 @@ export default function Footer () {
     {/* <div className=''>
                 <img src="/Landmarks.jpg" alt="" className='object-cover w-full h-full'/>
             </div> */}
-    <div className="bg-lead-color py-[80px] flex flex-row text-white items-center justify-between px-20">
+    <div className="bg-lead-color py-[20px] flex flex-row text-white items-center justify-between px-20">
         
             <div className="flex flex-col items-center ">
                 <div className="w-[200px] h-[200px] relative">
@@ -34,6 +34,8 @@ export default function Footer () {
                 <div className="text-[20px]">care@binsadiqgroup.com.pk</div>
                 <div className="text-[20px]">0331-000-1111</div>
         </div>
+
     </div>
+    <div className="w-full bg-golden text-white text-center h-[86px] flex justify-center items-center text-[24px]">2023 All Rights Reserved By Bin Sadiq Group </div>
     </>
 }

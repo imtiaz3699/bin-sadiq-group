@@ -12,6 +12,7 @@ import FadeInElement from '../fadedAnimations/page';
 // import './hero.css'
 import InfiniteCarousel from './InfiniteCarousel';
 import Carousel from './InfiniteCarousel';
+import ImageSlider from './AnotherSlider';
 
 export default  function Hero() {
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -70,32 +71,11 @@ useEffect(() => {
             </div>
             
 
-<Carousel/>
+
+<ImageSlider/>
 
 
-            {/* <div className="wrapper bg-white">
-                <div className="slider">
-                    <div className="slide" >
-                    {logos.map((element,idx)=> {
-                        return <img src={element} alt="" key = {idx}/>
-                    })}
-                    </div>
-                    <div className="slide" >
-                    {logos.map((element,idx)=> {
-                        return <img src={element} alt="" key = {idx}/>
-                    })}
-                    </div>
-
-                    
-
-
-                    
-                
-            </div>   
-            
-
-            </div> */}
-            
+                       
             <div className='py-20 '>
                 <div className='container mx-auto text-center flex flex-col items-center justify-center'>
                         <h1 className='text-golden text-[64px] font-normal text-golden '>OUR SERVICES </h1>

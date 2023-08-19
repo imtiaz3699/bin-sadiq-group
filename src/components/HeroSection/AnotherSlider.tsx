@@ -15,10 +15,10 @@ const ImageSlider: React.FC = () => {
           <img src="/association.png" alt="" className='w-[159px] h-[159px]'/>
         </div>
         <div className="slide">
-         <img src="/heritage.png" alt="" className='w-[159px] h-[159px]'/>
+         <img src="/heritage.png" alt="" className='w-[183px] h-[159px]'/>
         </div>
         <div className="slide">
-        <img src="/law-association.png" alt="" className='w-[159px] h-[159px]'/>
+        <img src="/law-association.png" alt="" className='w-[171px] h-[159px]'/>
         </div>
         <div className="slide">
         <img src="/foundation.png" alt="" className='w-[89px] h-[159px]'/>
@@ -30,10 +30,10 @@ const ImageSlider: React.FC = () => {
           <img src="/association.png" alt="" className='w-[159px] h-[159px]'/>
         </div>
         <div className="slide">
-         <img src="/heritage.png" alt="" className='w-[159px] h-[159px]'/>
+         <img src="/heritage.png" alt="" className='w-[183px] h-[159px]'/>
         </div>
         <div className="slide">
-        <img src="/law-association.png" alt="" className='w-[159px] h-[159px]'/>
+        <img src="/law-association.png" alt="" className='w-[171px] h-[159px]'/>
         </div>
         <div className="slide">
         <img src="/foundation.png" alt="" className='w-[89px] h-[159px]'/>

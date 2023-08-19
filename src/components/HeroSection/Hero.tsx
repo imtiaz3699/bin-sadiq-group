@@ -9,12 +9,14 @@ import CoreValues from '../Core_Values/CoreValues';
 import Footer from '@/app/footer/page';
 import ContinuousSlider from './Sliders';
 import FadeInElement from '../fadedAnimations/page';
-import './hero.css'
+// import './hero.css'
+import InfiniteCarousel from './InfiniteCarousel';
+import Carousel from './InfiniteCarousel';
 
 export default  function Hero() {
     const [currentIndex, setCurrentIndex] = useState(0);
     const [state, setState] = useState(0);
-const logos = ['/bin-sadiq-group.png','/association.png','/heritage.png','/law-association.png','/foundation.png']
+const logos = ['/bin-sadiq-group.png','/association.png','/heritage.png','/law-association.png','/foundation.png','/law-association.png','/law-association.png']
 const ourServices  = [
     {
         img:'/image 1.png',
@@ -40,10 +42,11 @@ useEffect(() => {
     }
   }, [currentIndex, text]);
 
+  
     return (
         <>
-        <div className='bg-cover w-full '>
-        <div className='bg-lead-color w-full '>
+        <div className='w-full '>
+        <div className='bg-lead-color'>
 
             <div className="flex container mx-auto flex-row  justify-center  text-black py-56 gap-20 ">
                 <div className=' flex flex-col'>
@@ -60,20 +63,39 @@ useEffect(() => {
             <CoreValues/>
             <div className=' text-black text-center py-10 pt-[200px]'>
                 <FadeInElement>
-                <div className='text-golden font-bold text-[80px] '>Why Choose Us</div>
+                <div className='text-golden font-bold text-[80px] transition-transform duration-300 transform hover:scale-110 animate-bounce'>Why Choose Us</div>
                 </FadeInElement>
             
                 <div className='text-[22px]  font-semibold text-gray-500 text-white'>We've always tried to be different,a different approach to buisness & customer service,<br /> a different culture at work place. We believe in the importance of fresh thinking-in being <br /> green,  and approaching things in new and different ways.</div>
             </div>
-            <div className=' flex flex-row items-center justify-center mt-56 justify-between bg-white px-20 py-[54px] '>
-                <div className='container mx-auto flex flex-row items-center justify-between  text-center '>
-                {
-                    logos.map((element,idx)=> {
-                        return <img src={element} alt="" className={`${element === '/foundation.png' ? 'w-[100px] h-[125]' : "w-[150px] h-[125px]" } hover:scale-125 transition-transform duration-300 transform `}/>
-                    })
-                }
-            </div>
-            </div>
+            
+
+<Carousel/>
+
+
+            {/* <div className="wrapper bg-white">
+                <div className="slider">
+                    <div className="slide" >
+                    {logos.map((element,idx)=> {
+                        return <img src={element} alt="" key = {idx}/>
+                    })}
+                    </div>
+                    <div className="slide" >
+                    {logos.map((element,idx)=> {
+                        return <img src={element} alt="" key = {idx}/>
+                    })}
+                    </div>
+
+                    
+
+
+                    
+                
+            </div>   
+            
+
+            </div> */}
+            
             <div className='py-20 '>
                 <div className='container mx-auto text-center flex flex-col items-center justify-center'>
                         <h1 className='text-golden text-[64px] font-normal text-golden '>OUR SERVICES </h1>

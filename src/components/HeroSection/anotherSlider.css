@@ -4,6 +4,8 @@
     display: grid;
     place-items: center;
     padding: 15px;
+    padding-right: 50px;
+    padding-left: 50px;
     perspective: 100px;
     background-color: white;
     overflow: hidden;

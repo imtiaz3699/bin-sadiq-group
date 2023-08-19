@@ -84,7 +84,8 @@ useEffect(() => {
                       {
                         ourServices.map((element,idx)=> {
                             return <div className={`transition-transform duration-500 ease-in-out transform hover:scale-125 w-[342px] shadow-2xl drop-shadow-2xl h-[342px] flex flex-col items-center justify-center bg-golden rounded-[12px]`} key = {idx} onMouseEnter={()=> setState(idx)}>
-                            <Image alt = "" src = {element.img} width = {99} height = {99}/>
+                            {/* <Image alt = "" src = {element.img} width = {99} height = {99}/> */}
+                            <img src={element.img} alt="" className='w-[99px] h-[99px]'/>
                             <h1 className='font-bold text-[24px] max-w-[180px] mt-[31px]'>{element.name}</h1>
                             <button className='bg-black w-[150px] h-[35px] text-[12px] text-white mt-[80px] px-[14px]'>Read More....</button>
                         </div>

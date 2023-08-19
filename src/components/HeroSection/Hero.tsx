@@ -9,8 +9,9 @@ import CoreValues from '../Core_Values/CoreValues';
 import Footer from '@/app/footer/page';
 import ContinuousSlider from './Sliders';
 import FadeInElement from '../fadedAnimations/page';
-import './hero.css'
+// import './hero.css'
 import InfiniteCarousel from './InfiniteCarousel';
+import Carousel from './InfiniteCarousel';
 
 export default  function Hero() {
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -69,8 +70,8 @@ useEffect(() => {
             </div>
             
 
+<Carousel/>
 
-<InfiniteCarousel/>
 
             {/* <div className="wrapper bg-white">
                 <div className="slider">

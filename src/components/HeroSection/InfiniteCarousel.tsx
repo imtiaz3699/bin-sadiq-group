@@ -1,95 +1,113 @@
 import { useEffect, useRef } from 'react';
-
+import "./hero.css"
 const Carousel: React.FC = () => {
   const carouselSliderRef = useRef<HTMLDivElement>(null);
   const listRef = useRef<HTMLUListElement>(null);
-  const itemRefs = useRef<NodeListOf<HTMLLIElement>>(null);
-  let list2Ref = useRef<HTMLUListElement>(null);
+  const itemRefs = useRef<NodeListOf<HTMLLIElement> | null>(null);
+  const cloneRef = useRef<HTMLUListElement | null>(null);
 
   const speed = 1;
 
-  let width: number;
+  let width = 0;
   let x = 0;
-  let x2 = width;
 
   useEffect(() => {
     const carouselSlider = carouselSliderRef.current;
     const list = listRef.current;
     const items = itemRefs.current;
+    const clone = cloneRef.current;
 
-    if (carouselSlider && list && items) {
+    if (carouselSlider && list && items && clone) {
       width = list.offsetWidth;
 
-      function clone() {
-        const list2 = list.cloneNode(true) as HTMLUListElement;
-        list2Ref.current = list2;
-        carouselSlider.appendChild(list2);
-        list2.style.left = `${width}px`;
-      }
-
-      function moveFirst() {
+      const moveSlides = () => {
         x -= speed;
 
         if (width >= Math.abs(x)) {
           list.style.left = `${x}px`;
+          clone.style.left = `${x + width}px`;
         } else {
           x = width;
         }
-      }
+      };
 
-      function moveSecond() {
-        x2 -= speed;
+      let intervalId = setInterval(moveSlides, 10);
 
-        if (list2Ref.current && list2Ref.current.offsetWidth >= Math.abs(x2)) {
-          list2Ref.current.style.left = `${x2}px`;
-        } else {
-          x2 = width;
-        }
-      }
+      carouselSlider.addEventListener('mouseenter', () => {
+        clearInterval(intervalId);
+      });
 
-      function hover() {
-        clearInterval(a);
-        clearInterval(b);
-      }
+      carouselSlider.addEventListener('mouseleave', () => {
+        intervalId = setInterval(moveSlides, 10);
+      });
 
-      function unhover() {
-        a = setInterval(moveFirst, 10);
-        b = setInterval(moveSecond, 10);
-      }
-
-      clone();
-
-      let a = setInterval(moveFirst, 10);
-      let b = setInterval(moveSecond, 10);
-
-      carouselSlider.addEventListener('mouseenter', hover);
-      carouselSlider.addEventListener('mouseleave', unhover);
+      return () => {
+        clearInterval(intervalId);
+      };
     }
   }, []);
 
+  useEffect(() => {
+    const list = listRef.current;
+    if (list) {
+      if (x <= -width) {
+        list.style.left = '0';
+        x = 0;
+      }
+    }
+  }, [x]);
+  const logos = ['/bin-sadiq-group.png','/association.png','/heritage.png','/law-association.png','/foundation.png','/law-association.png','/law-association.png']
   return (
     <section className="carousel">
       <div ref={carouselSliderRef} className="carousel__slider">
-        <ul ref={listRef} className="carousel__list">
-          <li ref={el => (itemRefs.current = document.querySelectorAll('.carousel__item'))} className="carousel__item">
-            <span>1</span>
-          </li>
+        <div className="carousel__track">
+          <ul ref={listRef} className="carousel__list">
+            <li
+              ref={el => {
+                if (el) itemRefs.current = el.querySelectorAll('.carousel__item');
+              }}
+              className="carousel__item"
+            >
+              <span><img src="/bin-sadiq-group.png" alt="" /></span>
+            </li>
+            <li className="carousel__item">
+              <span>
+                <img src="/association.png" alt="" />
+              </span>
+            </li>
+            <li className="carousel__item">
+              <span><img src="/heritage.png" alt="" /></span>
+            </li>
+            <li className="carousel__item">
+              <span><img src="/law-association.png" alt="" /></span>
+            </li>
+            <li className="carousel__item">
+              <span><img src="/foundation.png" alt="" /></span>
+            </li>
+            <li className="carousel__item">
+            <span><img src="/bin-sadiq-group.png" alt="" /></span>
+            </li>
+          </ul>
+          <ul ref={cloneRef} className="carousel__list">
           <li className="carousel__item">
-            <span>2</span>
-          </li>
-          <li className="carousel__item">
-            <span>3</span>
-          </li>
-          <li className="carousel__item">
-            <span>4</span>
-          </li>
-          <li className="carousel__item">
-            <span>5</span>
-          </li>
-          <li className="carousel__item">
-            <span>6</span>
-          </li>
-        </ul>
+              <span>
+                <img src="/association.png" alt="" />
+              </span>
+            </li>
+            <li className="carousel__item">
+              <span><img src="/heritage.png" alt="" /></span>
+            </li>
+            <li className="carousel__item">
+              <span><img src="/law-association.png" alt="" /></span>
+            </li>
+            <li className="carousel__item">
+              <span><img src="/foundation.png" alt="" /></span>
+            </li>
+            <li className="carousel__item">
+            <span><img src="/bin-sadiq-group.png" alt="" /></span>
+            </li>
+          </ul>
+        </div>
       </div>
     </section>
   );

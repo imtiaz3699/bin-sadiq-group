@@ -19,6 +19,7 @@ import InViewElement from '../InViewElement/InViewElement';
 export default  function Hero() {
     const [currentIndex, setCurrentIndex] = useState(0);
     const [state, setState] = useState(0);
+    const [isInView, setIsInView] = useState(false);
 const logos = ['/bin-sadiq-group.png','/association.png','/heritage.png','/law-association.png','/foundation.png','/law-association.png','/law-association.png']
 const ourServices  = [
     {
@@ -37,6 +38,7 @@ const ourServices  = [
 
 const text = 'At Bin Sadiq, we offer a comprehensive range of real estate services to meet all your needs. Whether you are looking to buy, sell, or rent a property, or need assistance with property management or construction, we have the expertise and resources to help you achieve your goals.'
 useEffect(() => {
+    
     if (currentIndex < text.length) {
       const timeoutId = setTimeout(() => {
         setCurrentIndex((prevIndex) => prevIndex + 1);
@@ -46,9 +48,8 @@ useEffect(() => {
   }, [currentIndex, text]);
 
   const { scrollY } = useScroll()
-const scale = useTransform(scrollY, [0, 8], [0.5, 4]);
-const element = document.getElementById('animate')
-const [isInView, setIsInView] = useState(false);
+
+
 
 const handleIntersection = (entries: IntersectionObserverEntry[]) => {
   entries.forEach((entry) => {
@@ -95,7 +96,7 @@ useEffect(() => {
                         
             </div>
             <CoreValues/>
-            <div className=' text-black text-center py-10 pt-[200px]'>
+            <div className=' text-black text-center py-20 '>
                 <InViewElement  targetId="element-1"
   inViewClassName="animate-ping animate-once animate-duration-[2000ms] animate-delay-500 animate-ease-in animate-normal animate-fill-backwards"
   outOfViewClassName="element-out-of-view">
@@ -114,7 +115,7 @@ useEffect(() => {
             <div className='py-20 '>
                 <div className='container mx-auto text-center flex flex-col items-center justify-center'>
                         <h1 id='animate' className='text-golden text-[64px] font-normal text-golden '>OUR SERVICES </h1>
-                        <div className='max-w-[995px] text-[24px] leading-[27px] text-white mt-[41px]'> {text.slice(0, currentIndex)}</div>
+                        <div className='max-w-[995px] text-[24px] leading-[27px] text-white mt-[41px]'> { text.slice(0, currentIndex) }</div>
                 <div className='grid grid-cols-3 place-items-center mt-[150px] gap-[100px]'>
                       {
                         ourServices.map((element,idx)=> {

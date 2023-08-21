@@ -2,6 +2,7 @@
 'use client'
 import React,{useState} from "react";
 import Link from "next/link"
+import Image from "next/image";
 
 export default function SecondNavbar () {
 
@@ -26,6 +27,7 @@ export default function SecondNavbar () {
         },
         {
             name:'/BinSadiqLogo.png',
+            img:'/BinSadiqLogo.png',
             url:'/', 
         },
         {
@@ -78,8 +80,11 @@ export default function SecondNavbar () {
             {
                 data.map((element,idx)=> {
                     return <div className="" key = {idx}>
-                    { idx === 3 ? 
-                    <img src={element?.name} alt="" className="w-[100px] h-[100px]"/> 
+                    { element?.img ? 
+                    <Image alt="Bin Sadiq Logo"
+                    src={element?.img}
+                    width={100}
+                    height={100}/> 
                     :
                     <Link href={element?.url}> 
                     <div className="text-[18px] relative font-semi-bold cursor-pointer  flex flex-row items-center gap-2" onMouseEnter={()=> dropDowns(idx)} onMouseLeave={()=> setState(null)}>
@@ -87,6 +92,7 @@ export default function SecondNavbar () {
                     <div className="flex flex-col items-center absolute w-[300px] top-[27px] pt-3 left-[-100px]">
                     {
                        state === idx  && element?.linked && element?.linked.map((item,index)=> {
+                        console.log('this is idx',idx);
                             return <>
                             <Link href={item?.url} key = {index}>
                             <div className="hover:text-golden text-[16px]">{item?.name}</div>

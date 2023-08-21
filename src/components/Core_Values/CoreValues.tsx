@@ -3,6 +3,7 @@ import FadeInElement from "@/components/fadedAnimations/page";
 
 import FadedAnimationElement from "@/components/fadedAnimations/page";
 import React,{useEffect} from "react"
+import InViewElement from "../InViewElement/InViewElement";
 export default  function CoreValues () {
     const [show,setShow] = React.useState<boolean>(false);
     const [show2,setShow2] = React.useState(false);
@@ -45,15 +46,29 @@ const timer = setTimeout(()=> {
 
     return <div className="bg-[#CFB156] text-center py-20">
         <div className="container mx-auto">
-        <div className="text-[79px] text-black font-bold text-transparent bg-clip-text bg-gradient-to-r from-black to-white animate-shine">OUR CORE VALUES</div>
+            <InViewElement 
+            targetId="element-2"
+            inViewClassName="animate-fade-right animate-once animate-duration-1000 animate-delay-500 animate-ease-in animate-normal animate-fill-backwards
+            "
+            outOfViewClassName="element-out-of-view"
+            >
+        <div className="text-[79px] text-black font-bold ">OUR CORE VALUES</div>
+
+            </InViewElement>
         <div className="flex flex-col items-center gap-20 pt-[150px]">
 
 
         <div className="flex flex-row items-center justify-center gap-[150px]">
         <div className=" flex flex-row items-center gap-5">
-            <div className="transition-transform duration-300 ease-in-out transform hover:scale-125 w-[100px] h-[100px] p-3 rounded-full flex flex-row items-center justify-center " >
+            <InViewElement targetId="element-3"
+            inViewClassName="animate-fade-right animate-once animate-duration-1000 animate-delay-500 animate-ease-in animate-normal animate-fill-backwards
+            "
+            outOfViewClassName="element-out-of-view">
+<div className="transition-transform duration-300 ease-in-out transform hover:scale-125 w-[100px] h-[100px] p-3 rounded-full flex flex-row items-center justify-center " >
             <img src='/core1.png' alt="" className="w-[100px]  " />
             </div>
+            </InViewElement>
+                        
             
             <div className="w-[3px] h-[100px] bg-white"></div>
             <FadedAnimationElement>
@@ -67,10 +82,15 @@ const timer = setTimeout(()=> {
         </div>
 
         <div className=" flex flex-row items-center gap-5">
-
+        <InViewElement targetId="element-4"
+            inViewClassName="animate-fade-right animate-once animate-duration-1000 animate-delay-500 animate-ease-in animate-normal animate-fill-backwards
+            "
+            outOfViewClassName="element-out-of-view">
             <div className="transition-transform duration-300 ease-in-out transform hover:scale-125 w-[100px] h-[100px] p-3 rounded-full flex flex-row items-center justify-center" >
             <img src="/core2.png" alt="" className="w-[100px]"/>
             </div>
+            </InViewElement>
+            
             
             <div className="w-[3px] h-[100px] bg-white"></div>
             <FadeInElement>
@@ -85,13 +105,27 @@ const timer = setTimeout(()=> {
         </div>
 
 
+        <InViewElement targetId="element-3"
+            inViewClassName="animate-fade-right animate-once animate-duration-1000 animate-delay-500 animate-ease-in animate-normal animate-fill-backwards
+            "
+            outOfViewClassName="element-out-of-view">
+
+            </InViewElement>
+
+
+
 
         <div className="flex flex-row items-center justify-center gap-[150px]">
         <div className=" flex flex-row items-center gap-5">
-
-            <div className="transition-transform duration-300 ease-in-out transform hover:scale-125 w-[100px] h-[100px] p-3 rounded-full flex flex-row items-center justify-center " >
+        <InViewElement targetId="element-3"
+            inViewClassName="animate-fade-right animate-once animate-duration-1000 animate-delay-500 animate-ease-in animate-normal animate-fill-backwards
+            "
+            outOfViewClassName="element-out-of-view">
+<div className="transition-transform duration-300 ease-in-out transform hover:scale-125 w-[100px] h-[100px] p-3 rounded-full flex flex-row items-center justify-center " >
             <img src="/core3.png" alt="" className="w-[100px]"/>
             </div>
+            </InViewElement>
+            
             
             <div className="w-[3px] h-[100px] bg-white"></div>
            <FadeInElement>
@@ -105,10 +139,15 @@ const timer = setTimeout(()=> {
         </div>
 
         <div className=" flex flex-row items-center gap-5">
-
-            <div className="transition-transform duration-300 ease-in-out transform hover:scale-125 w-[100px] h-[100px] p-3 rounded-full flex flex-row items-center justify-center" onMouseEnter={()=> setShow4(true)}>
+        <InViewElement targetId="element-3"
+            inViewClassName="animate-fade-right animate-once animate-duration-1000 animate-delay-500 animate-ease-in animate-normal animate-fill-backwards
+            "
+            outOfViewClassName="element-out-of-view">
+<div className="transition-transform duration-300 ease-in-out transform hover:scale-125 w-[100px] h-[100px] p-3 rounded-full flex flex-row items-center justify-center" onMouseEnter={()=> setShow4(true)}>
             <img src="/core4.png" alt="" className="w-[100px]"/>
             </div>
+            </InViewElement>
+            
             
             <div className="w-[3px] h-[100px] bg-white"></div>
             <FadeInElement>
@@ -124,10 +163,15 @@ const timer = setTimeout(()=> {
         </div>
         <div className="text-black mt-20 flex flex-row justify-center">
             <div className=" flex flex-row items-center gap-5">
-
-            <div className="transition-transform duration-300 ease-in-out transform hover:scale-125 w-[100px] h-[100px] p-3 rounded-full flex flex-row items-center justify-center" onMouseEnter={()=> setShow4(true)}>
+            <InViewElement targetId="element-3"
+            inViewClassName="animate-fade-right animate-once animate-duration-1000 animate-delay-500 animate-ease-in animate-normal animate-fill-backwards
+            "
+            outOfViewClassName="element-out-of-view">
+<div className="transition-transform duration-300 ease-in-out transform hover:scale-125 w-[100px] h-[100px] p-3 rounded-full flex flex-row items-center justify-center" onMouseEnter={()=> setShow4(true)}>
             <img src="/core5.png" alt="" className="w-[100px]"/>
             </div>
+            </InViewElement>
+            
             
             <div className="w-[3px] h-[100px] bg-white"></div>
             <FadeInElement>

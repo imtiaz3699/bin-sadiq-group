@@ -7,6 +7,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/effect-fade';
+import {motion} from 'framer-motion'
 
 // import required modules
 import { EffectFade,Autoplay,Navigation,Pagination } from 'swiper/modules';
@@ -32,16 +33,16 @@ const Navbar = () => {
         },
     ]
 
-return <div className='h-[100vh] w-full'>
-    <div className='flex flex-row items-center text-white justify-center gap-20 w-full absolute py-6 px-5 z-10'>
+return <div>
+    <div  className='flex flex-row items-center text-white justify-center gap-20 w-full absolute py-6 px-5 z-10'>
         <div className='flex flex-row gap-20'>
-        <div className='text-[18px] font-semi-bold cursor-pointer hover:text-golden'>HOME</div>
+        <motion.div whileHover ={{scale:1.3,originX:0,}} transition = {{type:'spring',stiffness:300}} className='text-[18px] font-semi-bold cursor-pointer hover:text-golden'>HOME</motion.div>
         <Link href='/aboutus'>
-        <div className='text-[18px] font-semi-bold cursor-pointer hover:text-golden'>ABOUT US</div>
+        <motion.div whileHover ={{scale:1.3,originX:0,}} transition = {{type:'spring',stiffness:300}} className='text-[18px] font-semi-bold cursor-pointer hover:text-golden'>ABOUT US</motion.div>
         </Link>
-        <div className='relative flex flex-row items-center gap-3' onMouseEnter={()=> setSecondDropDown(true)} onMouseLeave={()=> setSecondDropDown(false)}>
+        <motion.div whileHover ={{scale:1.3,originX:0,}} transition = {{type:'spring',stiffness:300}} className='relative flex flex-row items-center gap-3' onMouseEnter={()=> setSecondDropDown(true)} onMouseLeave={()=> setSecondDropDown(false)}>
             
-            <span className='hover:text-golden cursor-pointer'>PROJECTS</span>
+            <motion.span whileHover ={{scale:1.3,originX:0,}} transition = {{type:'spring',stiffness:300}} className='hover:text-golden cursor-pointer'>PROJECTS</motion.span>
                    {
         secondDropDown && 
         <div className='flex flex-col  px-3 py-3 left-[-13px]  absolute top-[25px] gap-3  rounded-xl '>
@@ -51,7 +52,7 @@ return <div className='h-[100vh] w-full'>
         </div> 
        } 
             
-            </div>
+            </motion.div>
 
 
 
@@ -62,13 +63,13 @@ return <div className='h-[100vh] w-full'>
         <div className='flex flex-row items-center gap-20'>
            
         <div className='relative text-[18px] font-semi-bold cursor-pointer  flex flex-row items-center gap-2' onMouseEnter={()=> setDropDown(true)} onMouseLeave={()=> setDropDown(false)}>
-            <span className='hover:text-golden'>CSR</span>
+            <motion.span whileHover ={{scale:1.3,originX:0,}} transition = {{type:'spring',stiffness:300}} className='hover:text-golden'>CSR</motion.span>
             
 
        {
         dropDown && <div className='flex flex-col  px-3 py-3 left-[-15px] absolute top-[25px] gap-3  rounded-xl w-[300px]'>
             <Link href='/csr'>
-            <div className='hover:text-golden text-[16px]'>Bin Sadiq Foundation</div>
+            <motion.div whileHover ={{scale:1.3,originX:0,}} transition = {{type:'spring',stiffness:300}} className='hover:text-golden text-[16px]'>Bin Sadiq Foundation</motion.div>
             </Link>
             <Link href="/bin-sadiq-law-associates">
             <div className='hover:text-golden text-[16px]'>Bin Sadiq Law Associates</div>
@@ -80,7 +81,7 @@ return <div className='h-[100vh] w-full'>
         
 
         <div className='relative text-[18px] font-semi-bold cursor-pointer  flex flex-row items-center gap-2' onMouseEnter={()=> setThirdDropDown(true)} onMouseLeave={()=> setThirdDropDown(false)}>
-           <span className='hover:text-golden'> PEOPLE </span>
+           <motion.span whileHover ={{scale:1.3,originX:0,}} transition = {{type:'spring',stiffness:300}} className='hover:text-golden'> PEOPLE </motion.span>
            
         {
         thirdDropDown && <div className='flex flex-col text-left px-3 py-3 left-[-15px] absolute top-[25px] gap-3  rounded-xl w-[150px]'>
@@ -94,7 +95,7 @@ return <div className='h-[100vh] w-full'>
        } 
 
             </div>
-        <div className='text-[18px] font-semi-bold cursor-pointer hover:text-golden'>BLOG</div>
+        <motion.div whileHover ={{scale:1.3,originX:0,}} transition = {{type:'spring',stiffness:300}} className='text-[18px] font-semi-bold cursor-pointer hover:text-golden'>BLOG</motion.div>
         </div>
     </div>
     <Swiper   effect={'fade'} modules={[EffectFade,Autoplay, Pagination,Navigation]} autoplay={{

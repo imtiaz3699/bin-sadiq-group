@@ -27,7 +27,7 @@ export default function SecondNavbar () {
         },
         {
             name:'/BinSadiqLogo.png',
-            img:'/BinSadiqLogo.png',
+            img:'/bin-sadiq-logo.png',
             url:'/', 
         },
         {

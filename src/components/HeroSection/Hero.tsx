@@ -10,13 +10,16 @@ import Footer from '@/app/footer/page';
 import ContinuousSlider from './Sliders';
 import FadeInElement from '../fadedAnimations/page';
 // import './hero.css'
+import { motion, useScroll, useTransform,inView,animate } from "framer-motion";
 import InfiniteCarousel from './InfiniteCarousel';
 import Carousel from './InfiniteCarousel';
 import ImageSlider from './AnotherSlider';
+import InViewElement from '../InViewElement/InViewElement';
 
 export default  function Hero() {
     const [currentIndex, setCurrentIndex] = useState(0);
     const [state, setState] = useState(0);
+    const [isInView, setIsInView] = useState(false);
 const logos = ['/bin-sadiq-group.png','/association.png','/heritage.png','/law-association.png','/foundation.png','/law-association.png','/law-association.png']
 const ourServices  = [
     {
@@ -35,6 +38,7 @@ const ourServices  = [
 
 const text = 'At Bin Sadiq, we offer a comprehensive range of real estate services to meet all your needs. Whether you are looking to buy, sell, or rent a property, or need assistance with property management or construction, we have the expertise and resources to help you achieve your goals.'
 useEffect(() => {
+    
     if (currentIndex < text.length) {
       const timeoutId = setTimeout(() => {
         setCurrentIndex((prevIndex) => prevIndex + 1);
@@ -43,15 +47,45 @@ useEffect(() => {
     }
   }, [currentIndex, text]);
 
-  
+  const { scrollY } = useScroll()
+
+
+
+const handleIntersection = (entries: IntersectionObserverEntry[]) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      setIsInView(true);
+    } else {
+      setIsInView(false);
+    }
+  });
+};
+
+useEffect(() => {
+  const observer = new IntersectionObserver(handleIntersection);
+
+  const targetElement = document.getElementById('in-view-element');
+
+  if (targetElement) {
+    observer.observe(targetElement);
+  }
+
+  return () => {
+    if (targetElement) {
+      observer.unobserve(targetElement);
+    }
+  };
+}, []);
     return (
         <>
         <div className='w-full '>
         <div className='bg-lead-color'>
 
             <div className="flex container mx-auto flex-row  justify-center  text-black py-56 gap-20 ">
-                <div className=' flex flex-col'>
-                        <h1 className='text-golden font-bold text-[48px] leading-[56px]'>CREATING SPACES <br />THAT INSPIRES </h1> 
+                <div  className='flex flex-col'>
+                        <h1
+                        id='in-view-element'
+                        className={isInView ? 'text-golden font-bold text-[48px] leading-[56px] animate-jump animate-ease-in-out animate-duration-1000' : "outOfViewClassName"} >CREATING SPACES <br />THAT INSPIRES </h1> 
                         <div className='max-w-[602px] text-white mt-5'>Having the inheritance and elegance of the past with the comfort and convenience of modern living. BIN SADIQ offers a unique opportunity to own residential and commercial places in the Heart of Twin cities, with restored heritage buildings and modern residences that feature state-of-the-art amenities and stunning views. Discover a world of timeless beauty, sophistication, and exclusivity at BIN SADIQ.</div>
                 </div>                
                 <div className='w-[452px] hover:translate-x-10 transition-transform duration-1000 group h-[514px] rounded-tr-[125px] rounded-xl  bg-cover hover:drop-shadow-2xl hover:shadow-2xl relative' 
@@ -62,11 +96,13 @@ useEffect(() => {
                         
             </div>
             <CoreValues/>
-            <div className=' text-black text-center py-10 pt-[200px]'>
-                <FadeInElement>
-                <div className='text-golden font-bold text-[80px] transition-transform duration-300 transform hover:scale-110 animate-bounce'>Why Choose Us</div>
-                </FadeInElement>
-            
+            <div className=' text-black text-center py-20 '>
+                <InViewElement  targetId="element-1"
+  inViewClassName="animate-ping animate-once animate-duration-[2000ms] animate-delay-500 animate-ease-in animate-normal animate-fill-backwards"
+  outOfViewClassName="element-out-of-view">
+                <div className={ isInView ? 'text-golden font-bold text-[80px] transition-transform duration-300 transform ' : "text-golden font-bold text-[80px] transition-transform duration-300 transform"}>Why Choose Us</div>
+                </InViewElement>
+                
                 <div className='text-[22px]  font-semibold text-gray-500 text-white'>We've always tried to be different,a different approach to buisness & customer service,<br /> a different culture at work place. We believe in the importance of fresh thinking-in being <br /> green,  and approaching things in new and different ways.</div>
             </div>
             
@@ -78,8 +114,8 @@ useEffect(() => {
                        
             <div className='py-20 '>
                 <div className='container mx-auto text-center flex flex-col items-center justify-center'>
-                        <h1 className='text-golden text-[64px] font-normal text-golden '>OUR SERVICES </h1>
-                        <div className='max-w-[995px] text-[24px] leading-[27px] text-white mt-[41px]'> {text.slice(0, currentIndex)}</div>
+                        <h1 id='animate' className='text-golden text-[64px] font-normal text-golden '>OUR SERVICES </h1>
+                        <div className='max-w-[995px] text-[24px] leading-[27px] text-white mt-[41px]'> { text.slice(0, currentIndex) }</div>
                 <div className='grid grid-cols-3 place-items-center mt-[150px] gap-[100px]'>
                       {
                         ourServices.map((element,idx)=> {

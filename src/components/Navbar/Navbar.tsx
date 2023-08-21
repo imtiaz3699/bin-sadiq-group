@@ -58,7 +58,7 @@ return <div>
 
         </div>
         <div>
-            <img src="/binSadiqLogo.png" alt="" className='w-[100px] h-[100px]'/>
+            <img src="/bin-sadiq-logo.png" alt="" className='w-[100px] h-[100px]'/>
         </div>
         <div className='flex flex-row items-center gap-20'>
            

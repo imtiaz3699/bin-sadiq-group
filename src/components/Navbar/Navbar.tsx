@@ -68,7 +68,7 @@ return <div>
 
        {
         dropDown && <div className='flex flex-col  px-3 py-3 left-[-15px] absolute top-[25px] gap-3  rounded-xl w-[300px]'>
-            <Link href='/csr'>
+            <Link href=''>
             <motion.div whileHover ={{scale:1.3,originX:0,}} transition = {{type:'spring',stiffness:300}} className='hover:text-golden text-[16px]'>Bin Sadiq Foundation</motion.div>
             </Link>
             <Link href="/bin-sadiq-law-associates">

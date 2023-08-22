@@ -12,6 +12,7 @@ import 'swiper/css/pagination';
 
 // import required modules
 import { FreeMode,Navigation, Pagination, Mousewheel, Keyboard } from 'swiper/modules';
+import InViewElement from '@/components/InViewElement/InViewElement';
 
 export default function ProjectSpecification () {
 
@@ -70,13 +71,26 @@ export default function ProjectSpecification () {
         
     ]
     return <div className="py-20 flex flex-col ">
-        <h1 className="font-bold text-[40px] text-golden text-center">PROJECT SPECIFICATION</h1>
+        <InViewElement targetId="element-5"
+            inViewClassName=" trnaslate-x-0 duration-300 transition-all duration-500 transform "
+            outOfViewClassName="-translate-x-[100%] ">
+        <h1 className="font-bold text-[64px] text-golden text-center">PROJECT SPECIFICATION</h1>
+        </InViewElement>
+        
         <div className="flex flex-col items-center mt-20 text-white">
            {
             data.map((element,idx)=> {
                 return <div className="flex flex-row items-center justify-between border-b-2 border-white text-gray-300 py-2 w-[800px]" key = {idx}>
+                    <InViewElement targetId="element-6"
+            inViewClassName=" trnaslate-x-0 duration-1000 transition-all duration-500 transform"
+            outOfViewClassName="-translate-x-[100%]">
                 <span className="text-[20px]">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {element.name} </span>
+                </InViewElement>
+                <InViewElement targetId="element-7"
+            inViewClassName=" trnaslate-x-0 duration-1000 transition-all duration-500 transform "
+            outOfViewClassName="translate-x-[100%]">
                 <span className="text-center text-[20px] w-[300px]">{element.value}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                </InViewElement>
             </div>
             })
            } 
@@ -89,11 +103,17 @@ export default function ProjectSpecification () {
            } 
     </div>
     <div className="flex flex-col items-center mt-[150px]">
-        <h1 className="font-bold text-golden text-[40px]">FEATURED UNITS</h1>
+        <InViewElement targetId="element-7"
+            inViewClassName="duration-1000 transition-all duration-500 transform animate-fade-down animate-once animate-ease-out animate-alternate animate-fill-both "
+            outOfViewClassName="">
+
+        
+        <h1 className="font-bold text-golden text-[64px] drop-shadow-2xl">FEATURED UNITS</h1>
+        </InViewElement>
        <div className="flex flex-col items-center gap-[80px] mt-[140px]">
         <div className="flex flex-row items-center gap-[249px]">
 
-            <div className="w-[527px] h-[298px] rounded-[21px] bg-cover drop-shadow-2xl" style = {{backgroundImage:`url(/Shop.png)`}}>
+            <div className="w-[527px] h-[298px] rounded-[21px] bg-cover drop-shadow-2xl rounded-[21px] overflow-hidden relative transform transition-transform duration-300 hover:scale-105" style = {{backgroundImage:`url(/Shop.png)`}}>
             <div className="flex flex-col items-center justify-center w-full h-full bg-green-800 opacity-50 rounded-[21px]">
                 <img src='/Shops-01.png' alt="" className="w-[100px] h-[72px]"/>
                 <p className="w-[284px] text-golden">The Heritage Paradise features premium spacious outlets within your budget. Invest today, and get the best returns of your investment</p>
@@ -101,18 +121,18 @@ export default function ProjectSpecification () {
            </div>
 
 
-        <div className="w-[527px] h-[298px] rounded-[21px] bg-cover drop-shadow-2xl rounded-[21px]" style = {{backgroundImage:`url(/Appartment.png)`}}>
-        <div className="flex flex-col items-center justify-center w-full h-full bg-green-800 opacity-60 rounded-[21px]">
-            <img src="/Appartment-01.png" alt="" className="w-[100px] h-[72px]"/>
-            <p className="w-[284px] text-golden">The Heritage Paradise features premium spacious outlets within your budget. Invest today, and get the best returns of your investment</p>
-        </div>
+        
+           <div className="w-[527px] h-[298px] rounded-[21px] bg-cover drop-shadow-2xl rounded-[21px] overflow-hidden relative transform transition-transform duration-300 hover:scale-105" style={{ backgroundImage: "url(/Appartment.png)" }}>
+    <div className="flex flex-col items-center justify-center w-full h-full bg-green-800 opacity-50 rounded-[21px]">
+        <img src="/Appartment-01.png" alt="" className="w-[100px] h-[72px]" />
+        <p className="w-[284px] text-golden">The Heritage Paradise features premium spacious outlets within your budget. Invest today, and get the best returns of your investment</p>
+    </div>
+</div>
         </div>
 
-        </div>
 
-
-        <div className="w-[527px] h-[298px] rounded-[21px] bg-cover drop-shadow-2xl " style = {{backgroundImage:`url(/Office.png)`}}>
-        <div className="flex flex-col items-center justify-center w-full h-full bg-green-800 opacity-60 rounded-[21px]">
+        <div className="w-[527px] h-[298px] rounded-[21px] bg-cover drop-shadow-2xl rounded-[21px] overflow-hidden relative transform transition-transform duration-300 hover:scale-105" style = {{backgroundImage:`url(/Office.png)`}}>
+        <div className="flex flex-col items-center justify-center w-full h-full bg-green-800 opacity-50 rounded-[21px]">
         <img src="/Office-01.png" alt="" className="w-[100px] h-[72px]"/>
         <p className="w-[284px] text-golden">The Heritage Paradise features premium spacious outlets within your budget. Invest today, and get the best returns of your investment</p>
         </div>    

@@ -7,9 +7,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-
-
-
+import '../styles.css'
 // import required modules
 import { FreeMode,Navigation, Pagination, Mousewheel, Keyboard } from 'swiper/modules';
 import InViewElement from '@/components/InViewElement/InViewElement';
@@ -74,7 +72,7 @@ export default function ProjectSpecification () {
         <InViewElement targetId="element-5"
             inViewClassName=" trnaslate-x-0 duration-300 transition-all duration-500 transform "
             outOfViewClassName="-translate-x-[100%] ">
-        <h1 className="font-bold text-[64px] text-golden text-center">PROJECT SPECIFICATION</h1>
+        <h1 className="font-bold  text-[64px] text-golden text-center">PROJECT SPECIFICATION</h1>
         </InViewElement>
         
         <div className="flex flex-col items-center mt-20 text-white">
@@ -103,11 +101,9 @@ export default function ProjectSpecification () {
            } 
     </div>
     <div className="flex flex-col items-center mt-[150px]">
-        <InViewElement targetId="element-7"
-            inViewClassName="duration-1000 transition-all duration-500 transform animate-fade-down animate-once animate-ease-out animate-alternate animate-fill-both "
-            outOfViewClassName="">
-
-        
+        <InViewElement targetId="element-8"
+            inViewClassName="duration-1000 transition-all duration-500 transform animate-fade-down  animate-ease-out animate-alternate animate-fill-both "
+            outOfViewClassName="asdf">
         <h1 className="font-bold text-golden text-[64px] drop-shadow-2xl">FEATURED UNITS</h1>
         </InViewElement>
        <div className="flex flex-col items-center gap-[80px] mt-[140px]">

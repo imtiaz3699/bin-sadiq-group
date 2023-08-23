@@ -85,7 +85,7 @@ useEffect(() => {
                 <div  className='flex flex-col'>
                         <h1
                         id='in-view-element'
-                        className={isInView ? 'text-golden font-bold text-[48px] leading-[56px] animate-jump animate-ease-in-out animate-duration-1000' : "outOfViewClassName"} >CREATING SPACES <br />THAT INSPIRES </h1> 
+                        className={isInView ? 'text-golden font-bold text-[48px] leading-[56px] ' : "outOfViewClassName"} >CREATING SPACES <br />THAT INSPIRES </h1> 
                         <div className='max-w-[602px] text-white mt-5'>Having the inheritance and elegance of the past with the comfort and convenience of modern living. BIN SADIQ offers a unique opportunity to own residential and commercial places in the Heart of Twin cities, with restored heritage buildings and modern residences that feature state-of-the-art amenities and stunning views. Discover a world of timeless beauty, sophistication, and exclusivity at BIN SADIQ.</div>
                 </div>                
                 <div className='w-[452px] hover:translate-x-10 transition-transform duration-1000 group h-[514px] rounded-tr-[125px] rounded-xl  bg-cover hover:drop-shadow-2xl hover:shadow-2xl relative' 
@@ -98,7 +98,7 @@ useEffect(() => {
             <CoreValues/>
             <div className=' text-black text-center py-20 '>
                 <InViewElement  targetId="element-1"
-  inViewClassName="animate-ping animate-once animate-duration-[2000ms] animate-delay-500 animate-ease-in animate-normal animate-fill-backwards"
+  inViewClassName="animate-fade-down animate-once animate-ease-linear"
   outOfViewClassName="element-out-of-view">
                 <div className={ isInView ? 'text-golden font-bold text-[80px] transition-transform duration-300 transform ' : "text-golden font-bold text-[80px] transition-transform duration-300 transform"}>Why Choose Us</div>
                 </InViewElement>

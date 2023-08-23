@@ -8,6 +8,7 @@ const ImageSlider: React.FC = () => {
   return (
     <div className="image-slider">
       <div className="image-slider-track">
+
         <div className="slide">
         <img src="/bin-sadiq-group.png" alt="" className='w-[159px] h-[159px]'/>
         </div>
@@ -31,13 +32,15 @@ const ImageSlider: React.FC = () => {
         </div>
         <div className="slide">
          <img src="/heritage.png" alt="" className='w-[183px] h-[159px]'/>
-        </div>
+        </div>  
         <div className="slide">
         <img src="/law-association.png" alt="" className='w-[171px] h-[159px]'/>
         </div>
         <div className="slide">
         <img src="/foundation.png" alt="" className='w-[89px] h-[159px]'/>
         </div>
+        
+        
         
       </div>
     </div>

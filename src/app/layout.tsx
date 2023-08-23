@@ -2,7 +2,19 @@ import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import { Roboto,Roboto_Condensed,Rubik } from 'next/font/google'
+import localFont from '@next/font/local'
 
+
+const coco = localFont({
+  src: [
+    {
+      path: '../../public/fonts/Cocogoose Pro Semilight Italic-trial.ttf',
+      weight: '400'
+    },
+  ],
+  variable: '--font-poppins'
+
+})
 const inter = Inter({ subsets: ['latin'] })
 
 const roboto_condensed = Roboto_Condensed ({
@@ -26,7 +38,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={roboto_condensed.className}>{children}</body>
+      <body className={`${coco.variable} font-sans`}>{children}</body>
     </html>
   )
 }

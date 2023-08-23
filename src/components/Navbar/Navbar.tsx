@@ -46,7 +46,7 @@ return <div>
                    {
         secondDropDown && 
         <div className='flex flex-col  px-3 py-3 left-[-13px]  absolute top-[25px] gap-3  rounded-xl '>
-            <Link href='/csr'>
+            <Link href='/heritage'>
             <div className='hover:text-golden text-[16px]'>Heritage</div>
             </Link>
         </div> 

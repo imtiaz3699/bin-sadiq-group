@@ -7,11 +7,16 @@ import localFont from '@next/font/local'
 
 const coco = localFont({
   src: [
+    // {
+    //   path: '../../public/fonts/Cocogoose Pro Semilight Italic-trial.ttf',
+    //   weight: '400'
+    // },
     {
-      path: '../../public/fonts/Cocogoose Pro Semilight Italic-trial.ttf',
+      path: '../../public/fonts/Optima Medium.ttf',
       weight: '400'
     },
   ],
+  
   variable: '--font-poppins'
 
 })

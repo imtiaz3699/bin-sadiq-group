@@ -36,26 +36,22 @@ const Navbar = () => {
 return <div>
     <div  className='flex flex-row items-center text-white justify-center gap-20 w-full absolute py-6 px-5 z-10'>
         <div className='flex flex-row gap-20'>
-        <motion.div whileHover ={{scale:1.3,originX:0,}} transition = {{type:'spring',stiffness:300}} className='text-[18px] font-semi-bold cursor-pointer hover:text-golden'>HOME</motion.div>
+        <motion.div whileHover ={{scale:1.3,originX:0,}} transition = {{type:'spring',stiffness:300}} className='text-[18px] text-golden font-semi-bold cursor-pointer hover:text-golden border-[1px] border-golden px-2 py-1 rounded-xl'>HOME</motion.div>
         <Link href='/aboutus'>
         <motion.div whileHover ={{scale:1.3,originX:0,}} transition = {{type:'spring',stiffness:300}} className='text-[18px] font-semi-bold cursor-pointer hover:text-golden'>ABOUT US</motion.div>
         </Link>
         <motion.div whileHover ={{scale:1.3,originX:0,}} transition = {{type:'spring',stiffness:300}} className='relative flex flex-row items-center gap-3' onMouseEnter={()=> setSecondDropDown(true)} onMouseLeave={()=> setSecondDropDown(false)}>
             
-            <motion.span whileHover ={{scale:1.3,originX:0,}} transition = {{type:'spring',stiffness:300}} className='hover:text-golden cursor-pointer'>PROJECTS</motion.span>
+            <motion.span whileHover ={{scale:1.3,originX:0,}} transition = {{type:'spring',stiffness:300}} className='text-[18px] font-semi-bold cursor-pointer hover:text-golden'>PROJECTS</motion.span>
                    {
         secondDropDown && 
         <div className='flex flex-col  px-3 py-3 left-[-13px]  absolute top-[25px] gap-3  rounded-xl '>
             <Link href='/heritage'>
-            <div className='hover:text-golden text-[16px]'>Heritage</div>
+            <div className='text-[18px] font-semi-bold cursor-pointer hover:text-golden'>Heritage</div>
             </Link>
         </div> 
        } 
-            
-            </motion.div>
-
-
-
+       </motion.div>
         </div>
         <div>
             <img src="/bin-sadiq-logo.png" alt="" className='w-[100px] h-[100px]'/>
@@ -63,7 +59,7 @@ return <div>
         <div className='flex flex-row items-center gap-20'>
            
         <div className='relative text-[18px] font-semi-bold cursor-pointer  flex flex-row items-center gap-2' onMouseEnter={()=> setDropDown(true)} onMouseLeave={()=> setDropDown(false)}>
-            <motion.span whileHover ={{scale:1.3,originX:0,}} transition = {{type:'spring',stiffness:300}} className='hover:text-golden'>CSR</motion.span>
+            <motion.span whileHover ={{scale:1.3,originX:0,}} transition = {{type:'spring',stiffness:300}} className='text-[18px] font-semi-bold cursor-pointer hover:text-golden'>CSR</motion.span>
             
 
        {
@@ -81,7 +77,7 @@ return <div>
         
 
         <div className='relative text-[18px] font-semi-bold cursor-pointer  flex flex-row items-center gap-2' onMouseEnter={()=> setThirdDropDown(true)} onMouseLeave={()=> setThirdDropDown(false)}>
-           <motion.span whileHover ={{scale:1.3,originX:0,}} transition = {{type:'spring',stiffness:300}} className='hover:text-golden'> PEOPLE </motion.span>
+           <motion.span whileHover ={{scale:1.3,originX:0,}} transition = {{type:'spring',stiffness:300}} className='text-[18px] font-semi-bold cursor-pointer hover:text-golden'> PEOPLE </motion.span>
            
         {
         thirdDropDown && <div className='flex flex-col text-left px-3 py-3 left-[-15px] absolute top-[25px] gap-3  rounded-xl w-[150px]'>

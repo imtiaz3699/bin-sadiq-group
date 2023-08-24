@@ -80,20 +80,18 @@ useEffect(() => {
         <>
         <div className='w-full '>
         <div className='bg-lead-color'>
-
             <div className="flex container mx-auto flex-row  justify-center  text-black py-56 gap-20 ">
                 <div  className='flex flex-col'>
                         <h1
                         id='in-view-element'
-                        className={isInView ? 'text-golden font-bold text-[48px] leading-[56px] ' : "outOfViewClassName"} >CREATING SPACES <br />THAT INSPIRES </h1> 
+                        className={isInView ? 'text-golden font-bold text-[64px] font-bold  leading-[56px] animate-fade-right animate-once animate-ease-linear' : "outOfViewClassName"} >CREATING SPACES <br />THAT INSPIRES </h1> 
                         <div className='max-w-[602px] text-white mt-5'>Having the inheritance and elegance of the past with the comfort and convenience of modern living. BIN SADIQ offers a unique opportunity to own residential and commercial places in the Heart of Twin cities, with restored heritage buildings and modern residences that feature state-of-the-art amenities and stunning views. Discover a world of timeless beauty, sophistication, and exclusivity at BIN SADIQ.</div>
                 </div>                
                 <div className='w-[452px] hover:translate-x-10 transition-transform duration-1000 group h-[514px] rounded-tr-[125px] rounded-xl  bg-cover hover:drop-shadow-2xl hover:shadow-2xl relative' 
                 style = {{backgroundImage:'url(/Pic2.png)'}}>
 
                     <div className='w-[410px] group-hover:translate-y-2 group-hover:translate-x-3 transition-transform duration-1000 h-[420px] overflow-hidden rounded-bl-[50px] hover:drop-shadow-2xl hover:shadow-2xl bg-cover absolute bottom-0 translate-y-[100px] right-0 translate-x-[100px]' style = {{backgroundImage:'url(/Pic1.png)'}}></div>
-                </div>
-                        
+                </div>       
             </div>
             <CoreValues/>
             <div className=' text-black text-center py-20 '>
@@ -102,20 +100,17 @@ useEffect(() => {
   outOfViewClassName="element-out-of-view">
                 <div className={ isInView ? 'text-golden font-bold text-[80px] transition-transform duration-300 transform ' : "text-golden font-bold text-[80px] transition-transform duration-300 transform"}>Why Choose Us</div>
                 </InViewElement>
-                
                 <div className='text-[22px]  font-semibold text-gray-500 text-white'>We've always tried to be different,a different approach to buisness & customer service,<br /> a different culture at work place. We believe in the importance of fresh thinking-in being <br /> green,  and approaching things in new and different ways.</div>
             </div>
-            
-
-
-<ImageSlider/>
-
-
-                       
+<ImageSlider/>     
             <div className='py-20 '>
                 <div className='container mx-auto text-center flex flex-col items-center justify-center'>
-                        <h1 id='animate' className='text-golden text-[64px] font-normal text-golden '>OUR SERVICES </h1>
-                        <div className='max-w-[995px] text-[24px] leading-[27px] text-white mt-[41px]'> { text.slice(0, currentIndex) }</div>
+                  <InViewElement  targetId="element-10"
+  inViewClassName="animate-flip-down animate-once animate-ease-linear"
+  outOfViewClassName="element-out-of-view">
+                        <h1 id='animate' className='text-golden text-[64px] font-bold text-golden '>OUR SERVICES </h1>
+                        </InViewElement>
+                        <div className='max-w-[995px] text-[24px] leading-[27px] font-normal text-white mt-[41px]'> { text.slice(0, currentIndex) }</div>
                 <div className='grid grid-cols-3 place-items-center mt-[150px] gap-[100px]'>
                       {
                         ourServices.map((element,idx)=> {
@@ -129,12 +124,9 @@ useEffect(() => {
                       }  
                 </div>
             </div>
-            </div>
-
-            
-                    
-                    <div className='bg-golden w-full  text-center py-20'>
-                    <h1 className='text-[64px] leading-[76px]'>UPDATES</h1>
+            </div>                    
+            <div className='bg-golden w-full  text-center py-20'>
+                    <h1 className='text-[64px] leading-[76px] font-bold'>UPDATES</h1>
                           <div className='container mx-auto mt-[55px]'>
                             <div className='flex flex-row items-center justify-center gap-[25px]'>
                                     <Image alt = "" src = "/P-Post 5 1.png" width = {400} height = {400} className='transition-transform duration-700 transform hover:scale-105 hover:shadow-lg'/>
@@ -143,8 +135,6 @@ useEffect(() => {
                             </div>
                             </div>  
                     </div>
-                    
-            
             </div>
             </div>
     </>

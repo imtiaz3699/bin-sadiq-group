@@ -57,7 +57,8 @@ useEffect(() => {
       style={{
         position: 'relative',
         height: '100vh',
-        overflow: 'hidden', // Ensure the video doesn't overflow
+        overflow: 'hidden',
+        width : "100vw" // Ensure the video doesn't overflow
       }}
     >
       <video

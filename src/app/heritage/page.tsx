@@ -6,6 +6,7 @@ import ProjectSpecification from "./ProjectSpecification";
 import Footer from "../footer/page";
 import InViewElement from "@/components/InViewElement/InViewElement";
 
+
 export default function Heritage () {
     const [currentIndex, setCurrentIndex] = useState(0);
     const [state, setState] = useState(0);
@@ -52,8 +53,32 @@ useEffect(() => {
   };
 }, []);
     return <div className="bg-grean">
-    <div style = {{backgroundImage:'url(/Main_Page.jpg)'}} className="h-[700px] ">
-    <SecondNavbar/>
+    <div
+      style={{
+        position: 'relative',
+        height: '700px',
+        overflow: 'hidden', // Ensure the video doesn't overflow
+      }}
+    >
+      <video
+        autoPlay
+        loop
+        muted
+        style={{
+          position: 'absolute',
+          width: '100%',
+          height: '100%',
+          objectFit: 'cover',
+        }}
+      >
+        <source
+          src="https://res.cloudinary.com/ddx3egvut/video/upload/v1692865037/thp4ifeasfgciizw5ot4.mp4"
+          type="video/mp4"
+        />
+        Your browser does not support the video tag.
+      </video>
+      
+      <SecondNavbar />
     </div>
     <div style = {{backgroundImage:'url(/edit.jpg)'}} className=" h-[700px] w-full bg-cover bg-no-repeat">
         <div className="w-[50%] h-full  py-20 float-right flex flex-col justify-center pl-20 bg-grean opacity-95 ">

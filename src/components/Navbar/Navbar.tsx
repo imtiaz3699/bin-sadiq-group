@@ -4,6 +4,7 @@ import React, { useRef, useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 // import './style.css';
 // Import Swiper styles
+import { usePathname } from 'next/navigation';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/effect-fade';
@@ -18,6 +19,7 @@ const Navbar = () => {
     const [dropDown, setDropDown] = useState(false);
     const [secondDropDown, setSecondDropDown] = useState(false)
     const [thirdDropDown, setThirdDropDown] = useState(false);
+    const pathname = usePathname();
     const sliderImages = [
         {
             img:'/Slider_img_1_Big.jpg',
@@ -36,13 +38,15 @@ const Navbar = () => {
 return <div>
     <div  className='flex flex-row items-center text-white justify-center gap-20 w-full absolute py-6 px-5 z-10'>
         <div className='flex flex-row gap-20'>
-        <motion.div whileHover ={{scale:1.3,originX:0,}} transition = {{type:'spring',stiffness:300}} className='text-[18px] text-golden font-semi-bold cursor-pointer hover:text-golden border-[1px] border-golden px-2 py-1 rounded-xl'>HOME</motion.div>
-        <Link href='/aboutus'>
-        <motion.div whileHover ={{scale:1.3,originX:0,}} transition = {{type:'spring',stiffness:300}} className='text-[18px] font-semi-bold cursor-pointer hover:text-golden'>ABOUT US</motion.div>
+            <Link href='/'>
+        <motion.div whileHover ={{scale:1.3,originX:0,}} transition = {{type:'spring',stiffness:300}} className={`${pathname === '/' ? "border-[1px] border-golden text-golden rounded-xl" : ""} hover:text-golden font-semi-bold cursor-pointer px-4 py-1 text-[18px] `}>HOME</motion.div>
         </Link>
-        <motion.div whileHover ={{scale:1.3,originX:0,}} transition = {{type:'spring',stiffness:300}} className='relative flex flex-row items-center gap-3' onMouseEnter={()=> setSecondDropDown(true)} onMouseLeave={()=> setSecondDropDown(false)}>
+        <Link href='/aboutus'>
+        <motion.div whileHover ={{scale:1.3,originX:0,}} transition = {{type:'spring',stiffness:300}} className={`${pathname === '/aboutus' ? "border-[1px] border-golden text-golden rounded-xl" : ""} hover:text-golden font-semi-bold cursor-pointer px-4 py-1 text-[18px] `}>ABOUT US</motion.div>
+        </Link>
+        <div className='relative flex flex-row items-center gap-3' onMouseEnter={()=> setSecondDropDown(true)} onMouseLeave={()=> setSecondDropDown(false)}>
             
-            <motion.span whileHover ={{scale:1.3,originX:0,}} transition = {{type:'spring',stiffness:300}} className='text-[18px] font-semi-bold cursor-pointer hover:text-golden'>PROJECTS</motion.span>
+            <motion.span whileHover ={{scale:1.3,originX:0,}} transition = {{type:'spring',stiffness:300}} className={`${pathname === '/heritage' ? "border-[1px] border-golden text-golden rounded-xl" : ""} hover:text-golden font-semi-bold cursor-pointer px-4 py-1 text-[18px] `}>PROJECTS</motion.span>
                    {
         secondDropDown && 
         <div className='flex flex-col  px-3 py-3 left-[-13px]  absolute top-[25px] gap-3  rounded-xl '>
@@ -51,7 +55,7 @@ return <div>
             </Link>
         </div> 
        } 
-       </motion.div>
+       </div>
         </div>
         <div>
             <img src="/bin-sadiq-logo.png" alt="" className='w-[100px] h-[100px]'/>
@@ -59,7 +63,7 @@ return <div>
         <div className='flex flex-row items-center gap-20'>
            
         <div className='relative text-[18px] font-semi-bold cursor-pointer  flex flex-row items-center gap-2' onMouseEnter={()=> setDropDown(true)} onMouseLeave={()=> setDropDown(false)}>
-            <motion.span whileHover ={{scale:1.3,originX:0,}} transition = {{type:'spring',stiffness:300}} className='text-[18px] font-semi-bold cursor-pointer hover:text-golden'>CSR</motion.span>
+            <motion.span whileHover ={{scale:1.3,originX:0,}} transition = {{type:'spring',stiffness:300}} className={`${pathname === '/heritage' ? "border-[1px] border-golden text-golden rounded-xl" : ""} hover:text-golden font-semi-bold cursor-pointer px-4 py-1 text-[18px] `}>CSR</motion.span>
             
 
        {
@@ -77,7 +81,7 @@ return <div>
         
 
         <div className='relative text-[18px] font-semi-bold cursor-pointer  flex flex-row items-center gap-2' onMouseEnter={()=> setThirdDropDown(true)} onMouseLeave={()=> setThirdDropDown(false)}>
-           <motion.span whileHover ={{scale:1.3,originX:0,}} transition = {{type:'spring',stiffness:300}} className='text-[18px] font-semi-bold cursor-pointer hover:text-golden'> PEOPLE </motion.span>
+           <motion.span whileHover ={{scale:1.3,originX:0,}} transition = {{type:'spring',stiffness:300}} className={`${pathname === '/heritage' ? "border-[1px] border-golden text-golden rounded-xl" : ""} hover:text-golden font-semi-bold cursor-pointer px-4 py-1 text-[18px] `}> PEOPLE </motion.span>
            
         {
         thirdDropDown && <div className='flex flex-col text-left px-3 py-3 left-[-15px] absolute top-[25px] gap-3  rounded-xl w-[150px]'>
@@ -91,13 +95,13 @@ return <div>
        } 
 
             </div>
-        <motion.div whileHover ={{scale:1.3,originX:0,}} transition = {{type:'spring',stiffness:300}} className='text-[18px] font-semi-bold cursor-pointer hover:text-golden'>BLOG</motion.div>
+        <motion.div whileHover ={{scale:1.3,originX:0,}} transition = {{type:'spring',stiffness:300}} className={`${pathname === '/heritage' ? "border-[1px] border-golden text-golden rounded-xl" : ""} hover:text-golden font-semi-bold cursor-pointer px-4 py-1 text-[18px] `}>BLOG</motion.div>
         </div>
     </div>
     <Swiper   effect={'fade'} modules={[EffectFade,Autoplay, Pagination,Navigation]} autoplay={{
           delay: 1500,
           disableOnInteraction: true,
-        }}  className="mySwiper w-[100%] h-[100%]">       
+        }}  className="mySwiper w-[100vw] h-[100%]">       
        {
         sliderImages.map((element,idx)=> {
             return (

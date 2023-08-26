@@ -45,35 +45,35 @@ const timer = setTimeout(()=> {
     ]
 
     return <div className="bg-[#CFB156] text-center py-20">
-        <div className="container mx-auto">
-            <InViewElement 
+        <div className="container mx-auto ">
+
+<InViewElement 
             targetId="element-2"
             inViewClassName="animate-fade-right animate-once animate-duration-1000 animate-delay-500 animate-ease-in animate-normal animate-fill-backwards
             "
             outOfViewClassName="element-out-of-view"
             >
-        <div className="text-[79px] text-black font-bold ">OUR CORE VALUES</div>
+                   {/* md:text-left   font-bold   */}
+        <div className="text-[30px] sm:text-[40px] md:text-[64px] leading-[56px] text-center text-black font-bold ">OUR CORE VALUES</div>
+</InViewElement>
 
-            </InViewElement>
-        <div className="flex flex-col items-center gap-20 pt-[150px]">
-
-
-        <div className="flex flex-row items-center justify-center gap-[150px]">
-        <div className=" flex flex-row items-center gap-5">
+      <div className="flex flex-col items-center justify-center gap-5 sm:gap-10 md2:gap-20 pt-[30px] md2:pt-[150px]">
+       <div className="flex flex-col  xs:flex-row items-center justify-center gap-[10px] xl:gap-[150px]">
+        <div className=" flex flex-col md2:flex-row items-center justify-center gap-5">
             <InViewElement targetId="element-3"
             inViewClassName="animate-fade-right animate-once animate-duration-1000 animate-delay-500 animate-ease-in animate-normal animate-fill-backwards
             "
             outOfViewClassName="element-out-of-view">
-<div className="transition-transform duration-300 ease-in-out transform hover:scale-125 w-[100px] h-[100px] p-3 rounded-full flex flex-row items-center justify-center " >
+            <div className="transition-transform duration-300 ease-in-out transform hover:scale-125 w-[100px] h-[100px] p-3 rounded-full flex flex-row items-center justify-center " >
             <img src='/core1.png' alt="" className="w-[100px]  " />
             </div>
             </InViewElement>
                         
             
-            <div className="w-[3px] h-[100px] bg-white"></div>
+            <div className="w-[150px] h-[3px] md2:w-[3px] md2:h-[100px] bg-white"></div>
             <FadedAnimationElement>
                 <>
-            <p className={`w-[250px] text-white text-[20px]  transition-opacity duration-500 opacity-100 transition-opacity duration-300 opacity-0 flex flex-col text-left text-black`}>
+            <p className={`w-[250px] text-white text-[20px] text-center md2:text-left  transition-opacity duration-500 opacity-100 transition-opacity duration-300 opacity-0 flex flex-col text-left text-black`}>
             WE ACT WITH
             <span className="font-bold drop-shadow-xl text-black">INTEGRITY</span>
             </p>
@@ -81,7 +81,7 @@ const timer = setTimeout(()=> {
             </FadedAnimationElement> 
         </div>
 
-        <div className=" flex flex-row items-center gap-5">
+        <div className="  flex flex-col md2:flex-row items-center justify-center gap-5">
         <InViewElement targetId="element-4"
             inViewClassName="animate-fade-right animate-once animate-duration-1000 animate-delay-500 animate-ease-in animate-normal animate-fill-backwards
             "
@@ -92,10 +92,10 @@ const timer = setTimeout(()=> {
             </InViewElement>
             
             
-            <div className="w-[3px] h-[100px] bg-white"></div>
+            <div className="w-[150px] h-[3px] md2:w-[3px] md2:h-[100px] bg-white"></div>
             <FadeInElement>
                 <>
-            <div className={`w-[250px] text-[20px] text-white transition-opacity duration-500 opacity-100 transition-opacity duration-300 opacity-0 flex flex-col text-left text-black`}>
+            <div className={`w-[250px] text-[20px] text-center md2:text-left text-white transition-opacity duration-500 opacity-100 transition-opacity duration-300 opacity-0 flex flex-col text-left text-black`}>
                 WE BELIEVE IN
                 <span className="font-bold text-black">MUTUAL RESPECT</span>
             </div>
@@ -105,18 +105,15 @@ const timer = setTimeout(()=> {
         </div>
 
 
-        <InViewElement targetId="element-3"
-            inViewClassName="animate-fade-right animate-once animate-duration-1000 animate-delay-500 animate-ease-in animate-normal animate-fill-backwards
-            "
-            outOfViewClassName="element-out-of-view">
-
-            </InViewElement>
 
 
 
 
-        <div className="flex flex-row items-center justify-center gap-[150px]">
-        <div className=" flex flex-row items-center gap-5">
+
+        <div className="flex flex-col xs:flex-row items-center justify-center gap-[10px] xl:gap-[150px]">
+     
+     
+        <div className=" flex flex-col md2:flex-row items-center justify-center gap-5">
         <InViewElement targetId="element-3"
             inViewClassName="animate-fade-right animate-once animate-duration-1000 animate-delay-500 animate-ease-in animate-normal animate-fill-backwards
             "
@@ -127,10 +124,10 @@ const timer = setTimeout(()=> {
             </InViewElement>
             
             
-            <div className="w-[3px] h-[100px] bg-white"></div>
+            <div className="w-[150px] h-[3px] md2:w-[3px] md2:h-[100px] bg-white"></div>
            <FadeInElement>
             <>
-            <div className={`w-[250px] text-[20px] text-white transition-opacity duration-500 opacity-100 transition-opacity duration-300 opacity-0 flex flex-col text-left text-black`}>
+            <div className={`w-[250px] text-[20px] text-center md2:text-left text-white transition-opacity duration-500 opacity-100 transition-opacity duration-300 opacity-0 flex flex-col text-left text-black`}>
             WE ARE DEVOTED
             <span className="font-bold text-black">INNOVATUION</span>
             </div> 
@@ -138,7 +135,7 @@ const timer = setTimeout(()=> {
             </FadeInElement>
         </div>
 
-        <div className=" flex flex-row items-center gap-5">
+        <div className=" flex flex-col md2:flex-row items-center justify-center gap-5">
         <InViewElement targetId="element-3"
             inViewClassName="animate-fade-right animate-once animate-duration-1000 animate-delay-500 animate-ease-in animate-normal animate-fill-backwards
             "
@@ -149,20 +146,25 @@ const timer = setTimeout(()=> {
             </InViewElement>
             
             
-            <div className="w-[3px] h-[100px] bg-white"></div>
+            <div className="w-[150px] h-[3px] md2:w-[3px] md2:h-[100px] bg-white"></div>
             <FadeInElement>
                 <>
-            <div className={`w-[250px] text-white transition-opacity duration-500 opacity-100 transition-opacity duration-300 opacity-0  flex flex-col text-left text-[20px] text-black`}>
+            <div className={`w-[250px] text-white text-center text-left transition-opacity duration-500 opacity-100 transition-opacity duration-300 opacity-0  flex flex-col text-left text-[20px] text-black`}>
                 WE BUILD TRUST THROUGH
                 <span className="font-bold  text-black">TRANSPARENCY</span>
             </div>
             </>
             </FadeInElement>
         </div>
+
+
         </div>
+
+
+
         </div>
-        <div className="text-black mt-20 flex flex-row justify-center">
-            <div className=" flex flex-row items-center gap-5">
+        <div className="text-black mt-5 md2:mt-20 flex flex-row justify-center">
+            <div className="flex flex-col md2:flex-row items-center justify-center gap-5">
             <InViewElement targetId="element-3"
             inViewClassName="animate-fade-right animate-once animate-duration-1000 animate-delay-500 animate-ease-in animate-normal animate-fill-backwards
             "
@@ -173,10 +175,10 @@ const timer = setTimeout(()=> {
             </InViewElement>
             
             
-            <div className="w-[3px] h-[100px] bg-white"></div>
+            <div className="w-[150px] h-[3px] md2:w-[3px] md2:h-[100px] bg-white"></div>
             <FadeInElement>
                 <>
-            <div className={`w-[250px] text-white transition-opacity duration-500 opacity-100 transition-opacity duration-300 opacity-0  flex flex-col text-left text-black`}>
+            <div className={`w-[250px] text-white text-center md2:text-left transition-opacity duration-500 opacity-100 transition-opacity duration-300 opacity-0  flex flex-col text-left text-black`}>
                 WE BUILD TRUST THROUGH
                 <span className="font-bold text-black">TRANSPARENCY</span>
             </div>

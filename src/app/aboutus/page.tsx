@@ -15,9 +15,6 @@ return<> <div className="w-full h-[100vh] bg-no-repeat relative bg-cover" style=
 <div className=""><img src="/That_Inspires.png" alt="" /></div>
 
 </div>
-
-
-
 </div>
 <div className="flex flex-row items-center justify-center ">
 <div  className="px-36 bg-white w-full py-20 text-black flex flex-row items-center  justify-center text-[28px] bg-lead-color"  
@@ -55,10 +52,9 @@ return<> <div className="w-full h-[100vh] bg-no-repeat relative bg-cover" style=
 <div className="bg-golden w-[400px] h-[5px]"></div>
 <p className="w-[1000px] text-center text-[25px]">Our Vision is to recreate the Heritage culture with Modern living in Reali Estate sector of Pakistan, which favors the development of sustainable, modern projects tailored to benefit society</p>
 </div>
-
+    
     <div>
         <Footer/>
     </div>
-
 </>
 }

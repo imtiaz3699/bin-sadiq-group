@@ -52,7 +52,7 @@ useEffect(() => {
     }
   };
 }, []);
-    return <div className="bg-grean">
+    return <div className="bg-grean overflow-hidden">
     <div
       style={{
         position: 'relative',

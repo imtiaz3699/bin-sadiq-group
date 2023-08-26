@@ -12,7 +12,7 @@ export default function Home() {
     <main className="">
       <Navbar/>
       <Hero/>
-      <Footer/>
+      {/* <Footer/> */}
     </main>
   )
 }

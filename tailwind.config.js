@@ -32,7 +32,7 @@ module.exports = {
       'md': '768px',
       // => @media (min-width: 768px) { ... }
       'md2' :"796px",
-
+       'md3' : '835px', 
       'lg': '1024px',
       // => @media (min-width: 1024px) { ... }
 

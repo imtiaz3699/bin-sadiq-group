@@ -19,6 +19,7 @@ const Navbar = () => {
     const [dropDown, setDropDown] = useState(false);
     const [secondDropDown, setSecondDropDown] = useState(false)
     const [thirdDropDown, setThirdDropDown] = useState(false);
+    const [isDropDown, setIsDropDown] = useState(false);
     const pathname = usePathname();
     const sliderImages = [
         {
@@ -36,8 +37,10 @@ const Navbar = () => {
     ]
 
 return <div>
-    <div  className='flex flex-row items-center text-white justify-center gap-20 w-full absolute py-6 px-5 z-10'>
-        <div className='flex flex-row gap-20'>
+    <div  className='flex flex-row items-center text-white justify-between md3:justify-center gap-5 gap-20 w-full  absolute py-6 px-5 z-10'>
+        
+        
+        <div className='hidden md3:flex flex-row gap-5 2xl:gap-20'>
             <Link href='/'>
         <motion.div whileHover ={{scale:1.3,originX:0,}} transition = {{type:'spring',stiffness:300}} className={`${pathname === '/' ? "border-[1px] border-golden text-golden rounded-xl" : ""} hover:text-golden font-semi-bold cursor-pointer px-4 py-1 text-[18px] `}>HOME</motion.div>
         </Link>
@@ -57,16 +60,17 @@ return <div>
        } 
        </div>
         </div>
-        <div>
+        
+        
+        <div className=''>
             <img src="/bin-sadiq-logo.png" alt="" className='w-[100px] h-[100px]'/>
         </div>
-        <div className='flex flex-row items-center gap-20'>
-           
-        <div className='relative text-[18px] font-semi-bold cursor-pointer  flex flex-row items-center gap-2' onMouseEnter={()=> setDropDown(true)} onMouseLeave={()=> setDropDown(false)}>
-            <motion.span whileHover ={{scale:1.3,originX:0,}} transition = {{type:'spring',stiffness:300}} className={`${pathname === '/heritage' ? "border-[1px] border-golden text-golden rounded-xl" : ""} hover:text-golden font-semi-bold cursor-pointer px-4 py-1 text-[18px] `}>CSR</motion.span>
-            
 
-       {
+
+        <div className='hidden md3:flex flex-row items-center gap-5 2xl:gap-20'>
+<div className='relative text-[18px] font-semi-bold cursor-pointer  flex flex-row items-center gap-2' onMouseEnter={()=> setDropDown(true)} onMouseLeave={()=> setDropDown(false)}>
+<motion.span whileHover ={{scale:1.3,originX:0,}} transition = {{type:'spring',stiffness:300}} className={`${pathname === '/heritage' ? "border-[1px] border-golden text-golden rounded-xl" : ""} hover:text-golden font-semi-bold cursor-pointer px-4 py-1 text-[18px] `}>CSR</motion.span>
+{
         dropDown && <div className='flex flex-col  px-3 py-3 left-[-15px] absolute top-[25px] gap-3  rounded-xl w-[300px]'>
             <Link href=''>
             <motion.div whileHover ={{scale:1.3,originX:0,}} transition = {{type:'spring',stiffness:300}} className='hover:text-golden text-[16px]'>Bin Sadiq Foundation</motion.div>
@@ -77,10 +81,7 @@ return <div>
         </div> 
        } 
         </div>
-        
-        
-
-        <div className='relative text-[18px] font-semi-bold cursor-pointer  flex flex-row items-center gap-2' onMouseEnter={()=> setThirdDropDown(true)} onMouseLeave={()=> setThirdDropDown(false)}>
+<div className='relative text-[18px] font-semi-bold cursor-pointer  flex flex-row items-center gap-2' onMouseEnter={()=> setThirdDropDown(true)} onMouseLeave={()=> setThirdDropDown(false)}>
            <motion.span whileHover ={{scale:1.3,originX:0,}} transition = {{type:'spring',stiffness:300}} className={`${pathname === '/heritage' ? "border-[1px] border-golden text-golden rounded-xl" : ""} hover:text-golden font-semi-bold cursor-pointer px-4 py-1 text-[18px] `}> PEOPLE </motion.span>
            
         {
@@ -97,7 +98,28 @@ return <div>
             </div>
         <motion.div whileHover ={{scale:1.3,originX:0,}} transition = {{type:'spring',stiffness:300}} className={`${pathname === '/heritage' ? "border-[1px] border-golden text-golden rounded-xl" : ""} hover:text-golden font-semi-bold cursor-pointer px-4 py-1 text-[18px] `}>BLOG</motion.div>
         </div>
+
+      
+       <div className='md3:hidden' onClick={()=> setIsDropDown(!isDropDown)}>
+        {
+            isDropDown ? <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-10 h-10">
+            <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+          </svg> : <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-10 h-10">
+  <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+</svg>   
+        }
+       </div>
+
+{
+    isDropDown && <div className='h-[500px] border-2 border-white top-28 bg-lead absolute left-0 right-0 '>
+    fgasdfsdafddas 
+</div>
+}       
+
+
     </div>
+
+    
     <Swiper   effect={'fade'} modules={[EffectFade,Autoplay, Pagination,Navigation]} autoplay={{
           delay: 1500,
           disableOnInteraction: true,

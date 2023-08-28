@@ -5,14 +5,16 @@ import Image from 'next/image'
 import Footer from './footer/page'
 import './styles.css';
 import './globals.css'
+import MyNavbar from './my-navbar/page'
 
 
 export default function Home() {
   return (
     <main className="">
-      <Navbar/>
+      {/* <Navbar/> */}
+      {/* <MyNavbar/> */}
       <Hero/>
-      {/* <Footer/> */}
+      <Footer/>
     </main>
   )
 }

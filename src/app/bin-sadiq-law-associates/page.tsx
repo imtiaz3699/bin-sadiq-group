@@ -1,10 +1,12 @@
 "use client"
 import SecondNavbar from "@/components/SecondNavbar/SecondNavbar";
+import MyNavbar from "../my-navbar/page";
 
 export default function BinSadiqLawAssociates () {
     return <>
     <div style = {{backgroundImage:'url(law.jpg)'}} className="relative w-full h-[814px] bg-cover">
-    <SecondNavbar/>
+    {/* <SecondNavbar/> */}
+    <MyNavbar/>
     <div className="text-white w-full h-full flex flex-col items-center justify-center">
     <div className="text-white flex flex-col items-center ">
     <h1 className="flex flex-row items-center text-[50px]">EXPERIENCE <div className="w-10 h-10"><img src="/dot.png" alt="" className="w-full h-full"/></div> CREATIVITY <div className="w-10 h-10"><img src="/dot.png" alt="" className="w-full h-full"/></div> RESULTS</h1>

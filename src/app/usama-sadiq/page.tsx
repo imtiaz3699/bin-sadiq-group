@@ -1,11 +1,13 @@
 'use client'
 
 import SecondNavbar from "@/components/SecondNavbar/SecondNavbar"
+import MyNavbar from "../my-navbar/page"
 
 export default function UsamaSadiq(){
     return <>
     <div className="w-full h-[825px]" style = {{backgroundImage:'url(/usama-sadiq.png)'}}>
-    <SecondNavbar/>
+    {/* <SecondNavbar/> */}
+    <MyNavbar/>
 
     </div>
     <div className="w-full py-10 bg-lead-color flex flex-col items-center justify-center">

@@ -2,11 +2,13 @@
 import Navbar from "@/components/Navbar/Navbar";
 import SecondNavbar from "@/components/SecondNavbar/SecondNavbar";
 import Footer from "../footer/page";
+import MyNavbar from "../my-navbar/page";
 
 export default function CSR () {
     return <>
     <div style = {{backgroundImage:'url(csr-bg-image.jpg)'}} className="w-full h-[814px] bg-cover">
-    <SecondNavbar/>
+    {/* <SecondNavbar/> */}
+    <MyNavbar/>
     </div>
     <div className="w-full flex justify-center">
         <div className="py-[150px] px-20 flex flex-row items-center justify-center gap-10 w-[1500px]">

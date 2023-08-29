@@ -15,7 +15,11 @@ import InfiniteCarousel from './InfiniteCarousel';
 import Carousel from './InfiniteCarousel';
 import ImageSlider from './AnotherSlider';
 import InViewElement from '../InViewElement/InViewElement';
-
+import MyNavbar from '@/app/my-navbar/page';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/effect-fade';
+import { EffectFade } from 'swiper/modules';
 export default  function Hero() {
     const [currentIndex, setCurrentIndex] = useState(0);
     const [state, setState] = useState(0);
@@ -34,6 +38,20 @@ const ourServices  = [
         img:'/image 3.png',
         name:'MARKETING & SALES',
     },
+]
+const sliderImages = [
+  {
+      img:'/Slider_img_1_Big.jpg',
+      alt:'',
+  },
+  {
+      img:'/Slider_img_2_big.jpg',
+      alt:'',
+  },
+  {
+      img:'/Slider_img_4_Big.jpg',
+      alt:'',
+  },
 ]
 
 const text = 'At Bin Sadiq, we offer a comprehensive range of real estate services to meet all your needs. Whether you are looking to buy, sell, or rent a property, or need assistance with property management or construction, we have the expertise and resources to help you achieve your goals.'
@@ -75,12 +93,34 @@ useEffect(() => {
       observer.unobserve(targetElement);
     }
   };
+
 }, []);
     return (
         <>
+        <div>
+
+        <MyNavbar/>
+        <div className=''>
+        <Swiper   effect={'fade'} modules={[EffectFade,Autoplay, Pagination,Navigation]} autoplay={{
+          delay: 1500,
+          disableOnInteraction: true,
+        }}  className="mySwiper w-[100vw] h-[100%]">       
+       {
+        sliderImages.map((element,idx)=> {
+            return (
+              <SwiperSlide key = {idx}>
+                         <img src={element.img} alt="" className='object-cover w-full h-full' />
+            </SwiperSlide>      
+            )
+        })
+       } 
+      </Swiper>
+      </div>
+        </div>
+
         <div className='w-full '>
         <div className='bg-lead-color'>
-            <div className="flex container mx-auto flex-col items-center xl:flex-row justify-center text-black px-3 py-56 gap-10 lg:gap-16 xl:gap-20 ">
+            <div className="flex container mx-auto flex-col items-center xl:flex-row justify-center text-black px-3 py-10 xl:py-56 gap-10 lg:gap-16 xl:gap-20 ">
                 <div  className='flex flex-col'>
                         <h1
                         id='in-view-element'

@@ -30,7 +30,7 @@ const TypingAnimation: React.FC<TypingAnimationProps> = ({ text, className }) =>
   }, [text]);
 
   return (
-    <span className={`inline-block ${className}`}>
+    <span className={className}>
       {isAnimationComplete ? text : displayText}
     </span>
   );

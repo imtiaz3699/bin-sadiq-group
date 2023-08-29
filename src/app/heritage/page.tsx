@@ -83,21 +83,21 @@ useEffect(() => {
       {/* <SecondNavbar /> */}
       <MyNavbar/>
     </div>
-    <div style = {{backgroundImage:'url(/edit.jpg)'}} className="h-[700px] lg:h-[700px] w-full bg-cover bg-no-repeat">
+    <div style = {{backgroundImage:'url(/edit.jpg)'}} className="h-[550px] lg:h-[700px] w-full bg-cover bg-no-repeat ">
         <div className="w-full lg:w-[50%] h-full md:float-right flex flex-col items-left justify-center px-3 md:pl-10 xl:pl-20 bg-grean opacity-95 ">
             <div className="relative w-[300px] h-[100px] ">
            <Image alt = "" src = "/Heritage_logo.png"  layout="fill" objectFit="cover" objectPosition="center"/>
            </div>
            <div>
            <InViewElement targetId="element-4"
-            inViewClassName="animate-fade-right animate-once animate-duration-1000 translate-x-0 text-center md:text-left animate-delay-500 animate-ease-in animate-normal animate-fill-backwards
+            inViewClassName="animate-fade-right animate-once animate-duration-1000 translate-x-0  text-left animate-delay-500 animate-ease-in animate-normal animate-fill-backwards
             "
             outOfViewClassName="-translate-x-[100%]">
 
            <h1 className="font-bold text-[32px] font-normal leading-[38.41px] text-golden mt-5 sm:mt-10 md:mt-20">OVERVIEW</h1>
            </InViewElement>
            </div>
-            <div className="max-w-[500px] text-center lg:text-left   text-white mt-5">{ text.slice(0, currentIndex) }</div>
+            <div className="max-w-[500px]  :text-left   text-white mt-5">{ text.slice(0, currentIndex) }</div>
         </div>
     </div>
 <ProjectSpecification/>

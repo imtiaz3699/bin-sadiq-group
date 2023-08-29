@@ -5,12 +5,8 @@ import Link from "next/link"
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 
-type Props = {
-    height?: string;
-    backgroundImage?: string;
-  };
 
-export default function MyNavbar({height,backgroundImage}:Props){
+const MyNavbar = () => {
     const [dropDown,setDropDown] = useState(false);
     const [isDropDown,setIsDropDown] = useState(false);
     const [state,setState] = useState<number|null>(null);
@@ -221,3 +217,5 @@ return <>
     </div>
 </>
 }
+
+export default MyNavbar;

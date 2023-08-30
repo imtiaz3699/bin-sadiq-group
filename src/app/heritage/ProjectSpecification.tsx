@@ -8,6 +8,8 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import '../styles.css'
+// import '../heritage/anotherSlider.css'
+import "./style.css"
 // import required modules
 import { FreeMode,Navigation, Pagination, Mousewheel, Keyboard } from 'swiper/modules';
 import InViewElement from '@/components/InViewElement/InViewElement';
@@ -93,13 +95,53 @@ export default function ProjectSpecification () {
             })
            } 
         </div>
-    <div className="flex flex-row items-center justify-between mt-[50px] md:mt-[150px] px-3 w-[100%]">
+        <>
+        <div className="image-slider mt-20">
+      <div className="image-slider-track">
+
+        <div className="slide">
+        <img src="/heritage1.png" alt="" className='w-[159px] h-[159px]'/>
+        </div>
+        <div className="slide">
+          <img src="/heritage2.png" alt="" className='w-[159px] h-[159px]'/>
+        </div>
+        <div className="slide">
+         <img src="/heritage3.png" alt="" className='w-[183px] h-[159px]'/>
+        </div>
+        <div className="slide">
+        <img src="/heritage4.png" alt="" className='w-[171px] h-[159px]'/>
+        </div>
+        <div className="slide">
+        <img src="/heritage5.png" alt="" className='w-[89px] h-[159px]'/>
+        </div>
+        <div className="slide">
+        <img src="/heritage6.png" alt="" className='w-[159px] h-[159px]'/>
+        </div>
+        <div className="slide">
+          <img src="/heritage7.png" alt="" className='w-[159px] h-[159px]'/>
+        </div>
+        <div className="slide">
+         <img src="/heritage8.png" alt="" className='w-[183px] h-[159px]'/>
+        </div>  
+        {/* <div className="slide">
+        <img src="/heritage9.png" alt="" className='w-[171px] h-[159px]'/>
+        </div>
+        <div className="slide">
+        <img src="/foundation.png" alt="" className='w-[89px] h-[159px]'/>
+        </div> */}
+        
+        
+        
+      </div>
+    </div>
+        </>
+    {/* <div className="flex flex-row items-center justify-between mt-[50px] md:mt-[150px] px-3 w-[100%]">
            {
             imageData.map((element,idx)=> {
                 return <img src={element} alt="" className="w-28 h-28"/>
             })
            } 
-    </div>
+    </div> */}
     <div className="flex flex-col items-center mt-[50px] md:mt-[150px]">
         <InViewElement targetId="element-8"
             inViewClassName="duration-1000 transition-all duration-500 transform animate-fade-down  animate-ease-out animate-alternate animate-fill-both "
@@ -164,5 +206,8 @@ export default function ProjectSpecification () {
 }         
       </Swiper>
 </div>
+
+<>
+</>
     </div>
 } 

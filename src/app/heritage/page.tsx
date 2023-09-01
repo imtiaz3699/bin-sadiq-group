@@ -6,7 +6,7 @@ import ProjectSpecification from "./ProjectSpecification";
 import Footer from "../footer/page";
 import InViewElement from "@/components/InViewElement/InViewElement";
 import MyNavbar from "../my-navbar/page";
-
+import { lato } from "../fonts/page";
 
 export default function Heritage () {
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -97,7 +97,7 @@ useEffect(() => {
            <h1 className="font-bold text-[32px] font-normal leading-[38.41px] text-golden mt-5 sm:mt-10 md:mt-20">OVERVIEW</h1>
            </InViewElement>
            </div>
-            <div className="max-w-[500px]  :text-left   text-white mt-5">{ text.slice(0, currentIndex) }</div>
+            <div className={`max-w-[500px]  text-left ${lato.className}  text-white mt-5`}>{ text.slice(0, currentIndex) }</div>
         </div>
     </div>
 <ProjectSpecification/>

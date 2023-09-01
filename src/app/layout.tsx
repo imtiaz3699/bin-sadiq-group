@@ -1,4 +1,4 @@
-'use client'
+
 import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
@@ -22,7 +22,7 @@ const coco = localFont({
 
 })
 const inter = Inter({ subsets: ['latin'] })
-export const lato = Lato({
+const lato = Lato({
   subsets:['latin'],
   weight:['400','700']
 })

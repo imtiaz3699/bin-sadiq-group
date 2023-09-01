@@ -96,43 +96,46 @@ export default function ProjectSpecification () {
            } 
         </div>
         <>
-        <div className="image-slider mt-20">
-      <div className="image-slider-track">
+        <div 
+        className="image-slider mt-20"
+        >
+      <div
+       className="image-slider-track"
+       >
 
         <div className="slide">
-        <img src="/heritage1.png" alt="" className='w-[159px] h-[159px]'/>
+        <img src="/heritage1.png" alt="" className='w-[106px] h-[106px]'/>
+        
         </div>
         <div className="slide">
-          <img src="/heritage2.png" alt="" className='w-[159px] h-[159px]'/>
+          <img src="/heritage2.png" alt="" className='w-[106px] h-[106px]'/>
+          
         </div>
         <div className="slide">
-         <img src="/heritage3.png" alt="" className='w-[183px] h-[159px]'/>
+         <img src="/heritage3.png" alt="" className='w-[106px] h-[106px]'/>
+         
         </div>
         <div className="slide">
-        <img src="/heritage4.png" alt="" className='w-[171px] h-[159px]'/>
+        <img src="/heritage4.png" alt="" className='w-[106px] h-[106px]'/>
+           
         </div>
         <div className="slide">
-        <img src="/heritage5.png" alt="" className='w-[89px] h-[159px]'/>
+        <img src="/heritage5.png" alt="" className='w-[92px] h-[130px]'/>
+        
         </div>
         <div className="slide">
-        <img src="/heritage6.png" alt="" className='w-[159px] h-[159px]'/>
+        <img src="/heritage6.png" alt="" className='w-[106px] h-[106px]'/>
+        
         </div>
         <div className="slide">
-          <img src="/heritage7.png" alt="" className='w-[159px] h-[159px]'/>
+          <img src="/heritage7.png" alt="" className='w-[84px] h-[106px]'/>
+          
         </div>
         <div className="slide">
-         <img src="/heritage8.png" alt="" className='w-[183px] h-[159px]'/>
+         <img src="/heritage8.png" alt="" className='w-[106px] h-[111px]'/>
+         
         </div>  
-        {/* <div className="slide">
-        <img src="/heritage9.png" alt="" className='w-[171px] h-[159px]'/>
         </div>
-        <div className="slide">
-        <img src="/foundation.png" alt="" className='w-[89px] h-[159px]'/>
-        </div> */}
-        
-        
-        
-      </div>
     </div>
         </>
     {/* <div className="flex flex-row items-center justify-between mt-[50px] md:mt-[150px] px-3 w-[100%]">

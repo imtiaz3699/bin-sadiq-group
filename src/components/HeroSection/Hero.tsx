@@ -20,13 +20,10 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/effect-fade';
 import { EffectFade } from 'swiper/modules';
-import { Inter } from 'next/font/google';
-import { Lato } from 'next/font/google';
-const lato = Inter ({
-  subsets:['latin'],
-  weight:"300",
-  style:'normal',
-})
+// import { Inter } from 'next/font/google';
+// import { Lato } from 'next/font/google';
+// import { lato } from '@/app/fonts/page';
+import { lato } from '@/app/layout';
 export default  function Hero() {
     const [currentIndex, setCurrentIndex] = useState(0);
     const [state, setState] = useState(0);
@@ -149,7 +146,7 @@ useEffect(() => {
   outOfViewClassName="element-out-of-view">
                 <div className={ 'text-golden font-bold text-center text-[30px] sm:text-[40px] md:text-[64px] font-bold leading-[56px] transition-transform duration-300 transform'}>Why Choose Us</div>
                 </InViewElement>
-                <div className='text-[18px] px-3 md:text-[22px]  font-semibold text-gray-500 text-white'>We've always tried to be different,a different approach to buisness & customer service,<br /> a different culture at work place. We believe in the importance of fresh thinking-in being <br /> green,  and approaching things in new and different ways.</div>
+                <div className={`text-[18px] px-3 md:text-[22px] text-gray-500 text-white ${lato.className} `}>We've always tried to be different,a different approach to buisness & customer service,<br /> a different culture at work place. We believe in the importance of fresh thinking-in being <br /> green,  and approaching things in new and different ways.</div>
             </div>
 <ImageSlider/>     
             <div className='py-20 '>
@@ -159,7 +156,7 @@ useEffect(() => {
   outOfViewClassName="element-out-of-view">
                         <h1 id='animate' className='text-golden font-bold text-center md:text-left text-[30px] sm:text-[40px] md:text-[64px]  font-bold  leading-[56px] animate-fade-right animate-once animate-ease-linear'>OUR SERVICES </h1>
                         </InViewElement>
-                        <div className={`max-w-[995px] text-[18px] px-3 md:text-[22px]  font-semibold text-gray-500 text-white mt-5 ${lato.className}`}> { text.slice(0, currentIndex) }</div>
+                        <div className={`max-w-[995px] text-[18px] px-3 md:text-[22px]   text-gray-500 text-white mt-5 ${lato.className}`}> { text.slice(0, currentIndex) }</div>
                 <div className='grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 place-items-center mt-[150px] gap-[50px] sm:gap-[100px] w-full px-5'>
                       {
                         ourServices.map((element,idx)=> {

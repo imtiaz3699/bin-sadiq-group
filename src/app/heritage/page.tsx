@@ -6,7 +6,7 @@ import ProjectSpecification from "./ProjectSpecification";
 import Footer from "../footer/page";
 import InViewElement from "@/components/InViewElement/InViewElement";
 import MyNavbar from "../my-navbar/page";
-import { lato } from "../fonts/page";
+import { lato } from "../layout";
 
 export default function Heritage () {
     const [currentIndex, setCurrentIndex] = useState(0);

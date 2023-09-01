@@ -20,6 +20,10 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/effect-fade';
 import { EffectFade } from 'swiper/modules';
+// import { Inter } from 'next/font/google';
+// import { Lato } from 'next/font/google';
+// import { lato } from '@/app/fonts/page';
+import { lato } from '@/app/layout';
 export default  function Hero() {
     const [currentIndex, setCurrentIndex] = useState(0);
     const [state, setState] = useState(0);
@@ -95,6 +99,7 @@ useEffect(() => {
   };
 
 }, []);
+
     return (
         <>
         <div>
@@ -124,8 +129,8 @@ useEffect(() => {
                 <div  className='flex flex-col'>
                         <h1
                         id='in-view-element'
-                        className={isInView ? 'text-golden font-bold text-center md:text-left text-[30px] sm:text-[40px] md:text-[64px]  font-bold  leading-[56px] animate-fade-right animate-once animate-ease-linear' : "outOfViewClassName"} >CREATING SPACES <br />THAT INSPIRES </h1> 
-                        <div className='max-w-[602px] text-white mt-5 text-[18px] sm:text-[20px] md:text-[25px] text-center md:text-left'>Having the inheritance and elegance of the past with the comfort and convenience of modern living. BIN SADIQ offers a unique opportunity to own residential and commercial places in the Heart of Twin cities, with restored heritage buildings and modern residences that feature state-of-the-art amenities and stunning views. Discover a world of timeless beauty, sophistication, and exclusivity at BIN SADIQ.</div>
+                        className={isInView ? 'text-golden font-bold text-center md:text-left text-[30px]  sm:text-[40px] md:text-[64px]  font-bold  leading-[56px] animate-fade-right animate-once animate-ease-linear' : "outOfViewClassName"} >CREATING SPACES <br />THAT INSPIRES </h1> 
+                        <div className={`max-w-[602px] text-white mt-5 text-[18px] ${lato.className} sm:text-[20px] md:text-[25px] text-center md:text-left`}>Having the inheritance and elegance of the past with the comfort and convenience of modern living. BIN SADIQ offers a unique opportunity to own residential and commercial places in the Heart of Twin cities, with restored heritage buildings and modern residences that feature state-of-the-art amenities and stunning views. Discover a world of timeless beauty, sophistication, and exclusivity at BIN SADIQ.</div>
                 </div>          
                 <Image alt = '' src = "/Pic2.png" width={300} height={300} className='sm:hidden'/>      
                 <div className='hidden sm:block w-[452px] md:hover:translate-x-10 transition-transform duration-1000 group  h-[514px] sm:rounded-tr-[125px] sm:rounded-xl  md:bg-cover hover:drop-shadow-2xl hover:shadow-2xl relative' 
@@ -141,7 +146,7 @@ useEffect(() => {
   outOfViewClassName="element-out-of-view">
                 <div className={ 'text-golden font-bold text-center text-[30px] sm:text-[40px] md:text-[64px] font-bold leading-[56px] transition-transform duration-300 transform'}>Why Choose Us</div>
                 </InViewElement>
-                <div className='text-[18px] px-3 md:text-[22px]  font-semibold text-gray-500 text-white'>We've always tried to be different,a different approach to buisness & customer service,<br /> a different culture at work place. We believe in the importance of fresh thinking-in being <br /> green,  and approaching things in new and different ways.</div>
+                <div className={`text-[18px] px-3 md:text-[22px] text-gray-500 text-white ${lato.className} `}>We've always tried to be different,a different approach to buisness & customer service,<br /> a different culture at work place. We believe in the importance of fresh thinking-in being <br /> green,  and approaching things in new and different ways.</div>
             </div>
 <ImageSlider/>     
             <div className='py-20 '>
@@ -151,7 +156,7 @@ useEffect(() => {
   outOfViewClassName="element-out-of-view">
                         <h1 id='animate' className='text-golden font-bold text-center md:text-left text-[30px] sm:text-[40px] md:text-[64px]  font-bold  leading-[56px] animate-fade-right animate-once animate-ease-linear'>OUR SERVICES </h1>
                         </InViewElement>
-                        <div className='max-w-[995px] text-[18px] px-3 md:text-[22px]  font-semibold text-gray-500 text-white mt-5'> { text.slice(0, currentIndex) }</div>
+                        <div className={`max-w-[995px] text-[18px] px-3 md:text-[22px]   text-gray-500 text-white mt-5 ${lato.className}`}> { text.slice(0, currentIndex) }</div>
                 <div className='grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 place-items-center mt-[150px] gap-[50px] sm:gap-[100px] w-full px-5'>
                       {
                         ourServices.map((element,idx)=> {

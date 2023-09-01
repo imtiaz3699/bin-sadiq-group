@@ -22,7 +22,7 @@ const coco = localFont({
 
 })
 const inter = Inter({ subsets: ['latin'] })
-const lato = Lato({
+export const lato = Lato({
   subsets:['latin'],
   weight:['400','700']
 })

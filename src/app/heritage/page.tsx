@@ -2,11 +2,11 @@
 import React,{useEffect,useState} from "react";
 import SecondNavbar from "@/components/SecondNavbar/SecondNavbar";
 import Image from "next/image";
-import ProjectSpecification from "./ProjectSpecification";
-import Footer from "./footer/Footer";
+import ProjectSpecification from "../../components/ProjectSpecification";
+import Footer from "../../components/footer/Footer";
 import InViewElement from "@/components/InViewElement/InViewElement";
-import MyNavbar from "./my-navbar/MyNavbar";
-import { lato } from "../app/layout";
+import MyNavbar from "../../components/my-navbar/MyNavbar";
+import { lato } from "../layout";
 
 export default function Heritage () {
     const [currentIndex, setCurrentIndex] = useState(0);

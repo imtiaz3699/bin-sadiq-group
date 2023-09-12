@@ -7,7 +7,6 @@ import MyNavbar from "../../components/my-navbar/MyNavbar";
 export default function CSR () {
     return <>
     <div style = {{backgroundImage:'url(csr-bg-image.jpg)'}} className="w-full h-[814px] bg-cover">
-    {/* <SecondNavbar/> */}
     <MyNavbar/>
     </div>
     <div className="w-full flex justify-center">

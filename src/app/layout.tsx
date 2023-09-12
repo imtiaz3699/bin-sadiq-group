@@ -1,8 +1,8 @@
 
 import './globals.css'
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
-import { Roboto,Roboto_Condensed,Rubik,Lato } from 'next/font/google'
+import { Inter,Roboto,Roboto_Condensed,Rubik,Lato } from 'next/font/google'
+// import { Roboto,Roboto_Condensed,Rubik,Lato } from 'next/font/google'
 import localFont from '@next/font/local'
 
 

@@ -5,7 +5,7 @@ import Image from 'next/image'
 import Footer from './footer/page'
 import './styles.css';
 import './globals.css'
-import MyNavbar from './my-navbar/page'
+import MyNavbar from './my-navbar/MyNavbar'
 
 
 export default function Home() {

@@ -1,7 +1,7 @@
 'use client'
 
 import SecondNavbar from "@/components/SecondNavbar/SecondNavbar"
-import MyNavbar from "../my-navbar/page"
+import MyNavbar from "../my-navbar/MyNavbar"
 
 export default function UsamaSadiq(){
     return <>

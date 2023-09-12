@@ -3,7 +3,7 @@ import Navbar from "@/components/Navbar/Navbar";
 import SecondNavbar from "@/components/SecondNavbar/SecondNavbar";
 import Footer from "../footer/page";
 import TypingAnimation from "@/components/TypingAnimation/TypingAnimation";
-import MyNavbar from "../my-navbar/page";
+import MyNavbar from "../my-navbar/MyNavbar";
 import { lato } from "../layout";
 
 export default function AboutUs  () {

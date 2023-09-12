@@ -2,7 +2,7 @@
 import Navbar from "@/components/Navbar/Navbar";
 import SecondNavbar from "@/components/SecondNavbar/SecondNavbar";
 import Footer from "../footer/page";
-import MyNavbar from "../my-navbar/page";
+import MyNavbar from "../my-navbar/MyNavbar";
 
 export default function CSR () {
     return <>

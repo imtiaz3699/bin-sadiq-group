@@ -120,14 +120,11 @@ const MyNavbar = () => {
         },
     ]
     const pathname = usePathname();
-    // const isRouteActive = (route:string) => {
-    //     return router.pathname === route;
-    //   };
+    
     const dropDowns = (index:number) => {
         if(index === 2) {
             setState(2)
         }
-
         if(index === 4){
             setState(4)
         }
@@ -163,8 +160,8 @@ return <>
                     </div>
                 </Link>
                 <div className="ml-5">
-                {
-                       secondState === idx  && element?.linked && element?.linked.map((item,index)=> {                       
+                    {
+                        secondState === idx  && element?.linked && element?.linked.map((item,index)=> {                       
                             return <>
                             <Link href={item?.url} key = {index}>
                             <div className={`${pathname === item.url ? "text-golden" : ""} hover:text-golden text-[16px]`}>{item?.name}</div>

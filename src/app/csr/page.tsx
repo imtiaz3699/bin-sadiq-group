@@ -1,7 +1,7 @@
 "use client"
 import Navbar from "@/components/Navbar/Navbar";
 import SecondNavbar from "@/components/SecondNavbar/SecondNavbar";
-import Footer from "../footer/page";
+import Footer from "../footer/Footer";
 import MyNavbar from "../my-navbar/MyNavbar";
 
 export default function CSR () {

@@ -6,21 +6,22 @@ import 'swiper/css/navigation';
 import { Autoplay,Navigation,Pagination } from 'swiper/modules';
 import Image from 'next/image';
 import CoreValues from '../Core_Values/CoreValues';
-import Footer from '@/app/footer/Footer';
+import Footer from '@/components/footer/Footer';
 import ContinuousSlider from './Sliders';
 import FadeInElement from '../fadedAnimations/page';
-// import './hero.css'
+
 import { motion, useScroll, useTransform,inView,animate } from "framer-motion";
 import InfiniteCarousel from './InfiniteCarousel';
 import Carousel from './InfiniteCarousel';
 import ImageSlider from './AnotherSlider';
 import InViewElement from '../InViewElement/InViewElement';
-import MyNavbar from '@/app/my-navbar/MyNavbar';
+import MyNavbar from '@/components/my-navbar/MyNavbar';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/effect-fade';
 import { EffectFade } from 'swiper/modules';
 import { lato } from '@/app/layout';
+import localFont from '@next/font/dist/local';
 
 export default  function Hero() {
     const [currentIndex, setCurrentIndex] = useState(0);

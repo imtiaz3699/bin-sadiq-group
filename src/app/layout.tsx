@@ -4,7 +4,8 @@ import type { Metadata } from 'next'
 // import { Inter,Roboto,Roboto_Condensed,Rubik,Lato } from 'next/font/google'
 // import { Roboto,Roboto_Condensed,Rubik,Lato } from 'next/font/google'
 import localFont from '@next/font/local'
-
+// import localFont from '@next/font/dist/local'
+// import localFont from '@next/font/dist/local'
 
 const coco = localFont({
   src: [

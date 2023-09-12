@@ -15,7 +15,7 @@ import InfiniteCarousel from './InfiniteCarousel';
 import Carousel from './InfiniteCarousel';
 import ImageSlider from './AnotherSlider';
 import InViewElement from '../InViewElement/InViewElement';
-import MyNavbar from '@/app/my-navbar/page';
+import MyNavbar from '@/app/my-navbar/MyNavbar';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/effect-fade';
@@ -105,7 +105,7 @@ useEffect(() => {
         <div>
 
         <MyNavbar/>
-        <div className=''>
+        <div className='overflow-hidden'>
         <Swiper   effect={'fade'} modules={[EffectFade,Autoplay, Pagination,Navigation]} autoplay={{
           delay: 1500,
           disableOnInteraction: true,

@@ -5,7 +5,7 @@ import Image from "next/image";
 import ProjectSpecification from "./ProjectSpecification";
 import Footer from "../footer/page";
 import InViewElement from "@/components/InViewElement/InViewElement";
-import MyNavbar from "../my-navbar/page";
+import MyNavbar from "../my-navbar/MyNavbar";
 import { lato } from "../layout";
 
 export default function Heritage () {

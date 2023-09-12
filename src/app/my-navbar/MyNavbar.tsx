@@ -4,7 +4,7 @@ import React,{useState} from "react";
 import Link from "next/link"
 import Image from "next/image";
 import { usePathname } from "next/navigation";
-
+import myImage from '../../../public/bin-sadiq-logo.png'
 
 const MyNavbar = () => {
     const [dropDown,setDropDown] = useState(false);
@@ -138,7 +138,7 @@ const MyNavbar = () => {
 return <>
 <div className={`xl:hidden ${isDropDown === true ? 'bg-lead-color' : 'bg-transparent'} flex flex-row justify-between  w-full absolute z-50 items-center px-5`}>
     <div className="w-[100px] h[100px]">
-    <Image alt = "" width={100} height={100} src = "/bin-sadiq-logo.png" />
+    <Image alt = "" width={100} height={100} src = {myImage} />
     </div>
     <div className="bg-transparent" onClick={()=> {setIsDropDown(!isDropDown)}}>
     {

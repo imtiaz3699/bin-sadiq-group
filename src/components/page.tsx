@@ -2,11 +2,11 @@
 import React,{useEffect,useState} from "react";
 import SecondNavbar from "@/components/SecondNavbar/SecondNavbar";
 import Image from "next/image";
-import ProjectSpecification from "../../components/ProjectSpecification";
-import Footer from "../../components/footer/Footer";
+import ProjectSpecification from "./ProjectSpecification";
+import Footer from "./footer/Footer";
 import InViewElement from "@/components/InViewElement/InViewElement";
-import MyNavbar from "../../components/my-navbar/MyNavbar";
-import { lato } from "../layout";
+import MyNavbar from "./my-navbar/MyNavbar";
+import { lato } from "../app/layout";
 
 export default function Heritage () {
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -77,7 +77,7 @@ useEffect(() => {
           src="https://res.cloudinary.com/ddx3egvut/video/upload/v1692865037/thp4ifeasfgciizw5ot4.mp4"
           type="video/mp4"
         />
-        Your browser does not support the video tag.
+        
       </video>
       
       {/* <SecondNavbar /> */}

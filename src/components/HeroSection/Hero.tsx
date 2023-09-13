@@ -4,7 +4,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import { Autoplay,Navigation,Pagination } from 'swiper/modules';
-import Image from 'next/image';
+// import Image from 'next/image';
 import CoreValues from '../Core_Values/CoreValues';
 import Footer from '@/components/footer/Footer';
 import ContinuousSlider from './Sliders';
@@ -133,7 +133,8 @@ useEffect(() => {
                         className={isInView ? 'text-golden font-bold text-center md:text-left text-[30px]  sm:text-[40px] md:text-[64px]  font-bold  leading-[56px] animate-fade-right animate-once animate-ease-linear' : "outOfViewClassName"} >CREATING SPACES <br />THAT INSPIRES </h1> 
                         <div className={`max-w-[602px] text-white mt-5 text-[18px] ${lato.className} sm:text-[20px] md:text-[25px] text-center md:text-left`}>Having the inheritance and elegance of the past with the comfort and convenience of modern living. BIN SADIQ offers a unique opportunity to own residential and commercial places in the Heart of Twin cities, with restored heritage buildings and modern residences that feature state-of-the-art amenities and stunning views. Discover a world of timeless beauty, sophistication, and exclusivity at BIN SADIQ.</div>
                 </div>          
-                <Image alt = '' src = "/Pic2.png" width={300} height={300} className='sm:hidden'/>      
+                {/* <Image alt = '' src = "/Pic2.png" width={300} height={300} className='sm:hidden'/>       */}
+                <img src="/Pic2.png" alt="" className='w-[300px] h-[300px] sm:hidden'/>
                 <div className='hidden sm:block w-[452px] md:hover:translate-x-10 transition-transform duration-1000 group  h-[514px] sm:rounded-tr-[125px] sm:rounded-xl  md:bg-cover hover:drop-shadow-2xl hover:shadow-2xl relative' 
                 style = {{backgroundImage:'url(/Pic2.png)'}}>
 
@@ -175,9 +176,13 @@ useEffect(() => {
                     <h1 className='font-bold text-center text-[30px] sm:text-[40px] md:text-[64px] font-bold leading-[56px]'>UPDATES</h1>
                           <div className='container mx-auto mt-[55px]'>
                             <div className='grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 place-items-center gap-[25px] px-5'>
-                                    <Image alt = "" src = "/P-Post 5 1.png" width = {400} height = {400} className='transition-transform duration-700 transform hover:scale-105 hover:shadow-lg'/>
-                                    <Image alt = "" src = "/Pre-Launch Post 1.png" width = {400} height = {400} className='transition-transform duration-700 transform hover:scale-105 hover:shadow-lg'/>
-                                    <Image alt = "" src = "/Quote Post 10 1.png" width = {400} height = {400} className='transition-transform duration-700 transform hover:scale-105 hover:shadow-lg'/>
+                                    {/* <Image alt = "" src = "/P-Post 5 1.png" width = {400} height = {400} className='transition-transform duration-700 transform hover:scale-105 hover:shadow-lg'/> */}
+                                    <img src="/P-Post 5 1.png" alt="" className='transition-transform duration-700 transform hover:scale-105 hover:shadow-lg'/>
+                                    {/* <Image alt = "" src = "/Pre-Launch Post 1.png" width = {400} height = {400} className='transition-transform duration-700 transform hover:scale-105 hover:shadow-lg'/> */}
+                                    <img src="/Pre-Launch Post 1.png" alt="/Pre-Launch Post 1.png" className='transition-transform duration-700 transform hover:scale-105 hover:shadow-lg'/>
+
+                                    {/* <Image alt = "" src = "/Quote Post 10 1.png" width = {400} height = {400} className='transition-transform duration-700 transform hover:scale-105 hover:shadow-lg'/> */}
+                                    <img src="/Quote Post 10 1.png" alt="" className='transition-transform duration-700 transform hover:scale-105 hover:shadow-lg'/>
                             </div>
                             </div>  
                     </div>

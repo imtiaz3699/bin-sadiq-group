@@ -86,7 +86,8 @@ useEffect(() => {
     <div style = {{backgroundImage:'url(/edit.jpg)'}} className="h-[550px] lg:h-[700px] w-full bg-cover bg-no-repeat ">
         <div className="w-full lg:w-[50%] h-full md:float-right flex flex-col items-left justify-center px-3 md:pl-10 xl:pl-20 bg-grean opacity-95 ">
             <div className="relative w-[300px] h-[100px] ">
-           <Image alt = "" src = "/Heritage_logo.png"  layout="fill" objectFit="cover" objectPosition="center"/>
+           {/* <Image alt = "" src = "/Heritage_logo.png"  layout="fill" objectFit="cover" objectPosition="center"/> */}
+           <img src="/Heritage_logo.png" alt="" className="w-full h-full"/>
            </div>
            <div>
            <InViewElement targetId="element-4"

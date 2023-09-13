@@ -209,8 +209,5 @@ export default function ProjectSpecification () {
 }         
       </Swiper>
 </div>
-
-<>
-</>
     </div>
 } 

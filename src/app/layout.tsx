@@ -22,6 +22,8 @@ const coco = localFont({
   variable: '--font-poppins'
 
 })
+
+
 export const lato = localFont({
   src:[
     {
@@ -31,21 +33,18 @@ export const lato = localFont({
   ],
   variable:'--font-font'
 })
-// const inter = Inter({ subsets: ['latin'] })
-// export const lato = Lato({
-//   subsets:['latin'],
-//   weight:['400','700']
-// })
-// const roboto_condensed = Roboto_Condensed ({
-//   subsets:['latin'],
-//   weight:['400','700']
-// })
 
-// const roboto = Roboto ({
-//   subsets:['latin'],
-//   weight:['400','500','700']
 
-// })
+export const marriware = localFont({
+  src:[
+    {
+      path: '../../public/fonts/MarriwaRE/Merriweather-Regular.ttf',
+      weight:'400',      
+    },
+  ],
+  variable:'--font-font-marriware'
+})
+
 const metadata: Metadata = {
   title: 'Bin Sadiq Group',
   description: 'Creating Legacy',

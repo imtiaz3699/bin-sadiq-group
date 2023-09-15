@@ -5,7 +5,7 @@ import Link from "next/link"
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import myImage from '../../../public/bin-sadiq-logo.png'
-
+import { marriware } from '@/app/layout';
 const MyNavbar = () => {
     const [dropDown,setDropDown] = useState(false);
     const [isDropDown,setIsDropDown] = useState(false);
@@ -132,7 +132,7 @@ const MyNavbar = () => {
             setState(5)
         }        
     }
-return <>
+return <div className={`${marriware.className}`}>
 <div className={`xl:hidden ${isDropDown === true ? 'bg-lead-color' : 'bg-transparent'} flex flex-row justify-between  w-full absolute z-50 items-center px-5`}>
     <div className="w-[100px] h[100px]">
     {/* <Image alt = "" width={100} height={100} src = {myImage} /> */}
@@ -146,7 +146,7 @@ return <>
         }
     </div>
    {
-    isDropDown && <div className="flex bg-lead-color flex-col items-left  absolute left-0 top-0 z-50 mt-24 py-5 text-white  w-full px-5 ">
+    isDropDown && <div className="flex bg-lead-color flex-col items-left absolute left-0 top-0 z-50 mt-24 py-5 text-white w-full px-5">
     {
         data2.map((element,idx)=> {
             return <div  className="flex flex-col">
@@ -196,7 +196,7 @@ return <>
                     // height={100}/> 
                     :
                     <Link href={element?.url}> 
-                    <div className={`${pathname === element?.url ? "text-[18px]  border-[1px] border-golden px-2 py-1 rounded-xl relative font-semi-bold text-golden cursor-pointer  flex flex-row items-center gap-2" : "text-[18px] relative font-semi-bold cursor-pointer  flex flex-row items-center gap-2"}}`} onMouseEnter={()=> dropDowns(idx)} onMouseLeave={()=> setState(null)}>
+                    <div className={`${ pathname === element?.url ? "text-[18px] px-2 py-1 rounded-xl relative  text-golden cursor-pointer  flex flex-row items-center gap-2" : "text-[18px] relative font-semi-bold cursor-pointer  flex flex-row items-center gap-2"}}`} onMouseEnter={()=> dropDowns(idx)} onMouseLeave={()=> setState(null)}>
                        <span className="hover:text-golden">{element?.name}</span>  
                     <div className="flex flex-col items-center absolute w-[300px] top-[27px] pt-3 left-[-100px]">
                     {
@@ -214,7 +214,7 @@ return <>
                 })
             }
     </div>
-</>
+</div>
 }
 
 export default MyNavbar;

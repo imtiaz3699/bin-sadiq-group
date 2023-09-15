@@ -149,7 +149,7 @@ const timer = setTimeout(()=> {
             <div className="w-[150px] h-[3px] md2:w-[3px] md2:h-[100px] bg-white"></div>
             <FadeInElement>
                 <>
-            <div className={`w-[250px] text-white text-center text-left transition-opacity duration-500 opacity-100 transition-opacity duration-300 opacity-0  flex flex-col text-left text-[20px] text-black`}>
+            <div className={`w-[250px] text-white text-center md2:text-left transition-opacity duration-500 opacity-100 transition-opacity duration-300 opacity-0 flex flex-col text-left text-[20px] text-black`}>
                 WE BUILD TRUST THROUGH
                 <span className="font-bold  text-black">TRANSPARENCY</span>
             </div>

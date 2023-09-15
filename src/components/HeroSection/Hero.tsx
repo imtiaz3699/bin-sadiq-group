@@ -59,7 +59,7 @@ const sliderImages = [
   },
 ]
 
-const text = 'At Bin Sadiq, we offer a comprehensive range of real estate services to meet all your needs. Whether you are looking to buy, sell, or rent a property, or need assistance with property management or construction, we have the expertise and resources to help you achieve your goals.'
+const text = 'Here at Bin Sadiq, we go all-out for establishing an inclusive range of real estate amenities to fore mostly illustrate and decrypt your vision into tangible edifices. From seeking to buy, sell or rent a property to needing assistance with property management or construction, we fervently work at consigning the trustees and making the most of our relevant expertise as well as our resources to gratify your requisites.'
 useEffect(() => {
     
     if (currentIndex < text.length) {
@@ -131,7 +131,8 @@ useEffect(() => {
                         <h1
                         id='in-view-element'
                         className={isInView ? 'text-golden font-bold text-center md:text-left text-[30px]  sm:text-[40px] md:text-[64px]  font-bold  leading-[56px] animate-fade-right animate-once animate-ease-linear' : "outOfViewClassName"} >CREATING SPACES <br />THAT INSPIRES </h1> 
-                        <div className={`max-w-[602px] text-white mt-5 text-[18px] ${lato.className} sm:text-[20px] md:text-[25px] text-center md:text-left`}>Having the inheritance and elegance of the past with the comfort and convenience of modern living. BIN SADIQ offers a unique opportunity to own residential and commercial places in the Heart of Twin cities, with restored heritage buildings and modern residences that feature state-of-the-art amenities and stunning views. Discover a world of timeless beauty, sophistication, and exclusivity at BIN SADIQ.</div>
+                        <div className={`max-w-[638px] text-white  mt-5 text-[18px] ${lato.className} sm:text-[20px]  text-center md:text-left`}>Engraved in glorious chronicles that grace our enigmatic development footprint, Bin Sadiq Group brings forward contemporary and futuristic properties so as to revamp the real estate haven by tenfolds. Streamlining residential and commercial sites way ahead of times in The Heart of the evergreen Twin Cities, we have come a long way since inception. Accomplishing unwavering restoration of heritage buildings that stand out in both design and structure has been our top notch forte. Bin Sadiq masters in development grandeur with a successful track record and portfolio.
+</div>
                 </div>          
                 {/* <Image alt = '' src = "/Pic2.png" width={300} height={300} className='sm:hidden'/>       */}
                 <img src="/Pic2.png" alt="" className='w-[300px] h-[300px] sm:hidden'/>
@@ -148,7 +149,7 @@ useEffect(() => {
   outOfViewClassName="element-out-of-view">
                 <div className={ 'text-golden font-bold text-center text-[30px] sm:text-[40px] md:text-[64px] font-bold leading-[56px] transition-transform duration-300 transform'}>Why Choose Us</div>
                 </InViewElement>
-                <div className={`text-[18px] px-3 md:text-[22px] text-gray-500 text-white ${lato.className} `}>We've always tried to be different,a different approach to buisness & customer service,<br /> a different culture at work place. We believe in the importance of fresh thinking-in being <br /> green,  and approaching things in new and different ways.</div>
+                <div className={`max-w-[1300px] text-[18px] px-3 md:text-[22px] text-gray-500 text-white ${lato.className} `}>We've always tried to be different,a different approach to buisness & customer service,<br /> a different culture at work place. We believe in the importance of fresh thinking-in being <br /> green,  and approaching things in new and different ways.</div>
             </div>
 <ImageSlider/>     
             <div className='py-20 '>
@@ -158,7 +159,7 @@ useEffect(() => {
   outOfViewClassName="element-out-of-view">
                         <h1 id='animate' className='text-golden font-bold text-center md:text-left text-[30px] sm:text-[40px] md:text-[64px]  font-bold  leading-[56px] animate-fade-right animate-once animate-ease-linear'>OUR SERVICES </h1>
                         </InViewElement>
-                        <div className={`max-w-[995px] text-[18px] px-3 md:text-[22px]   text-gray-500 text-white mt-5 ${lato.className}`}> { text.slice(0, currentIndex) }</div>
+                        <div className={`max-w-[1300px] text-[18px] px-3 md:text-[22px]   text-gray-500 text-white mt-5 ${lato.className}`}> { text.slice(0, currentIndex) }</div>
                 <div className='grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 place-items-center mt-[150px] gap-[50px] sm:gap-[100px] w-full px-5'>
                       {
                         ourServices.map((element,idx)=> {

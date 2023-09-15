@@ -22,7 +22,8 @@ return<> <div className="w-full h-[100vh] bg-no-repeat relative bg-cover" style=
 <div  className="px-3 sm:px-5 xl:px-36 bg-white w-full py-5 sm:py-10 xl:py-20 text-black flex flex-row items-center  justify-center  "  
 >
 
-<TypingAnimation  className={`text-center text-[18px] md:text-[30px] ${lato.className} `} text = 'Bin Sadiq  is a living legacy in the real estate industry, with a track record of success spanning over several years in residential projects. We pride ourselves on our Professionalism, Integrity, and Commitment to our clients. Our team of experts has extensive knowledge and experience in all aspects of the Real Estate Buisness, from property valuation and marketing to construction and renovation. We are dedicated to providing personalized and efficient service, and we strive to build long-lasting relationships with our clients.' />
+{/* <TypingAnimation  className={`text-center text-[18px] md:text-[30px] ${lato.className} `} text = 'Bin Sadiq  is a living legacy in the real estate industry, with a track record of success spanning over several years in residential projects. We pride ourselves on our Professionalism, Integrity, and Commitment to our clients. Our team of experts has extensive knowledge and experience in all aspects of the Real Estate Buisness, from property valuation and marketing to construction and renovation. We are dedicated to providing personalized and efficient service, and we strive to build long-lasting relationships with our clients.' /> */}
+<div className={`text-center text-[18px] md:text-[30px] ${lato.className}`}>Bin Sadiq  is a living legacy in the real estate industry, with a track record of success spanning over several years in residential projects. We pride ourselves on our Professionalism, Integrity, and Commitment to our clients. Our team of experts has extensive knowledge and experience in all aspects of the Real Estate Buisness, from property valuation and marketing to construction and renovation. We are dedicated to providing personalized and efficient service, and we strive to build long-lasting relationships with our clients.</div>
 
 </div>
 </div>
@@ -54,7 +55,7 @@ return<> <div className="w-full h-[100vh] bg-no-repeat relative bg-cover" style=
 <div className="py-5 sm:py-10 xl:py-20 px-3 bg-white text-black flex flex-col gap-10 items-center justify-center bg-lead-color">
 <h1 className="text-black font-bold text-center md:text-left text-[30px] sm:text-[40px] md:text-[64px]  font-bold  leading-[56px]">Vision</h1>
 <div className="bg-golden w-[300px] sm:w-[400px] h-[5px]"></div>
-<p className={`text-center text-[18px] md:text-[30px] ${lato.className}`}>Our Vision is to recreate the Heritage culture with Modern living in Reali Estate sector of Pakistan, which favors the development of sustainable, modern projects tailored to benefit society</p>
+<p className={`text-center text-[18px] md:text-[30px] ${lato.className}`}>Our Vision is to recreate the Heritage culture with Modern living in Real Estate sector of Pakistan, which favors the development of sustainable, modern projects tailored to benefit society</p>
 </div>
     
     <div>

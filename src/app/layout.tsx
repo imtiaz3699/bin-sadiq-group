@@ -25,7 +25,8 @@ const coco = localFont({
 export const lato = localFont({
   src:[
     {
-      path: '../../public/fonts/Lato-Black.ttf',
+      path: '../../public/fonts/Lato-Regular.ttf',
+      weight:'400',      
     },
   ],
   variable:'--font-font'

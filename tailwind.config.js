@@ -11,7 +11,8 @@ module.exports = {
       fontFamily: {
         sans: ['var(--font-poppins)'],
         variable:['var(--font-font)'],
-        marriware:['--font-font-marriware']
+        marriware:['--font-font-marriware'],
+        sweet:['--font-font-sweet']
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',

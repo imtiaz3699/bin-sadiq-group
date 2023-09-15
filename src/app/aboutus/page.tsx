@@ -4,17 +4,18 @@ import SecondNavbar from "@/components/SecondNavbar/SecondNavbar";
 import Footer from "../../components/footer/Footer";
 import TypingAnimation from "@/components/TypingAnimation/TypingAnimation";
 import MyNavbar from "../../components/my-navbar/MyNavbar";
-import { lato } from "../layout";
+import { lato,sweet } from "../layout";
 
 export default function AboutUs  () {
     
 return<> <div className="w-full h-[100vh] bg-no-repeat relative bg-cover" style= {{backgroundImage:'url(/aboutus1.jpg)'}}>
 {/* <SecondNavbar/> */}
 <MyNavbar/>
-<div >
-<div className="text-white top-[35%] left-[20%] text-[35px] absolute">CREATING SPACES</div>
+<div className=" top-[35%] text-white left-[20%] absolute">
+<div className="text-[50px] ">CREATING SPACES</div>
+<div className={`text-[200px] text-golden ${sweet.className} `}>That Inspires</div>
 {/* <div className="italic">That Inspires</div> */}
-<div className=""><img src="/That_Inspires.png" alt="" /></div>
+{/* <div className=""><img src="/That_Inspires.png" alt="" /></div> */}
 
 </div>
 </div>

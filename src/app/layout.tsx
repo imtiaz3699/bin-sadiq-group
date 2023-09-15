@@ -44,6 +44,15 @@ export const marriware = localFont({
   ],
   variable:'--font-font-marriware'
 })
+export const sweet = localFont({
+  src:[
+    {
+      path: '../../public/fonts/Sweet/SweetHipster-PzlE.ttf',
+      weight:'400',      
+    },
+  ],
+  variable:'--font-font-sweet'
+})
 
 const metadata: Metadata = {
   title: 'Bin Sadiq Group',

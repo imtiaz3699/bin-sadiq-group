@@ -9,7 +9,11 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['var(--font-poppins)']
+        sans: ['var(--font-poppins)'],
+        variable:['var(--font-font)'],
+        marriware:['--font-font-marriware'],
+        sweet:['--font-font-sweet'],
+        ananda:['--font-font-ananda']
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',

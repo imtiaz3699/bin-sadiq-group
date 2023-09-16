@@ -2,10 +2,10 @@
 import React,{useEffect,useState} from "react";
 import SecondNavbar from "@/components/SecondNavbar/SecondNavbar";
 import Image from "next/image";
-import ProjectSpecification from "./ProjectSpecification";
-import Footer from "../footer/page";
+import ProjectSpecification from "../../components/ProjectSpecification";
+import Footer from "../../components/footer/Footer";
 import InViewElement from "@/components/InViewElement/InViewElement";
-import MyNavbar from "../my-navbar/MyNavbar";
+import MyNavbar from "../../components/my-navbar/MyNavbar";
 import { lato } from "../layout";
 
 export default function Heritage () {
@@ -77,7 +77,7 @@ useEffect(() => {
           src="https://res.cloudinary.com/ddx3egvut/video/upload/v1692865037/thp4ifeasfgciizw5ot4.mp4"
           type="video/mp4"
         />
-        Your browser does not support the video tag.
+        
       </video>
       
       {/* <SecondNavbar /> */}
@@ -86,7 +86,8 @@ useEffect(() => {
     <div style = {{backgroundImage:'url(/edit.jpg)'}} className="h-[550px] lg:h-[700px] w-full bg-cover bg-no-repeat ">
         <div className="w-full lg:w-[50%] h-full md:float-right flex flex-col items-left justify-center px-3 md:pl-10 xl:pl-20 bg-grean opacity-95 ">
             <div className="relative w-[300px] h-[100px] ">
-           <Image alt = "" src = "/Heritage_logo.png"  layout="fill" objectFit="cover" objectPosition="center"/>
+           {/* <Image alt = "" src = "/Heritage_logo.png"  layout="fill" objectFit="cover" objectPosition="center"/> */}
+           <img src="/Heritage_logo.png" alt="" className="w-full h-full"/>
            </div>
            <div>
            <InViewElement targetId="element-4"

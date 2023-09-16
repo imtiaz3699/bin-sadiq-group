@@ -1,19 +1,20 @@
 {
   "name": "bin-sadiq-group",
+  "homepage": "https://binsadiqgroup.com.pk/",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build && next export",
     "start": "next start",
     "lint": "next lint",
-    "dev:network": "next dev -H 0.0.0.0",
     "export": "next build && next export"
   },
   "dependencies": {
     "@cloudinary/react": "^1.11.2",
     "@cloudinary/url-gen": "^1.11.2",
-    "@next/font": "^13.4.18",
+    "@next/codemod": "^13.4.19",
+    "@next/font": "^13.4.19",
     "@types/node": "20.4.5",
     "@types/react": "18.2.17",
     "@types/react-dom": "18.2.7",

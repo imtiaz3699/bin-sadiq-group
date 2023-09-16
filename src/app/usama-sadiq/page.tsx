@@ -1,12 +1,12 @@
 'use client'
 
-import SecondNavbar from "@/components/SecondNavbar/SecondNavbar"
-import MyNavbar from "../my-navbar/MyNavbar"
+
+import MyNavbar from "../../components/my-navbar/MyNavbar"
 
 export default function UsamaSadiq(){
     return <>
-    <div className="w-full h-[825px]" style = {{backgroundImage:'url(/usama-sadiq.png)'}}>
-    {/* <SecondNavbar/> */}
+    <div className="w-full h-[825px] bg-cover" style = {{backgroundImage:'url("https://res.cloudinary.com/ddx3egvut/image/upload/v1694517842/usama-sadiq_jmsdss.png")'}}>
+    
     <MyNavbar/>
 
     </div>

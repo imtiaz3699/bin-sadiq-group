@@ -1,13 +1,12 @@
 "use client"
 import Navbar from "@/components/Navbar/Navbar";
 import SecondNavbar from "@/components/SecondNavbar/SecondNavbar";
-import Footer from "../footer/page";
-import MyNavbar from "../my-navbar/MyNavbar";
+import Footer from "../../components/footer/Footer";
+import MyNavbar from "../../components/my-navbar/MyNavbar";
 
 export default function CSR () {
     return <>
     <div style = {{backgroundImage:'url(csr-bg-image.jpg)'}} className="w-full h-[814px] bg-cover">
-    {/* <SecondNavbar/> */}
     <MyNavbar/>
     </div>
     <div className="w-full flex justify-center">

@@ -87,10 +87,11 @@ export default function SecondNavbar () {
                 data.map((element,idx)=> {
                     return <div className="" key = {idx}>
                     { element?.img ? 
-                    <Image alt="Bin Sadiq Logo"
-                    src={element?.img}
-                    width={100}
-                    height={100}/> 
+                    <img src={element.img} alt="" className="w-[100px] h-[100px]"/>
+                    // <Image alt="Bin Sadiq Logo"
+                    // src={element?.img}
+                    // width={100}
+                    // height={100}/> 
                     :
                     <Link href={element?.url}> 
                     <div className={`${pathname === element?.url ? "text-[18px]  border-[1px] border-golden px-2 py-1 rounded-xl relative font-semi-bold text-golden cursor-pointer  flex flex-row items-center gap-2" : "text-[18px] relative font-semi-bold cursor-pointer  flex flex-row items-center gap-2"}}`} onMouseEnter={()=> dropDowns(idx)} onMouseLeave={()=> setState(null)}>

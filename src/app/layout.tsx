@@ -1,10 +1,11 @@
 
 import './globals.css'
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
-import { Roboto,Roboto_Condensed,Rubik,Lato } from 'next/font/google'
+// import { Inter,Roboto,Roboto_Condensed,Rubik,Lato } from 'next/font/google'
+// import { Roboto,Roboto_Condensed,Rubik,Lato } from 'next/font/google'
 import localFont from '@next/font/local'
-
+// import localFont from '@next/font/dist/local'
+// import localFont from '@next/font/dist/local'
 
 const coco = localFont({
   src: [
@@ -21,21 +22,48 @@ const coco = localFont({
   variable: '--font-poppins'
 
 })
-const inter = Inter({ subsets: ['latin'] })
-export const lato = Lato({
-  subsets:['latin'],
-  weight:['400','700']
-})
-const roboto_condensed = Roboto_Condensed ({
-  subsets:['latin'],
-  weight:['400','700']
+
+
+export const lato = localFont({
+  src:[
+    {
+      path: '../../public/fonts/Lato-Regular.ttf',
+      weight:'400',      
+    },
+  ],
+  variable:'--font-font'
 })
 
-const roboto = Roboto ({
-  subsets:['latin'],
-  weight:['400','500','700']
 
+export const marriware = localFont({
+  src:[
+    {
+      path: '../../public/fonts/MarriwaRE/Merriweather-Regular.ttf',
+      weight:'400',      
+    },
+  ],
+  variable:'--font-font-marriware'
 })
+export const sweet = localFont({
+  src:[
+    {
+      path: '../../public/fonts/Sweet/SweetHipster-PzlE.ttf',
+      weight:'400',      
+    },
+  ],
+  variable:'--font-font-sweet'
+})
+
+export const ananda = localFont({
+  src:[
+    {
+      path: '../../public/fonts/Ananda/Ananda Personal Use.ttf',
+      weight:'400',      
+    },
+  ],
+  variable:'--font-font-ananda'
+})
+
 const metadata: Metadata = {
   title: 'Bin Sadiq Group',
   description: 'Creating Legacy',

@@ -54,6 +54,16 @@ export const sweet = localFont({
   variable:'--font-font-sweet'
 })
 
+export const ananda = localFont({
+  src:[
+    {
+      path: '../../public/fonts/Ananda/Ananda Personal Use.ttf',
+      weight:'400',      
+    },
+  ],
+  variable:'--font-font-ananda'
+})
+
 const metadata: Metadata = {
   title: 'Bin Sadiq Group',
   description: 'Creating Legacy',

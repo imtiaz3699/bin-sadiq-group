@@ -1,5 +1,5 @@
 "use client"
-import React, { useRef, useState } from 'react';
+// import React from 'react';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -96,55 +96,43 @@ export default function ProjectSpecification () {
            } 
         </div>
         <>
-        <div 
-        className="image-slider mt-20"
-        >
-      <div
-       className="image-slider-track"
-       >
-
-        <div className="slide">
+                <div className="image-slider mt-20">
+                    <div className="image-slider-track" style={{backgroundColor:'#1A3728'}}>
+        <div className="slide" style={{backgroundColor:'#1A3728'}}>
         <img src="/heritage1.png" alt="" className='w-[106px] h-[106px]'/>
-        
         </div>
-        <div className="slide">
+        <div className="slide" style={{backgroundColor:'#1A3728'}}>
           <img src="/heritage2.png" alt="" className='w-[106px] h-[106px]'/>
           
         </div>
-        <div className="slide">
+        <div className="slide" style={{backgroundColor:'#1A3728'}}>
          <img src="/heritage3.png" alt="" className='w-[106px] h-[106px]'/>
          
         </div>
-        <div className="slide">
+        <div className="slide" style={{backgroundColor:'#1A3728'}}>
         <img src="/heritage4.png" alt="" className='w-[106px] h-[106px]'/>
            
         </div>
-        <div className="slide">
+        <div className="slide" style={{backgroundColor:'#1A3728'}}>
         <img src="/heritage5.png" alt="" className='w-[92px] h-[130px]'/>
         
         </div>
-        <div className="slide">
+        <div className="slide" style={{backgroundColor:'#1A3728'}}>
         <img src="/heritage6.png" alt="" className='w-[106px] h-[106px]'/>
         
         </div>
-        <div className="slide">
+        <div className="slide" style={{backgroundColor:'#1A3728'}}>
           <img src="/heritage7.png" alt="" className='w-[84px] h-[106px]'/>
           
         </div>
-        <div className="slide">
+        <div className="slide" style={{backgroundColor:'#1A3728'}}>
          <img src="/heritage8.png" alt="" className='w-[106px] h-[111px]'/>
          
         </div>  
         </div>
     </div>
         </>
-    {/* <div className="flex flex-row items-center justify-between mt-[50px] md:mt-[150px] px-3 w-[100%]">
-           {
-            imageData.map((element,idx)=> {
-                return <img src={element} alt="" className="w-28 h-28"/>
-            })
-           } 
-    </div> */}
+    
     <div className="flex flex-col items-center mt-[50px] md:mt-[150px]">
         <InViewElement targetId="element-8"
             inViewClassName="duration-1000 transition-all duration-500 transform animate-fade-down  animate-ease-out animate-alternate animate-fill-both "

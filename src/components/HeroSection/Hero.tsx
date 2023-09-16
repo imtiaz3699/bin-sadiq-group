@@ -134,7 +134,6 @@ useEffect(() => {
                         <div className={`max-w-[638px] text-white  mt-5 text-[18px] ${lato.className} sm:text-[20px]  text-center md:text-left`}>Engraved in glorious chronicles that grace our enigmatic development footprint, Bin Sadiq Group brings forward contemporary and futuristic properties so as to revamp the real estate haven by tenfolds. Streamlining residential and commercial sites way ahead of times in The Heart of the evergreen Twin Cities, we have come a long way since inception. Accomplishing unwavering restoration of heritage buildings that stand out in both design and structure has been our top notch forte. Bin Sadiq masters in development grandeur with a successful track record and portfolio.
 </div>
                 </div>          
-                {/* <Image alt = '' src = "/Pic2.png" width={300} height={300} className='sm:hidden'/>       */}
                 <img src="/Pic2.png" alt="" className='w-[300px] h-[300px] sm:hidden'/>
                 <div className='hidden sm:block w-[452px] md:hover:translate-x-10 transition-transform duration-1000 group  h-[514px] sm:rounded-tr-[125px] sm:rounded-xl  md:bg-cover hover:drop-shadow-2xl hover:shadow-2xl relative' 
                 style = {{backgroundImage:'url(/Pic2.png)'}}>

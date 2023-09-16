@@ -62,7 +62,7 @@ const timer = setTimeout(()=> {
         <div className=" flex flex-col md2:flex-row items-center justify-center gap-5">
             <InViewElement targetId="element-3"
             inViewClassName="animate-fade-right animate-once animate-duration-1000 animate-delay-500 animate-ease-in animate-normal animate-fill-backwards
-            "
+        "
             outOfViewClassName="element-out-of-view">
             <div className="transition-transform duration-300 ease-in-out transform hover:scale-125 w-[100px] h-[100px] p-3 rounded-full flex flex-row items-center justify-center " >
             <img src='/core1.png' alt="" className="w-[100px]  " />

@@ -11,7 +11,7 @@ export default function CSR () {
     </div>
     <div className="w-full flex justify-center">
         <div className="py-[150px] px-20 flex flex-row items-center justify-center gap-10 w-[1500px]">
-        <div className="w-[595px] h-[457px] rounded-xl drop-shadow-xl shadow-xl shadow-slate-800">
+        <div className="w-[550px] h-[350px] rounded-xl drop-shadow-xl shadow-xl shadow-slate-800">
         <img src="/flood.jpg" alt="" className="w-full h-full bg-contained rounded-xl"/>
         </div>
         <div className="flex flex-col w-[500px] gap-5">

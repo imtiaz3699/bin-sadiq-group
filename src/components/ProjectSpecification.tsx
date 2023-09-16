@@ -1,4 +1,4 @@
-"use client"
+
 // import React from 'react';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -11,7 +11,7 @@ import 'swiper/css/pagination';
 // import '../heritage/anotherSlider.css'
 import "./style.css"
 // import required modules
-import { FreeMode,Navigation, Pagination, Mousewheel, Keyboard } from 'swiper/modules';
+import { FreeMode,Navigation, Pagination, Mousewheel, Keyboard,Autoplay } from 'swiper/modules';
 import InViewElement from '@/components/InViewElement/InViewElement';
 
 export default function ProjectSpecification () {
@@ -59,8 +59,40 @@ export default function ProjectSpecification () {
             img:'/showCase3.png',
         },
         {
-            img:'/showCase1.png',
+            img:'/images/1.jpg',
         },
+        {
+            img:'/images/2.jpg',
+        },
+        {
+            img:'/images/3.jpg',
+        },
+        {
+            img:'/images/4.jpg',
+        },
+        {
+            img:'/images/5.jpg',
+        },
+        {
+            img:'/images/6.jpg',
+        },
+        {
+            img:'/images/7.jpg',
+        },
+        {
+            img:'/images/8.jpg',
+        },
+        {
+            img:'/images/9.jpg',
+        },
+        {
+            img:'/images/10.jpg',
+        },
+        {
+            img:'/images/11.jpg',
+        },
+        
+        
     ]
     const secondImageData = [
         {
@@ -70,7 +102,18 @@ export default function ProjectSpecification () {
         },
         
     ]
-    return <div className="py-20 flex flex-col ">
+    const params = {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        loop: true,
+        autoplay: {
+          delay: 3000, // Delay between slides in milliseconds (3 seconds in this example)
+        },
+        pagination: {
+          clickable: true, // Enable pagination bullets
+        },
+      };
+    return <div className="py-20 flex flex-col " style = {{backgroundColor:'#1A3728'}}>
         <InViewElement targetId="element-5"
             inViewClassName=" trnaslate-x-0 duration-300 transition-all duration-500 transform "
             outOfViewClassName="-translate-x-[100%] ">
@@ -96,7 +139,7 @@ export default function ProjectSpecification () {
            } 
         </div>
         <>
-                <div className="image-slider mt-20">
+                <div className="image-slider grid place-items-center relative overflow-hidden bg-[#1A3728] h-[250px] w-[100%] mt-20">
                     <div className="image-slider-track" style={{backgroundColor:'#1A3728'}}>
         <div className="slide" style={{backgroundColor:'#1A3728'}}>
         <img src="/heritage1.png" alt="" className='w-[106px] h-[106px]'/>
@@ -175,20 +218,14 @@ export default function ProjectSpecification () {
            <button className="border-[3px] border-golden w-[251px] h-[78px] text-[24px] text-white">View Broucher</button>
 </div>
 
-<div className="flex flex-row justify-center w-full mt-[200px]">
+<div className=" w-full mt-[200px]">
         <Swiper
-        slidesPerView={3}
-        spaceBetween={30}
-        freeMode={true}
-        pagination={{
-          clickable: true,
-        }}
-        modules={[FreeMode, Pagination]}
+        {...params}
         className="mySwiper"
       >
         {
-            sliderImage.map((element,idx)=> {
-                return <SwiperSlide>
+          sliderImage.map((element,idx)=> {
+             return <SwiperSlide>
             <div className='w-[488px] h-[275px]'>
             <img src={element.img} alt="" className='w-full h-full bg-cover'/>
         </div>

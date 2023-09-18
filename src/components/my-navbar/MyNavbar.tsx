@@ -134,9 +134,10 @@ const MyNavbar = () => {
     }
 return <div className={`${marriware.className}`}>
 <div className={`xl:hidden ${isDropDown === true ? 'bg-lead-color' : 'bg-transparent'} flex flex-row justify-between  w-full absolute z-50 items-center px-5`}>
-    <div className="w-[100px] h[100px]">
+    <div className="w-[150px] h[150px] py-5">
     {/* <Image alt = "" width={100} height={100} src = {myImage} /> */}
-    <img src="/bin-sadiq-logo.png" alt="" />
+    {/* <img src="/bin-sadiq-logo.png" alt="" className="hidden md:block"/> */}
+    <img src="/logoFinal.png" alt="" className="block xl:hidden w-full h-full"/>
     </div>
     <div className="bg-transparent" onClick={()=> {setIsDropDown(!isDropDown)}}>
     {
@@ -146,7 +147,7 @@ return <div className={`${marriware.className}`}>
         }
     </div>
    {
-    isDropDown && <div className="flex bg-lead-color flex-col items-left absolute left-0 top-0 z-50 mt-24 py-5 text-white w-full px-5">
+    isDropDown && <div className="flex bg-lead-color flex-col items-left absolute left-0 top-0 z-50 mt-20 py-5 text-white w-full px-5">
     {
         data2.map((element,idx)=> {
             return <div  className="flex flex-col">

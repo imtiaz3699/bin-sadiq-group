@@ -33,11 +33,11 @@ return<> <div className="w-full h-[480px] xl:h-[100vh] bg-no-repeat relative bg-
 
 
 
-            <div className="flex flex-col md:flex-row items-centr">
-            <div className="w-[50%] h-[514px]">
+            <div className="flex flex-col items-centr md:flex-row ">
+            <div className="w-full h-auto md:w-[50%] ">
             <img src="/aboutus2.jpg" alt="" className="w-full h-full bg-cover"/>
             </div>
-            <div className="w-[50%] h-[514px] "><img src="/aboutus4.jpg" alt="" className="w-full h-full "/></div>
+            <div className="w-full h-auto md:w-[50%] "><img src="/aboutus4.jpg" alt="" className="w-full h-full "/></div>
             </div>
 
 
@@ -53,12 +53,12 @@ return<> <div className="w-full h-[480px] xl:h-[100vh] bg-no-repeat relative bg-
 
 
 
-            <div className="flex flex-col sm:flex-row ">
-            <div className="w-full sm:w-[50%]">
-            <img src="/aboutus3.jpg" alt="" className="bg-cover w-full h-full"/>
+            <div className="flex flex-col items-center md:flex-row ">
+            <div className="w-full md:w-[50%]">
+            <img src="/aboutus3.jpg" alt="" className=" w-full h-full"/>
             </div>
-            <div className="w-full sm:w-[50%]">
-            <img src="/aboutus5.jpg" alt="" className="bg-cover w-full h-full"/>
+            <div className="w-full md:w-[50%]">
+            <img src="/aboutus5.jpg" alt="" className="w-full h-full"/>
             </div>
             </div>
 

@@ -141,9 +141,9 @@ return <div className={`${marriware.className}`}>
     </div>
     <div className="bg-transparent" onClick={()=> {setIsDropDown(!isDropDown)}}>
     {
-            isDropDown ? <img src="/cross-.png" alt="" className="w-[30px] h-[25px]"/>
+           isDropDown ? <img src="/cross-.png" alt="" className="w-[30px] h-[25px]"/>
            :    
-                <img src="/apps.png" alt="" className="w-[30px] h-[30px]"/>
+           <img src="/apps.png" alt="" className="w-[30px] h-[30px]"/>
         }
     </div>
    {

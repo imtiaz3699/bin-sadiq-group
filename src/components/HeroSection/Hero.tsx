@@ -153,11 +153,11 @@ useEffect(() => {
 <ImageSlider/>     
             <div className='py-20 '>
                 <div className='container mx-auto text-center flex flex-col items-center justify-center'>
-                  <InViewElement  targetId="element-10"
-  inViewClassName="animate-flip-down animate-once animate-ease-linear"
-  outOfViewClassName="element-out-of-view">
-                        <h1 id='animate' className='text-golden font-bold text-center md:text-left text-[30px] sm:text-[40px] md:text-[64px]  font-bold  leading-[56px] animate-fade-right animate-once animate-ease-linear'>OUR SERVICES </h1>
-                        </InViewElement>
+                  <InViewElement targetId="element-10"
+                          inViewClassName="animate-flip-down animate-once animate-ease-linear"
+                           outOfViewClassName="element-out-of-view">
+                            <h1 id='animate' className='text-golden font-bold text-center md:text-left text-[30px] sm:text-[40px] md:text-[64px]  font-bold  leading-[56px] animate-fade-right animate-once animate-ease-linear'>OUR SERVICES </h1>
+                            </InViewElement>
                         <div className={`max-w-[1300px] text-[18px] px-3 md:text-[22px]   text-gray-500 text-white mt-5 ${lato.className}`}> { text.slice(0, currentIndex) }</div>
                 <div className='grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 place-items-center mt-[150px] gap-[50px] sm:gap-[100px] w-full px-5'>
                       {
@@ -185,7 +185,7 @@ useEffect(() => {
                                     <img src="/Quote Post 10 1.png" alt="" className='transition-transform duration-700 transform hover:scale-105 hover:shadow-lg'/>
                             </div>
                             </div>  
-                    </div>
+            </div>
             </div>
             </div>
     </>

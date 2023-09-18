@@ -32,7 +32,11 @@ img{
     animation: play 40s linear infinite;
 
 }
-
+@media (max-width: 768px) {
+   .image-slider {
+    height: 100px;
+   }
+  }
 @keyframes play{
     0%{
         transform: translateX(0);

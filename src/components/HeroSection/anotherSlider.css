@@ -35,6 +35,9 @@ img{
 @media (max-width: 768px) {
    .image-slider {
     height: 100px;
+    padding: 10px;
+    padding-right: 15px;
+    padding-left: 15px;
    }
   }
 @keyframes play{

@@ -21,7 +21,14 @@ img{
     width:calc(200px*12);
     animation: play 40s linear infinite;
 }
-
+@media (max-width: 768px) {
+    .image-slider {
+     height: 100px;
+     padding: 10px;
+     padding-right: 10px;
+     padding-left: 10px;
+    }
+   }
 @keyframes play{
     0%{
         transform: translateX(0);

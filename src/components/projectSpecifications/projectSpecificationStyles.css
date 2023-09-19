@@ -1,4 +1,4 @@
-.slide{
+.my-slide{
     display: grid;
     place-items: center;
     padding: 15px;
@@ -8,12 +8,12 @@
     background-color: #1A3728;
     overflow: hidden;
 }
-img{
+/* img{
     height: 100%;
     width:100%;
     transition: transform 0.5s;
-}
-.image-slider-track{
+} */
+.image-slider-track-mine{
     display: flex;
     align-items: center;
     background-color: #1A3728;
@@ -21,7 +21,7 @@ img{
     animation: play 40s linear infinite;
 }
 @media (max-width: 768px) {
-    .slide {
+    .my-slide {
     height: 100px;
      padding: 10px;
      padding-right: 15px;

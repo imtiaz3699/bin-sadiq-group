@@ -17,13 +17,12 @@ img{
     display: flex;
     align-items: center;
     background-color: #1A3728;
-    height: 100%;
     width:calc(200px*12);
     animation: play 40s linear infinite;
 }
 @media (max-width: 768px) {
     .slide {
-    
+    height: 100px;
      padding: 10px;
      padding-right: 15px;
      padding-left: 15px;
@@ -39,13 +38,14 @@ img{
     }
 }
 
-.image-slider::before,
+/* .image-slider::before,
 .image-slider::after{
     content: '';
     height: 100%;
     width: 15%;
     z-index: 2;
     position: absolute;
+    background-color: #1A3728;
     }
 .image-slider::before{
         left:0;
@@ -55,7 +55,7 @@ img{
         right:0;
         top:0;
  
-}
+} */
 img:hover{
         transform: translateZ(20px);
 }

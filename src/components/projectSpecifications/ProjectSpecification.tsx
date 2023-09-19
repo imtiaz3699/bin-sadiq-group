@@ -139,7 +139,7 @@ export default function ProjectSpecification () {
            } 
         </div>
         <>
-        <div className="image-slider grid place-items-center relative overflow-hidden bg-[#1A3728] h-[250px] w-[100%] mt-20">
+        <div className="image-slider grid place-items-center relative overflow-hidden bg-[#1A3728] h-[100px] md:h-[250px] w-[100%] mt-20">
                     <div className="image-slider-track" style={{backgroundColor:'#1A3728'}}>
         <div className="slide" style={{backgroundColor:'#1A3728'}}>
             <img src="/heritage1.png" alt="" className='w-[46px] h-[44px] md:w-[106px] md:h-[106px]'/>

@@ -22,13 +22,13 @@ img{
     animation: play 40s linear infinite;
 }
 @media (max-width: 768px) {
-    .image-slider {
-     height: 100px;
+    .slide {
+    
      padding: 10px;
-     padding-right: 5px;
-     padding-left: 5px;
+     padding-right: 15px;
+     padding-left: 15px;
     }
-   }
+}
 @keyframes play{
     0%{
         transform: translateX(0);
@@ -41,8 +41,6 @@ img{
 
 .image-slider::before,
 .image-slider::after{
-    /* background: linear-gradient(to right,rgba(255,255,255,1)0%,rgba(255,255,255,0)100%); */
-    /* background-color: #1A3728; */
     content: '';
     height: 100%;
     width: 15%;
@@ -56,8 +54,7 @@ img{
 .image-slider::after{
         right:0;
         top:0;
-        /* background: linear-gradient(to left,rgba(255,255,255,1)0%,rgba(255,255,255,0)100%); */
-        /* background-color: #1A3728; */
+ 
 }
 img:hover{
         transform: translateZ(20px);

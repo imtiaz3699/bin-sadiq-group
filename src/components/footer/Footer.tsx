@@ -19,30 +19,32 @@ export default function Footer () {
                 <div className="text-[20px]">CAREERS</div>
                 <div className="text-[20px]">CONTACT US</div>
             </div>
-            <div className="flex flex-col items-center justify-center">
-            <div className="flex flex-row items-center">
+            <div className="flex flex-col items-center justify-center gap-[20px]">
+            <div className="flex flex-row items-center gap-[20px]">
             <Link href = "https://twitter.com/BinSadiqGroup" target="_blank">
             {/* <Image alt = "Twitter" src = "/tlogo.png" width = {50} height = {50} className="w-[50px] h-[50px] "/> */}
-            <img src="/tlogo.png" className="w-[50px] h-[50px] xl:w-[70px] xl:h-[70px]" alt="" />
+            <img src="/tlogo.png" className="w-[30px] h-[30px] xl:w-[48px] xl:h-[48px]" alt="" />
             </Link>
             <Link href = "https://www.instagram.com/binsadiqgroup/" target="_blank">
             {/* <Image alt = "Instagram" src = "/ilogo.png" width = {50} height = {50} className="w-[50px] h-[50px] xl:w-[70px] xl:h-[70px]"/> */}
-            <img src="/ilogo.png" alt="" className="w-[50px] h-[50px] xl:w-[70px] xl:h-[70px]"/>
+            <img src="/ilogo.png" alt="" className="w-[30px] h-[30px] xl:w-[48px] xl:h-[48px]"/>
             </Link>
             <Link href = "https://www.facebook.com/BinSadiqGroup" target="_blank">
             {/* <Image alt = "Facebook" src = "/flogo.png" width = {50} height = {50} className="w-[50px] h-[50px] xl:w-[70px] xl:h-[70px]"/> */}
-            <img src="/flogo.png" alt="" className="w-[50px] h-[50px] xl:w-[70px] xl:h-[70px]"/>
+            <img src="/flogo.png" alt="" className="w-[15px] h-[30px] xl:w-[21px] xl:h-[48px]"/>
             </Link>
             <Link href = "https://www.linkedin.com/company/77645619/admin/feed/posts/" target="_blank">
             {/* <Image alt = "Linked" src = "/llogo.png" width = {50} height = {50} className="w-[50px] h-[50px] xl:w-[70px] xl:h-[70px]"/> */}
-            <img src="/llogo.png" alt="" className="w-[50px] h-[50px] xl:w-[70px] xl:h-[70px]"/>
+            <img src="/llogo.png" alt="" className="w-[30px] h-[30px] xl:w-[48px] xl:h-[48px]"/>
             </Link>
             </div>
+            <div className="flex flex-col items-center">
                 <div className="text-[20px]">care@binsadiqgroup.com.pk</div>
                 <div className="text-[20px]">0331-000-1111</div>
+                </div>
         </div>
 
     </div>
     <div className="w-full bg-golden text-white text-center h-[86px] flex justify-center items-center text-[18px] sm:text-[24px]">2023 All Rights Reserved By Bin Sadiq Group </div>
-    </>
+</>
 }

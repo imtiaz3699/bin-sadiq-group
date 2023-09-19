@@ -162,7 +162,7 @@ useEffect(() => {
                 <div className='grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 place-items-center mt-[150px] gap-[50px] sm:gap-[100px] w-full px-5'>
                       {
                         ourServices.map((element,idx)=> {
-                            return <div className={`transition-transform duration-500 ease-in-out transform hover:scale-125 w-full sm:w-[342px] shadow-2xl drop-shadow-2xl" px-5 py-5 h-auto sm:h-[342px] flex flex-col items-center justify-center bg-golden rounded-[12px]`} key = {idx} onMouseEnter={()=> setState(idx)}>
+                            return <div className={`transition-transform duration-500 ease-in-out transform hover:scale-100 md:hover:scale-125 w-full sm:w-[342px] shadow-2xl drop-shadow-2xl" px-5 py-5 h-auto sm:h-[342px] flex flex-col items-center justify-center bg-golden rounded-[12px]`} key = {idx} onMouseEnter={()=> setState(idx)}>
                             <img src={element.img} alt="" className='w-[99px] h-[99px]'/>
                             <h1 className='font-bold text-[24px] max-w-[180px] mt-[31px]'>{element.name}</h1>
                             <button className='bg-black w-[150px] h-[35px] text-[12px] text-white mt-[80px] px-[14px]'>Read More....</button>

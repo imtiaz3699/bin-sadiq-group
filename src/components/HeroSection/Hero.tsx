@@ -130,7 +130,7 @@ useEffect(() => {
                 <div  className='flex flex-col'>
                         <h1
                         id='in-view-element'
-                        className={isInView ? 'text-golden font-bold text-center md:text-left text-[30px]  sm:text-[40px] md:text-[64px]  font-bold  leading-[56px] animate-fade-right animate-once animate-ease-linear' : "outOfViewClassName"} >CREATING SPACES <br />THAT INSPIRES </h1> 
+                        className={isInView ? 'text-golden  text-center md:text-left text-[30px]  sm:text-[40px] md:text-[64px]  font-bold  leading-[56px] animate-fade-right animate-once animate-ease-linear' : "outOfViewClassName"} >CREATING SPACES <br />THAT INSPIRES </h1> 
                         <div className={`max-w-[638px] text-white  mt-5 text-[18px] ${lato.className} sm:text-[20px]  text-center md:text-left`}>Engraved in glorious chronicles that grace our enigmatic development footprint, Bin Sadiq Group brings forward contemporary and futuristic properties so as to revamp the real estate haven by tenfolds. Streamlining residential and commercial sites way ahead of times in The Heart of the evergreen Twin Cities, we have come a long way since inception. Accomplishing unwavering restoration of heritage buildings that stand out in both design and structure has been our top notch forte. Bin Sadiq masters in development grandeur with a successful track record and portfolio.
 </div>
                 </div>          
@@ -146,9 +146,9 @@ useEffect(() => {
                 <InViewElement  targetId="element-1"
   inViewClassName="animate-fade-down animate-once animate-ease-linear"
   outOfViewClassName="element-out-of-view">
-                <div className={ 'text-golden font-bold text-center text-[30px] sm:text-[40px] md:text-[64px] font-bold leading-[56px] transition-transform duration-300 transform'}>Why Choose Us</div>
+                <div className={ 'text-golden  text-center text-[30px] sm:text-[40px] md:text-[64px] font-bold leading-[56px] transition-transform duration-300 transform'}>Why Choose Us</div>
                 </InViewElement>
-                <div className={`max-w-[1300px] text-[18px] px-3 md:text-[22px] text-gray-500 text-white ${lato.className} `}>We've always tried to be different,a different approach to buisness & customer service,<br /> a different culture at work place. We believe in the importance of fresh thinking-in being <br /> green,  and approaching things in new and different ways.</div>
+                <div className={`max-w-[1300px] text-[18px] px-3 md:text-[22px]  text-white ${lato.className} `}>We've always tried to be different,a different approach to buisness & customer service,<br /> a different culture at work place. We believe in the importance of fresh thinking-in being <br /> green,  and approaching things in new and different ways.</div>
             </div>
 <ImageSlider/>     
             <div className='py-20 '>
@@ -173,7 +173,7 @@ useEffect(() => {
             </div>
             </div>                    
             <div className='bg-golden w-full  text-center py-20'>
-                    <h1 className='font-bold text-center text-[30px] sm:text-[40px] md:text-[64px] font-bold leading-[56px]'>UPDATES</h1>
+                    <h1 className=' text-center text-[30px] sm:text-[40px] md:text-[64px] font-bold leading-[56px]'>UPDATES</h1>
                           <div className='container mx-auto mt-[55px]'>
                             <div className='grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 place-items-center gap-[25px] px-5'>
                                     {/* <Image alt = "" src = "/P-Post 5 1.png" width = {400} height = {400} className='transition-transform duration-700 transform hover:scale-105 hover:shadow-lg'/> */}

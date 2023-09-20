@@ -65,7 +65,7 @@ const MyNavbar = () => {
         },
         {
             name:'CONTACT',
-            url:'', 
+            url:'/contact_us', 
         },
     ]
     const data2 = [
@@ -116,7 +116,7 @@ const MyNavbar = () => {
         },
         {
             name:'CONTACT',
-            url:'', 
+            url:'/contact_us', 
         },
     ]
     const pathname = usePathname();

@@ -10,37 +10,37 @@ export default function Footer () {
     <div className="bg-lead-color py-[20px] flex flex-col sm:flex-row text-white items-center justify-between px-20">
         
             <div className="flex flex-col items-center ">
-                <div className="w-[150px] h-[150px]">
+                <div className="hidden md:flex w-[150px] h-[150px]">
                 {/* <Image alt = "" src = "/logo.png" objectFit="cover" layout="fill"/> */}
                 <img src="/logo.png" alt="" className="w-full h-full"/>
 
 
                 </div>
-                <div className="text-[20px]">CAREERS</div>
-                <div className="text-[20px]">CONTACT US</div>
+                <div className="text-[12px] md:text-[20px] font-bold">CAREERS</div>
+                <div className="text-[12px] md:text-[20px] font-bold">CONTACT US</div>
             </div>
             <div className="flex flex-col items-center justify-center gap-[20px]">
-            <div className="flex flex-row items-center gap-[20px]">
+            <div className="flex flex-row items-center gap-[20px] mt-[20px]">
             <Link href = "https://twitter.com/BinSadiqGroup" target="_blank">
             {/* <Image alt = "Twitter" src = "/tlogo.png" width = {50} height = {50} className="w-[50px] h-[50px] "/> */}
-            <img src="/tlogo.png" className="w-[30px] h-[30px] xl:w-[48px] xl:h-[48px]" alt="" />
+            <img src="/tlogo.png" className="w-[19px] h-[19px] xl:w-[48px] xl:h-[48px]" alt="" />
             </Link>
             <Link href = "https://www.instagram.com/binsadiqgroup/" target="_blank">
             {/* <Image alt = "Instagram" src = "/ilogo.png" width = {50} height = {50} className="w-[50px] h-[50px] xl:w-[70px] xl:h-[70px]"/> */}
-            <img src="/ilogo.png" alt="" className="w-[30px] h-[30px] xl:w-[48px] xl:h-[48px]"/>
+            <img src="/ilogo.png" alt="" className="w-[21px] h-[21px] xl:w-[48px] xl:h-[48px]"/>
             </Link>
             <Link href = "https://www.facebook.com/BinSadiqGroup" target="_blank">
             {/* <Image alt = "Facebook" src = "/flogo.png" width = {50} height = {50} className="w-[50px] h-[50px] xl:w-[70px] xl:h-[70px]"/> */}
-            <img src="/flogo.png" alt="" className="w-[15px] h-[30px] xl:w-[21px] xl:h-[48px]"/>
+            <img src="/flogo.png" alt="" className="w-[11px] h-[21px] xl:w-[21px] xl:h-[48px]"/>
             </Link>
             <Link href = "https://www.linkedin.com/company/77645619/admin/feed/posts/" target="_blank">
             {/* <Image alt = "Linked" src = "/llogo.png" width = {50} height = {50} className="w-[50px] h-[50px] xl:w-[70px] xl:h-[70px]"/> */}
-            <img src="/llogo.png" alt="" className="w-[30px] h-[30px] xl:w-[48px] xl:h-[48px]"/>
+            <img src="/llogo.png" alt="" className="w-[21px] h-[21px] xl:w-[48px] xl:h-[48px]"/>
             </Link>
             </div>
             <div className="flex flex-col items-center">
-                <div className="text-[20px]">care@binsadiqgroup.com.pk</div>
-                <div className="text-[20px]">0331-000-1111</div>
+                <div className="text-[12px] md:text-[20px] font-normal">care@binsadiqgroup.com.pk</div>
+                <div className="text-[12px] md:text-[20px] font-normal">0331-000-1111</div>
                 </div>
         </div>
 

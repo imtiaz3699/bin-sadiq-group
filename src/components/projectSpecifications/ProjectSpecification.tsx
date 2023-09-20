@@ -140,30 +140,30 @@ export default function ProjectSpecification () {
         </div>
         <>
         <div className="grid place-items-center relative overflow-hidden bg-[#1A3728] h-[100px] md:h-[250px] w-[100%] mt-20">
-                    <div className="image-slider-track-mine" style={{backgroundColor:'#1A3728'}}>
+        <div className="image-slider-track-mine" style={{backgroundColor:'#1A3728'}}>
         <div className="my-slide" style={{backgroundColor:'#1A3728'}}>
-            <img src="/heritage1.png" alt="" className='w-[74px] h-[72px] md:w-[106px] md:h-[106px]'/>
+                <img src="/heritage1.png" alt="" className='w-[74px] h-[72px] md:w-[106px] md:h-[106px]'/>
         </div>
         <div className="my-slide" style={{backgroundColor:'#1A3728'}}>
-            <img src="/heritage2.png" alt="" className='w-[73px] h-[74px] md:w-[106px] md:h-[106px]'/>
+                <img src="/heritage2.png" alt="" className='w-[73px] h-[74px] md:w-[106px] md:h-[106px]'/>
         </div>
         <div className="my-slide" style={{backgroundColor:'#1A3728'}}>
-            <img src="/heritage3.png" alt="" className='w-[69px] h-[74px] md:w-[106px] md:h-[106px]'/>
+                <img src="/heritage3.png" alt="" className='w-[69px] h-[74px] md:w-[106px] md:h-[106px]'/>
         </div>
         <div className="my-slide" style={{backgroundColor:'#1A3728'}}>
-            <img src="/heritage4.png" alt="" className='w-[71px] h-[74px] md:w-[106px] md:h-[106px]'/>
+                <img src="/heritage4.png" alt="" className='w-[71px] h-[74px] md:w-[106px] md:h-[106px]'/>
         </div>
         <div className="my-slide" style={{backgroundColor:'#1A3728'}}>
-            <img src="/heritage5.png" alt="" className='w-[62px] h-[90px] md:w-[92px] md:h-[130px]'/>
+                <img src="/heritage5.png" alt="" className='w-[62px] h-[90px] md:w-[92px] md:h-[130px]'/>
         </div>
         <div className="my-slide" style={{backgroundColor:'#1A3728'}}>
-            <img src="/heritage6.png" alt="" className='w-[76px] h-[74px] md:w-[106px] md:h-[106px]'/>
+                <img src="/heritage6.png" alt="" className='w-[76px] h-[74px] md:w-[106px] md:h-[106px]'/>
         </div>
         <div className="my-slide" style={{backgroundColor:'#1A3728'}}>
-          <img src="/heritage7.png" alt="" className='w-[56px] h-[69px] md:w-[84px] md:h-[106px]'/>
+            <img src="/heritage7.png" alt="" className='w-[56px] h-[69px] md:w-[84px] md:h-[106px]'/>
         </div>
         <div className="my-slide" style={{backgroundColor:'#1A3728'}}>
-         <img src="/heritage8.png" alt="" className='w-[74px] h-[75px] md:w-[106px] md:h-[111px]'/>
+             <img src="/heritage8.png" alt="" className='w-[74px] h-[75px] md:w-[106px] md:h-[111px]'/>
         </div>  
         </div>
     </div>

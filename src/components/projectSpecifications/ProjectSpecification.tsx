@@ -1,5 +1,5 @@
 
-// import React from 'react';
+import React,{useState,useEffect} from 'react';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -113,6 +113,29 @@ export default function ProjectSpecification () {
           clickable: true, // Enable pagination bullets
         },
       };
+      
+
+      const [slidesPerView, setSlidesPerView] = useState(3); // Default number of slides per view
+
+      useEffect(() => {
+        // Function to update slidesPerView based on screen width
+        const updateSlidesPerView = () => {
+          if (window.innerWidth <= 768) { // Adjust this breakpoint as needed
+            setSlidesPerView(1); // Show one slide on small screens (e.g., mobile)
+          } else {
+            setSlidesPerView(3); // Show three slides on larger screens (e.g., desktop)
+          }
+        };
+    
+        // Call the function on initial load and when the window is resized
+        updateSlidesPerView();
+        window.addEventListener('resize', updateSlidesPerView);
+    
+        // Clean up the event listener when the component unmounts
+        return () => {
+          window.removeEventListener('resize', updateSlidesPerView);
+        };
+      }, []);
     return <div className="py-20 flex flex-col " style = {{backgroundColor:'#1A3728'}}>
         <InViewElement targetId="element-5"
             inViewClassName=" trnaslate-x-0 duration-300 transition-all duration-500 transform "
@@ -213,13 +236,17 @@ export default function ProjectSpecification () {
 
 <div className=" w-full mt-[200px]">
         <Swiper
-        {...params}
+        spaceBetween={30}
+        loop={true}
+        autoplay={{ delay: 3000 }}
+        pagination={{ clickable: true }}
+        slidesPerView={slidesPerView}
         className="mySwiper"
       >
         {
           sliderImage.map((element,idx)=> {
              return <SwiperSlide>
-            <div className='w-[488px] h-[275px]'>
+            <div className='w-full h-full px-3 md:w-[488px] md:h-[275px]'>
             <img src={element.img} alt="" className='w-full h-full bg-cover'/>
         </div>
         </SwiperSlide>

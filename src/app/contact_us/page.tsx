@@ -6,7 +6,7 @@ export default function ContactUs () {
         {
             img:'/location.png',
             name:'Our Home Office',
-            address:'Bin Sadiq Group F-8',
+            address:'Office 15-Y Buisness Bay Bahria Phase 7,Bahria Express Way Rawalpindi',
         },{
             img:'/phone-call.png',
             name:'Phone Number',
@@ -28,10 +28,10 @@ export default function ContactUs () {
         <div className="grid grid-cols-1 gap-5 md:gap-0 md:grid-cols-3 place-items-center -translate-y-20 px-3 md:px-20">
                {
                 contactUs.map((element,idx)=> {
-                    return <div className="w-[340px] rounded-xl bg-golden flex flex-col items-center gap-2 py-10">
+                    return <div className="w-[340px] h-[200px] rounded-xl bg-golden flex flex-col items-center px-3 gap-2 py-10">
                         <img src={element.img} alt="" className="w-[50px] h-[50px]"/>
                         <div className="text-[20px] font-bold">{element.name}</div>
-                        <div>{element.address}</div>
+                        <div className="text-center">{element.address}</div>
 
                     </div> 
                 })
@@ -62,7 +62,6 @@ export default function ContactUs () {
             </div>
             
             <div className="w-[300px] h-[200px] md:w-[500px] md:h-[400px] rounded-xl">
-            
             <iframe className="w-full h-full rounded-xl"  src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=Bin Sadiq Group&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
             </div>
             

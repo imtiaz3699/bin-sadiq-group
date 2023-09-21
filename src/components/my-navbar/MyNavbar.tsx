@@ -64,7 +64,7 @@ const MyNavbar = () => {
             ],
         },
         {
-            name:'CONTACT',
+            name:'CONTACT US',
             url:'/contact_us', 
         },
     ]
@@ -115,7 +115,7 @@ const MyNavbar = () => {
             ],
         },
         {
-            name:'CONTACT',
+            name:'CONTACT US',
             url:'/contact_us', 
         },
     ]

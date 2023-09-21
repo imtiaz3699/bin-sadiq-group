@@ -1,5 +1,6 @@
 
-// import React from 'react';
+'use client'
+import React,{useState,useEffect} from 'react';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -9,7 +10,7 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 // import '../styles.css'
 // import '../heritage/anotherSlider.css'
-import "./style.css"
+import './projectSpecificationStyles.css'
 // import required modules
 import { FreeMode,Navigation, Pagination, Mousewheel, Keyboard,Autoplay } from 'swiper/modules';
 import InViewElement from '@/components/InViewElement/InViewElement';
@@ -113,6 +114,29 @@ export default function ProjectSpecification () {
           clickable: true, // Enable pagination bullets
         },
       };
+      
+
+      const [slidesPerView, setSlidesPerView] = useState(3); // Default number of slides per view
+
+      useEffect(() => {
+        // Function to update slidesPerView based on screen width
+        const updateSlidesPerView = () => {
+          if (window.innerWidth <= 768) { // Adjust this breakpoint as needed
+            setSlidesPerView(1); // Show one slide on small screens (e.g., mobile)
+          } else {
+            setSlidesPerView(3); // Show three slides on larger screens (e.g., desktop)
+          }
+        };
+    
+        // Call the function on initial load and when the window is resized
+        updateSlidesPerView();
+        window.addEventListener('resize', updateSlidesPerView);
+    
+        // Clean up the event listener when the component unmounts
+        return () => {
+          window.removeEventListener('resize', updateSlidesPerView);
+        };
+      }, []);
     return <div className="py-20 flex flex-col " style = {{backgroundColor:'#1A3728'}}>
         <InViewElement targetId="element-5"
             inViewClassName=" trnaslate-x-0 duration-300 transition-all duration-500 transform "
@@ -139,38 +163,31 @@ export default function ProjectSpecification () {
            } 
         </div>
         <>
-                <div className="image-slider grid place-items-center relative overflow-hidden bg-[#1A3728] h-[250px] w-[100%] mt-20">
-                    <div className="image-slider-track" style={{backgroundColor:'#1A3728'}}>
-        <div className="slide" style={{backgroundColor:'#1A3728'}}>
-        <img src="/heritage1.png" alt="" className='w-[106px] h-[106px]'/>
+        <div className="grid place-items-center relative overflow-hidden bg-[#1A3728] h-[100px] md:h-[250px] w-[100%] mt-20">
+        <div className="image-slider-track-mine" style={{backgroundColor:'#1A3728'}}>
+        <div className="my-slide" style={{backgroundColor:'#1A3728'}}>
+                <img src="/heritage1.png" alt="" className='w-[74px] h-[72px] md:w-[106px] md:h-[106px]'/>
         </div>
-        <div className="slide" style={{backgroundColor:'#1A3728'}}>
-          <img src="/heritage2.png" alt="" className='w-[106px] h-[106px]'/>
-          
+        <div className="my-slide" style={{backgroundColor:'#1A3728'}}>
+                <img src="/heritage2.png" alt="" className='w-[73px] h-[74px] md:w-[106px] md:h-[106px]'/>
         </div>
-        <div className="slide" style={{backgroundColor:'#1A3728'}}>
-         <img src="/heritage3.png" alt="" className='w-[106px] h-[106px]'/>
-         
+        <div className="my-slide" style={{backgroundColor:'#1A3728'}}>
+                <img src="/heritage3.png" alt="" className='w-[69px] h-[74px] md:w-[106px] md:h-[106px]'/>
         </div>
-        <div className="slide" style={{backgroundColor:'#1A3728'}}>
-        <img src="/heritage4.png" alt="" className='w-[106px] h-[106px]'/>
-           
+        <div className="my-slide" style={{backgroundColor:'#1A3728'}}>
+                <img src="/heritage4.png" alt="" className='w-[71px] h-[74px] md:w-[106px] md:h-[106px]'/>
         </div>
-        <div className="slide" style={{backgroundColor:'#1A3728'}}>
-        <img src="/heritage5.png" alt="" className='w-[92px] h-[130px]'/>
-        
+        <div className="my-slide" style={{backgroundColor:'#1A3728'}}>
+                <img src="/heritage5.png" alt="" className='w-[62px] h-[90px] md:w-[92px] md:h-[130px]'/>
         </div>
-        <div className="slide" style={{backgroundColor:'#1A3728'}}>
-        <img src="/heritage6.png" alt="" className='w-[106px] h-[106px]'/>
-        
+        <div className="my-slide" style={{backgroundColor:'#1A3728'}}>
+                <img src="/heritage6.png" alt="" className='w-[76px] h-[74px] md:w-[106px] md:h-[106px]'/>
         </div>
-        <div className="slide" style={{backgroundColor:'#1A3728'}}>
-          <img src="/heritage7.png" alt="" className='w-[84px] h-[106px]'/>
-          
+        <div className="my-slide" style={{backgroundColor:'#1A3728'}}>
+            <img src="/heritage7.png" alt="" className='w-[56px] h-[69px] md:w-[84px] md:h-[106px]'/>
         </div>
-        <div className="slide" style={{backgroundColor:'#1A3728'}}>
-         <img src="/heritage8.png" alt="" className='w-[106px] h-[111px]'/>
-         
+        <div className="my-slide" style={{backgroundColor:'#1A3728'}}>
+             <img src="/heritage8.png" alt="" className='w-[74px] h-[75px] md:w-[106px] md:h-[111px]'/>
         </div>  
         </div>
     </div>
@@ -220,13 +237,17 @@ export default function ProjectSpecification () {
 
 <div className=" w-full mt-[200px]">
         <Swiper
-        {...params}
+        spaceBetween={30}
+        loop={true}
+        autoplay={{ delay: 3000 }}
+        pagination={{ clickable: true }}
+        slidesPerView={slidesPerView}
         className="mySwiper"
       >
         {
           sliderImage.map((element,idx)=> {
              return <SwiperSlide>
-            <div className='w-[488px] h-[275px]'>
+            <div className='w-full h-full px-3 md:w-[488px] md:h-[275px]'>
             <img src={element.img} alt="" className='w-full h-full bg-cover'/>
         </div>
         </SwiperSlide>

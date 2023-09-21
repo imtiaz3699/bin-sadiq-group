@@ -153,16 +153,16 @@ useEffect(() => {
 <ImageSlider/>     
             <div className='py-20 '>
                 <div className='container mx-auto text-center flex flex-col items-center justify-center'>
-                  <InViewElement  targetId="element-10"
-  inViewClassName="animate-flip-down animate-once animate-ease-linear"
-  outOfViewClassName="element-out-of-view">
-                        <h1 id='animate' className='text-golden  text-center md:text-left text-[30px] sm:text-[40px] md:text-[64px]  font-bold  leading-[56px] animate-fade-right animate-once animate-ease-linear'>OUR SERVICES </h1>
-                        </InViewElement>
-                        <div className={`max-w-[1300px] text-[18px] px-3 md:text-[22px]    text-white mt-5 ${lato.className}`}> { text.slice(0, currentIndex) }</div>
+                  <InViewElement targetId="element-10"
+                          inViewClassName="animate-flip-down animate-once animate-ease-linear"
+                           outOfViewClassName="element-out-of-view">
+                            <h1 id='animate' className='text-golden font-bold text-center md:text-left text-[30px] sm:text-[40px] md:text-[64px]  font-bold  leading-[56px] animate-fade-right animate-once animate-ease-linear'>OUR SERVICES </h1>
+                            </InViewElement>
+                        <div className={`max-w-[1300px] text-[18px] px-3 md:text-[22px]   text-gray-500 text-white mt-5 ${lato.className}`}> { text.slice(0, currentIndex) }</div>
                 <div className='grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 place-items-center mt-[150px] gap-[50px] sm:gap-[100px] w-full px-5'>
                       {
                         ourServices.map((element,idx)=> {
-                            return <div className={`transition-transform duration-500 ease-in-out transform hover:scale-125 w-full sm:w-[342px] shadow-2xl drop-shadow-2xl" px-5 py-5 h-auto sm:h-[342px] flex flex-col items-center justify-center bg-golden rounded-[12px]`} key = {idx} onMouseEnter={()=> setState(idx)}>
+                            return <div className={`transition-transform duration-500 ease-in-out transform hover:scale-100 md:hover:scale-125 w-full sm:w-[342px] shadow-2xl drop-shadow-2xl" px-5 py-5 h-auto sm:h-[342px] flex flex-col items-center justify-center bg-golden rounded-[12px]`} key = {idx} onMouseEnter={()=> setState(idx)}>
                             <img src={element.img} alt="" className='w-[99px] h-[99px]'/>
                             <h1 className='font-bold text-[24px] max-w-[180px] mt-[31px]'>{element.name}</h1>
                             <button className='bg-black w-[150px] h-[35px] text-[12px] text-white mt-[80px] px-[14px]'>Read More....</button>
@@ -185,7 +185,7 @@ useEffect(() => {
                                     <img src="/Quote Post 10 1.png" alt="" className='transition-transform duration-700 transform hover:scale-105 hover:shadow-lg'/>
                             </div>
                             </div>  
-                    </div>
+            </div>
             </div>
             </div>
     </>

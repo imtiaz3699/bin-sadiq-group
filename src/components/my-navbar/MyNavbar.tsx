@@ -64,8 +64,8 @@ const MyNavbar = () => {
             ],
         },
         {
-            name:'CONTACT',
-            url:'', 
+            name:'CONTACT US',
+            url:'/contact_us', 
         },
     ]
     const data2 = [
@@ -115,8 +115,8 @@ const MyNavbar = () => {
             ],
         },
         {
-            name:'CONTACT',
-            url:'', 
+            name:'CONTACT US',
+            url:'/contact_us', 
         },
     ]
     const pathname = usePathname();
@@ -137,13 +137,13 @@ return <div className={`${marriware.className}`}>
     <div className="w-[150px] h[150px] py-5">
     {/* <Image alt = "" width={100} height={100} src = {myImage} /> */}
     {/* <img src="/bin-sadiq-logo.png" alt="" className="hidden md:block"/> */}
-    <img src="/logoFinal.png" alt="" className="block xl:hidden w-full h-full"/>
+    <img src="/LogoFinal.png" alt="" className="block xl:hidden w-full h-full"/>
     </div>
     <div className="bg-transparent" onClick={()=> {setIsDropDown(!isDropDown)}}>
     {
-            isDropDown ? <img src="/cross-.png" alt="" className="w-[30px] h-[25px]"/>
+           isDropDown ? <img src="/cross-.png" alt="" className="w-[30px] h-[25px]"/>
            :    
-                <img src="/apps.png" alt="" className="w-[30px] h-[30px]"/>
+           <img src="/apps.png" alt="" className="w-[30px] h-[30px]"/>
         }
     </div>
    {

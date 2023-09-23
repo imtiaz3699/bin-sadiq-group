@@ -100,6 +100,6 @@ Download</p>
     </div>
 
     
-    <div className="w-full bg-golden text-white text-center h-[86px] flex justify-center items-center text-[18px] sm:text-[24px]">2023 All Rights Reserved By Bin Sadiq Group </div>
+    <div className="w-full bg-golden text-white text-center h-[40px] flex justify-center items-center text-[16px] xs:text-[18px] sm:text-[24px]">2023 All Rights Reserved By Bin Sadiq Group </div>
 </>
 }

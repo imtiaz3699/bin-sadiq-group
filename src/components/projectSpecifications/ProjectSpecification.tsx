@@ -16,6 +16,18 @@ import { FreeMode,Navigation, Pagination, Mousewheel, Keyboard,Autoplay } from '
 import InViewElement from '@/components/InViewElement/InViewElement';
 
 export default function ProjectSpecification () {
+    const floorPlan = '/FLOOR_PLAN.pdf';
+    const broucher = '/The-Heritage_Catalogue_Book.pdf'
+    const downloadFile = (fileUrl:string, fileName:string) => {
+        const a = document.createElement('a');
+        a.href = fileUrl;
+        a.download = fileName;
+        a.style.display = 'none';
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+      };
+      
 
     const data = [
         {
@@ -230,9 +242,9 @@ export default function ProjectSpecification () {
         
     </div>
 <div className="flex flex-col md:flex-row items-center justify-center gap-[29px] mt-[139px]">
-           <button className="border-[3px] border-golden w-[251px] h-[78px] text-[24px] text-white">View Floor Plan</button>
+           <button className="border-[3px] border-golden w-[251px] h-[78px] text-[24px] text-white" onClick={()=> downloadFile(floorPlan, 'floor-plan')}>View Floor Plan</button>
            <div className="w-[100px] h-[4px] md:w-[4px] md:h-[100px] bg-golden"></div>
-           <button className="border-[3px] border-golden w-[251px] h-[78px] text-[24px] text-white">View Broucher</button>
+           <button className="border-[3px] border-golden w-[251px] h-[78px] text-[24px] text-white" onClick={()=> downloadFile(broucher, 'Broucher')}>View Broucher</button>
 </div>
 
 <div className=" w-full mt-[200px]">

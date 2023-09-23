@@ -1,5 +1,6 @@
 import Footer from "@/components/footer/Footer";
 import MyNavbar from "@/components/my-navbar/MyNavbar";
+import { lato } from "../layout";
 
 export default function OurServices() {
 
@@ -22,7 +23,7 @@ export default function OurServices() {
     ]
         return <div className="bg-lead-color">
             
-                <div className="relative w-full h-[500px]  bg-lead-color  bg-cover" style={{backgroundImage:'url(/Slider_img_2_big.jpg)'}}>
+                <div className="relative w-full h-[500px] bg-lead-color bg-cover" style={{backgroundImage:'url(/Slider_img_2_big.jpg)'}}>
                 <MyNavbar/>
                 </div>
                 <div className="px-20 ">
@@ -34,7 +35,7 @@ export default function OurServices() {
                                     <img src={element.img} alt="" className="invert"/>
                                     </div>
                                     <div className="text-center text-[20px] w-[150px] font-bold">{element.name}</div>
-                                    <div className="text-justify">{element.description}</div>
+                                    <div className={`text-justify text-[16px] ${lato.className}`}>{element.description}</div>
                                 </div>
                             })
                         } 

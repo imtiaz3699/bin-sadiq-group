@@ -22,6 +22,7 @@ import 'swiper/css/effect-fade';
 import { EffectFade } from 'swiper/modules';
 import { lato } from '@/app/layout';
 import localFont from '@next/font/dist/local';
+import Link from 'next/link';
 
 export default  function Hero() {
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -34,14 +35,17 @@ const ourServices  = [
     {
         img:'/image 1.png',
         name:'ASSET MANAGEMENT',
+        url:'/our-services'
     },
     {
         img:'/image 2.png',
         name:'INVESTMENT CONSULTANCY',
+        url:'/our-services'
     },
     {
         img:'/image 3.png',
         name:'MARKETING & SALES',
+        url:'/our-services'
     },
 ]
 const sliderImages = [
@@ -162,10 +166,12 @@ useEffect(() => {
                 <div className='grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 place-items-center mt-[150px] gap-[50px] sm:gap-[100px] w-full px-5'>
                       {
                         ourServices.map((element,idx)=> {
-                            return <div className={`transition-transform duration-500 ease-in-out transform hover:scale-100 md:hover:scale-125 w-full sm:w-[342px] shadow-2xl drop-shadow-2xl" px-5 py-5 h-auto sm:h-[342px] flex flex-col items-center justify-center bg-golden rounded-[12px]`} key = {idx} onMouseEnter={()=> setState(idx)}>
+                            return <div className={`transition-transform duration-500 ease-in-out transform hover:scale-[1.1] w-full sm:w-[342px] shadow-2xl drop-shadow-2xl" px-5 py-5 h-auto sm:h-[342px] flex flex-col items-center justify-center bg-golden rounded-[12px]`} key = {idx} onMouseEnter={()=> setState(idx)}>
                             <img src={element.img} alt="" className='w-[99px] h-[99px]'/>
                             <h1 className='font-bold text-[24px] max-w-[180px] mt-[31px]'>{element.name}</h1>
+                            <Link href='/our-services'>
                             <button className='bg-black w-[150px] h-[35px] text-[12px] text-white mt-[80px] px-[14px]'>Read More....</button>
+                            </Link>
                         </div>
                         })
                       }  

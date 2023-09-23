@@ -64,13 +64,14 @@ const MyNavbar = () => {
             ],
         },
         {
-            name:'CONTACT US',
-            url:'/contact_us', 
-        },
-        {
             name:'OUR SERVICES',
             url:'/our-services', 
         },
+        {
+            name:'CONTACT US',
+            url:'/contact_us', 
+        },
+        
     ]
     const data2 = [
         {
@@ -119,13 +120,14 @@ const MyNavbar = () => {
             ],
         },
         {
-            name:'CONTACT US',
-            url:'/contact_us', 
-        },
-        {
             name:'OUR SERVICES',
             url:'/our-services', 
         },
+        {
+            name:'CONTACT US',
+            url:'/contact_us', 
+        },
+        
     ]
     const pathname = usePathname();
     
@@ -142,11 +144,14 @@ const MyNavbar = () => {
     }
 return <div className={`${marriware.className}`}>
 <div className={`xl:hidden ${isDropDown === true ? 'bg-lead-color' : 'bg-transparent'} flex flex-row justify-between  w-full absolute z-50 items-center px-5`}>
+    <Link href='/'>
+
     <div className="w-[100px] h[100px] py-5">
     {/* <Image alt = "" width={100} height={100} src = {myImage} /> */}
     {/* <img src="/bin-sadiq-logo.png" alt="" className="hidden md:block"/> */}
     <img src="/LogoFinal.png" alt="" className="block xl:hidden w-full h-full"/>
     </div>
+    </Link>
     <div className="bg-transparent" onClick={()=> {setIsDropDown(!isDropDown)}}>
     {
            isDropDown ? <img src="/cross-.png" alt="" className="w-[20px] h-[17px]"/>
@@ -198,7 +203,9 @@ return <div className={`${marriware.className}`}>
                 data.map((element,idx)=> {
                     return <div className="" key = {idx}>
                     { element?.img ? 
+                    <Link href={element.url}>
                     <img src={element.img} alt="" className="w-[100px] h-[100px]"/>
+                    </Link>
                     // <Image alt="Bin Sadiq Logo"
                     // src={element?.img}
                     // width={100}

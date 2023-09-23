@@ -67,6 +67,10 @@ const MyNavbar = () => {
             name:'CONTACT US',
             url:'/contact_us', 
         },
+        {
+            name:'OUR SERVICES',
+            url:'/our-services', 
+        },
     ]
     const data2 = [
         {
@@ -117,6 +121,10 @@ const MyNavbar = () => {
         {
             name:'CONTACT US',
             url:'/contact_us', 
+        },
+        {
+            name:'OUR SERVICES',
+            url:'/our-services', 
         },
     ]
     const pathname = usePathname();

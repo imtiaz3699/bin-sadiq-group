@@ -64,9 +64,14 @@ const MyNavbar = () => {
             ],
         },
         {
+            name:'OUR SERVICES',
+            url:'/our-services', 
+        },
+        {
             name:'CONTACT US',
             url:'/contact_us', 
         },
+        
     ]
     const data2 = [
         {
@@ -115,9 +120,14 @@ const MyNavbar = () => {
             ],
         },
         {
+            name:'OUR SERVICES',
+            url:'/our-services', 
+        },
+        {
             name:'CONTACT US',
             url:'/contact_us', 
         },
+        
     ]
     const pathname = usePathname();
     
@@ -134,20 +144,23 @@ const MyNavbar = () => {
     }
 return <div className={`${marriware.className}`}>
 <div className={`xl:hidden ${isDropDown === true ? 'bg-lead-color' : 'bg-transparent'} flex flex-row justify-between  w-full absolute z-50 items-center px-5`}>
-    <div className="w-[150px] h[150px] py-5">
+    <Link href='/'>
+
+    <div className="w-[100px] h[100px] py-5">
     {/* <Image alt = "" width={100} height={100} src = {myImage} /> */}
     {/* <img src="/bin-sadiq-logo.png" alt="" className="hidden md:block"/> */}
     <img src="/LogoFinal.png" alt="" className="block xl:hidden w-full h-full"/>
     </div>
+    </Link>
     <div className="bg-transparent" onClick={()=> {setIsDropDown(!isDropDown)}}>
     {
-           isDropDown ? <img src="/cross-.png" alt="" className="w-[30px] h-[25px]"/>
+           isDropDown ? <img src="/cross-.png" alt="" className="w-[20px] h-[17px]"/>
            :    
-           <img src="/apps.png" alt="" className="w-[30px] h-[30px]"/>
+           <img src="/apps.png" alt="" className="w-[25px] h-[25px]"/>
         }
     </div>
    {
-    isDropDown && <div className="flex bg-lead-color flex-col items-left absolute left-0 top-0 z-50 mt-20 py-5 text-white w-full px-5">
+    isDropDown && <div className="flex bg-lead-color flex-col items-left absolute left-0 top-0 z-50 mt-16 py-5 text-white w-full px-5">
     {
         data2.map((element,idx)=> {
             return <div  className="flex flex-col">
@@ -190,7 +203,9 @@ return <div className={`${marriware.className}`}>
                 data.map((element,idx)=> {
                     return <div className="" key = {idx}>
                     { element?.img ? 
+                    <Link href={element.url}>
                     <img src={element.img} alt="" className="w-[100px] h-[100px]"/>
+                    </Link>
                     // <Image alt="Bin Sadiq Logo"
                     // src={element?.img}
                     // width={100}

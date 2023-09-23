@@ -22,6 +22,7 @@ import 'swiper/css/effect-fade';
 import { EffectFade } from 'swiper/modules';
 import { lato } from '@/app/layout';
 import localFont from '@next/font/dist/local';
+import Link from 'next/link';
 
 export default  function Hero() {
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -34,14 +35,17 @@ const ourServices  = [
     {
         img:'/image 1.png',
         name:'ASSET MANAGEMENT',
+        url:'/our-services'
     },
     {
         img:'/image 2.png',
         name:'INVESTMENT CONSULTANCY',
+        url:'/our-services'
     },
     {
         img:'/image 3.png',
         name:'MARKETING & SALES',
+        url:'/our-services'
     },
 ]
 const sliderImages = [
@@ -130,8 +134,8 @@ useEffect(() => {
                 <div  className='flex flex-col'>
                         <h1
                         id='in-view-element'
-                        className={isInView ? 'text-golden  text-center md:text-left text-[30px]  sm:text-[40px] md:text-[64px]  font-bold  leading-[56px] animate-fade-right animate-once animate-ease-linear' : "outOfViewClassName"} >CREATING SPACES <br />THAT INSPIRES </h1> 
-                        <div className={`max-w-[638px] text-white  mt-5 text-[18px] ${lato.className} sm:text-[20px]  text-center md:text-left`}>Engraved in glorious chronicles that grace our enigmatic development footprint, Bin Sadiq Group brings forward contemporary and futuristic properties so as to revamp the real estate haven by tenfolds. Streamlining residential and commercial sites way ahead of times in The Heart of the evergreen Twin Cities, we have come a long way since inception. Accomplishing unwavering restoration of heritage buildings that stand out in both design and structure has been our top notch forte. Bin Sadiq masters in development grandeur with a successful track record and portfolio.
+                        className={isInView ? 'text-golden text-center md:text-left text-[30px] sm:text-[40px] md:text-[64px] font-bold leading-[56px] animate-fade-right animate-once animate-ease-linear' : "outOfViewClassName"} >CREATING SPACES <br />THAT INSPIRES </h1> 
+                        <div className={`max-w-[638px] text-white mt-5 text-[16px] ${lato.className} sm:text-[20px] text-justify md:text-left`}>Engraved in glorious chronicles that grace our enigmatic development footprint, Bin Sadiq Group brings forward contemporary and futuristic properties so as to revamp the real estate haven by tenfolds. Streamlining residential and commercial sites way ahead of times in The Heart of the evergreen Twin Cities, we have come a long way since inception. Accomplishing unwavering restoration of heritage buildings that stand out in both design and structure has been our top notch forte. Bin Sadiq masters in development grandeur with a successful track record and portfolio.
 </div>
                 </div>          
                 <img src="/Pic2.png" alt="" className='w-[300px] h-[300px] sm:hidden'/>
@@ -148,9 +152,9 @@ useEffect(() => {
   outOfViewClassName="element-out-of-view">
                 <div className={ 'text-golden  text-center text-[30px] sm:text-[40px] md:text-[64px] font-bold leading-[56px] transition-transform duration-300 transform'}>Why Choose Us</div>
                 </InViewElement>
-                <div className={`max-w-[1300px] text-[18px] px-3 md:text-[22px]  text-white ${lato.className} `}>We've always tried to be different,a different approach to buisness & customer service,<br /> a different culture at work place. We believe in the importance of fresh thinking-in being <br /> green,  and approaching things in new and different ways.</div>
+                <div className={`max-w-[1300px] text-justify md:text-center text-[16px] px-3 md:text-[22px] text-white ${lato.className} `}>We've always tried to be different,a different approach to buisness & customer service, a different culture at work place. We believe in the importance of fresh thinking-in being green,  and approaching things in new and different ways.</div>
             </div>
-<ImageSlider/>     
+<ImageSlider/>      
             <div className='py-20 '>
                 <div className='container mx-auto text-center flex flex-col items-center justify-center'>
                   <InViewElement targetId="element-10"
@@ -158,14 +162,16 @@ useEffect(() => {
                            outOfViewClassName="element-out-of-view">
                             <h1 id='animate' className='text-golden font-bold text-center md:text-left text-[30px] sm:text-[40px] md:text-[64px]  font-bold  leading-[56px] animate-fade-right animate-once animate-ease-linear'>OUR SERVICES </h1>
                             </InViewElement>
-                        <div className={`max-w-[1300px] text-[18px] px-3 md:text-[22px]   text-gray-500 text-white mt-5 ${lato.className}`}> { text.slice(0, currentIndex) }</div>
+                        <div className={`max-w-[1300px] text-[16px] text-justify md:text-center px-3 md:text-[22px] text-gray-500 text-white mt-5 ${lato.className}`}> { text.slice(0, currentIndex) }</div>
                 <div className='grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 place-items-center mt-[150px] gap-[50px] sm:gap-[100px] w-full px-5'>
                       {
                         ourServices.map((element,idx)=> {
-                            return <div className={`transition-transform duration-500 ease-in-out transform hover:scale-100 md:hover:scale-125 w-full sm:w-[342px] shadow-2xl drop-shadow-2xl" px-5 py-5 h-auto sm:h-[342px] flex flex-col items-center justify-center bg-golden rounded-[12px]`} key = {idx} onMouseEnter={()=> setState(idx)}>
+                            return <div className={`transition-transform duration-500 ease-in-out transform hover:scale-[1.1] w-full sm:w-[342px] shadow-2xl drop-shadow-2xl" px-5 py-5 h-auto sm:h-[342px] flex flex-col items-center justify-center bg-golden rounded-[12px]`} key = {idx} onMouseEnter={()=> setState(idx)}>
                             <img src={element.img} alt="" className='w-[99px] h-[99px]'/>
                             <h1 className='font-bold text-[24px] max-w-[180px] mt-[31px]'>{element.name}</h1>
+                            <Link href='/our-services'>
                             <button className='bg-black w-[150px] h-[35px] text-[12px] text-white mt-[80px] px-[14px]'>Read More....</button>
+                            </Link>
                         </div>
                         })
                       }  

@@ -44,7 +44,7 @@ const timer = setTimeout(()=> {
         
     ]
 
-    return <div className="bg-[#CFB156] text-center  pt-20 sm:pt-0 sm:py-20">
+    return <div className="bg-[#CFB156] text-center  pt-20  sm:py-20">
         <div className="container mx-auto ">
 
 <InViewElement 
@@ -65,7 +65,7 @@ const timer = setTimeout(()=> {
         "
             outOfViewClassName="element-out-of-view">
             <div className="transition-transform duration-300 ease-in-out transform hover:scale-125 w-[100px] md:h-[100px]  rounded-full flex flex-row items-center justify-center " >
-            <img src='/core1.png' alt="" className="w-[70px] md:w-[100px]" />
+            <img src='/core1.png' alt="" className="w-[70px] md:w-[80px]" />
             </div>
             </InViewElement>
                         
@@ -75,7 +75,7 @@ const timer = setTimeout(()=> {
                 <>
             <p className={`w-[250px] text-white text-[20px] text-center md2:text-left  transition-opacity duration-500 opacity-100 transition-opacity duration-300 opacity-0 flex flex-col text-left text-black`}>
             WE ACT WITH
-            <span className="font-bold drop-shadow-xl text-white md:text-black">INTEGRITY</span>
+            <span className="font-bold text-white sm:text-black">INTEGRITY</span>
             </p>
             </>
             </FadedAnimationElement> 
@@ -87,7 +87,7 @@ const timer = setTimeout(()=> {
             "
             outOfViewClassName="element-out-of-view">
             <div className="transition-transform duration-300 ease-in-out transform hover:scale-125 w-[100px] md:h-[100px]  rounded-full flex flex-row items-center justify-center" >
-            <img src="/core2.png" alt="" className="w-[70px] md:w-[100px]"/>
+            <img src="/core2.png" alt="" className="w-[70px] md:w-[80px]"/>
             </div>
             </InViewElement>
             
@@ -113,13 +113,13 @@ const timer = setTimeout(()=> {
         <div className="w-full flex flex-col xs:flex-row items-center justify-center gap-[10px] xl:gap-[150px]">
      
      
-        <div className="w-full  bg-black sm:bg-transparent  h-[250px] sm:h-auto flex flex-col md2:flex-row items-center justify-center gap-5">
+        <div className="w-full sm:w-auto bg-black sm:bg-transparent  h-[250px] sm:h-auto flex flex-col md2:flex-row items-center justify-center gap-5">
         <InViewElement targetId="element-3"
             inViewClassName="animate-fade-right animate-once animate-duration-1000 animate-delay-500 animate-ease-in animate-normal animate-fill-backwards
             "
             outOfViewClassName="element-out-of-view">
 <div className="transition-transform duration-300 ease-in-out transform hover:scale-125 w-[100px] h-[100px]  rounded-full flex flex-row items-center justify-center " >
-            <img src="/core3.png" alt="" className="w-[70px] md:w-[100px]"/>
+            <img src="/core3.png" alt="" className="w-[70px] md:w-[80px]"/>
             </div>
             </InViewElement>
             
@@ -129,7 +129,7 @@ const timer = setTimeout(()=> {
             <>
             <div className={`w-[250px] text-[20px] text-center md2:text-left text-white transition-opacity duration-500 opacity-100 transition-opacity duration-300 opacity-0 flex flex-col text-left text-black`}>
             WE ARE DEVOTED
-            <span className="font-bold text-white md:text-black">INNOVATUION</span>
+            <span className="font-bold text-white sm:text-black">INNOVATUION</span>
             </div> 
             </>
             </FadeInElement>
@@ -141,7 +141,7 @@ const timer = setTimeout(()=> {
             "
             outOfViewClassName="element-out-of-view">
 <div className="transition-transform duration-300 ease-in-out transform hover:scale-125 w-[100px] h-[100px]  rounded-full flex flex-row items-center justify-center" onMouseEnter={()=> setShow4(true)}>
-            <img src="/core4.png" alt="" className="w-[70px] md:w-[100px]"/>
+            <img src="/core4.png" alt="" className="w-[70px] md:w-[80px]"/>
             </div>
             </InViewElement>
             
@@ -170,7 +170,7 @@ const timer = setTimeout(()=> {
             "
             outOfViewClassName="element-out-of-view">
 <div className="transition-transform duration-300 ease-in-out transform hover:scale-125 w-[100px] md:h-[100px]  rounded-full flex flex-row items-center justify-center" onMouseEnter={()=> setShow4(true)}>
-            <img src="/core5.png" alt="" className="w-[70px] md:w-[100px]"/>
+            <img src="/core5.png" alt="" className="w-[70px] md:w-[80px]"/>
             </div>
             </InViewElement>
             
@@ -180,7 +180,7 @@ const timer = setTimeout(()=> {
                 <>
             <div className={`w-[250px] text-white  text-[20px] text-center md2:text-left transition-opacity duration-500 opacity-100 transition-opacity duration-300 opacity-0  flex flex-col text-left text-black`}>
                 WE BUILD TRUST THROUGH
-                <span className="font-bold text-white md:text-black">TRANSPARENCY</span>
+                <span className="font-bold text-white sm:text-black">TRANSPARENCY</span>
             </div>
             </>
             </FadeInElement>

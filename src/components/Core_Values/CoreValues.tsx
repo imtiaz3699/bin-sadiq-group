@@ -63,7 +63,7 @@ const timer = setTimeout(()=> {
             inViewClassName="animate-fade-right animate-once animate-duration-1000 animate-delay-500 animate-ease-in animate-normal animate-fill-backwards"
             outOfViewClassName="element-out-of-view">
             <div className="transition-transform duration-300 ease-in-out transform hover:scale-125 w-[100px] md:h-[100px]  rounded-full flex flex-row items-center justify-center " >
-            <img src='/core1.png' alt="" className="w-[70px] md:w-[80px]" />
+            <img src='/core1.png' alt="" className="w-[70px] h-[70px] md:w-[109px] md:h-[109px]" />
             </div>
             </InViewElement>
             <div className="w-[150px] h-[3px] md2:w-[3px] md2:h-[100px] bg-white"></div>
@@ -83,7 +83,7 @@ const timer = setTimeout(()=> {
             inViewClassName="animate-fade-right animate-once animate-duration-1000 animate-delay-500 animate-ease-in animate-normal animate-fill-backwards"
             outOfViewClassName="element-out-of-view">
             <div className="transition-transform duration-300 ease-in-out transform hover:scale-125 w-[100px] md:h-[100px]  rounded-full flex flex-row items-center justify-center" >
-            <img src="/core2.png" alt="" className="w-[70px] md:w-[80px]"/>
+            <img src="/core2.png" alt="" className="w-[70px] h-[70px] md:w-[115px] md:h-[120px]"/>
             </div>
             </InViewElement>
             <div className="w-[150px] h-[3px] md2:w-[3px] md2:h-[100px] bg-white"></div>
@@ -113,7 +113,7 @@ const timer = setTimeout(()=> {
             "
             outOfViewClassName="element-out-of-view">
 <div className="transition-transform duration-300 ease-in-out transform hover:scale-125 w-[100px] h-[100px]  rounded-full flex flex-row items-center justify-center " >
-            <img src="/core3.png" alt="" className="w-[70px] md:w-[80px]"/>
+            <img src="/core3.png" alt="" className="w-[70px] md:w-[135px] md:h-[125px]"/>
             </div>
             </InViewElement>
             
@@ -135,7 +135,7 @@ const timer = setTimeout(()=> {
             inViewClassName="animate-fade-right animate-once animate-duration-1000 animate-delay-500 animate-ease-in animate-normal animate-fill-backwards"
             outOfViewClassName="element-out-of-view">
             <div className="transition-transform duration-300 ease-in-out transform hover:scale-125 w-[100px] h-[100px]  rounded-full flex flex-row items-center justify-center" onMouseEnter={()=> setShow4(true)}>
-            <img src="/core4.png" alt="" className="w-[70px] md:w-[80px]"/>
+            <img src="/core4.png" alt="" className="w-[70px] md:w-[116px] md:h-[120px]"/>
             </div>
             </InViewElement>
             
@@ -164,11 +164,9 @@ const timer = setTimeout(()=> {
             inViewClassName="animate-fade-right animate-once animate-duration-1000 animate-delay-500 animate-ease-in animate-normal animate-fill-backwards"
             outOfViewClassName="element-out-of-view">
             <div className="transition-transform duration-300 ease-in-out transform hover:scale-125 w-[100px] md:h-[100px]  rounded-full flex flex-row items-center justify-center" onMouseEnter={()=> setShow4(true)}>
-            <img src="/core5.png" alt="" className="w-[70px] md:w-[80px]"/>
+            <img src="/core5.png" alt="" className="w-[70px] md:w-[154px] md:h-[120px]"/>
             </div>
             </InViewElement>
-            
-            
             <div className="w-[150px] h-[3px] md2:w-[3px] md2:h-[100px] bg-white"></div>
             <FadeInElement>
                 <>
